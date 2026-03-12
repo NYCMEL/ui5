@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — Popover</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="Popover.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">Popover</h1>
+  <p class="demo-desc">Displays additional information or actions for an object in a compact popup.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Popover Variants</div>
+  <div class="demo-block">
+    <div class="demo-row" style="padding-bottom:120px">
+      <div class="ui5-popover-wrap">
+        <button class="ui5-btn ui5-btn--default" data-popover-toggle="pop-info">ℹ Info Popover</button>
+        <div class="ui5-popover" id="pop-info">
+          <strong>Additional Information</strong>
+          <p class="text-sm text-muted" style="margin-top:6px">This popover provides context about the current item and available actions.</p>
+        </div>
+      </div>
+      <div class="ui5-popover-wrap">
+        <button class="ui5-btn ui5-btn--emphasized" data-popover-toggle="pop-actions">Actions ▾</button>
+        <div class="ui5-popover" id="pop-actions" style="min-width:160px;padding:8px">
+          <div class="ui5-popover-item">✏️ Edit</div>
+          <div class="ui5-popover-item">📋 Duplicate</div>
+          <div class="ui5-popover-item" style="color:#b00">🗑️ Delete</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="../../shared/base.js"></script>
+<script src="Popover.js"></script>
+</body>
+</html>

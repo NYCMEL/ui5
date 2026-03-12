@@ -1,0 +1,16 @@
+@use '../../shared/variables' as *;
+
+.ui5-input-wrap { display: flex; flex-direction: column; gap: 4px;
+  label { font-size: 12px; font-weight: 500; color: $text-2; } }
+
+.ui5-textarea {
+  padding: 8px 10px; border: 1px solid $border; border-radius: $radius-sm;
+  font-family: $font-primary; font-size: 14px; color: $text-1;
+  background: $bg-surface; outline: none; resize: vertical; min-height: 72px;
+  width: 100%; transition: border-color $t, box-shadow $t; line-height: 1.5;
+
+  &::placeholder { color: $text-3; }
+  &:hover  { border-color: #9ea1a8; }
+  &:focus  { border-color: $border-focus; box-shadow: 0 0 0 2px rgba($color-primary, 0.2); }
+  &:disabled { opacity: 0.5; cursor: not-allowed; background: $bg-sunken; }
+}

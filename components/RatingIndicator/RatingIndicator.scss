@@ -1,0 +1,16 @@
+@use '../../shared/variables' as *;
+
+.ui5-rating {
+  display: inline-flex; gap: 4px; cursor: pointer;
+
+  &__star {
+    font-size: 24px; color: $border; transition: color $t, transform $t; cursor: pointer;
+    line-height: 1;
+    &.filled { color: #faad14; }
+    &:hover  { transform: scale(1.15); }
+  }
+
+  &--readonly { cursor: default;
+    .ui5-rating__star { cursor: default; &:hover { transform: none; } }
+  }
+}

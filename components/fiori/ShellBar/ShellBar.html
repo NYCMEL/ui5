@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — ShellBar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="ShellBar.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">ShellBar</h1>
+  <p class="demo-desc">A header bar component providing a consistent look for enterprise applications. Contains logo, product name, search, and user actions.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Shell Bar</div>
+  <div class="demo-block" style="padding:0;overflow:hidden;border-radius:8px">
+    <div class="ui5-shellbar">
+      <div class="ui5-shellbar__start">
+        <button class="ui5-shellbar__menu-btn">☰</button>
+        <div class="ui5-shellbar__logo">
+          <span class="ui5-shellbar__logo-icon">🌐</span>
+          <div>
+            <div class="ui5-shellbar__product">SAP Fiori</div>
+            <div class="ui5-shellbar__context">Enterprise Suite</div>
+          </div>
+        </div>
+      </div>
+      <div class="ui5-shellbar__search-wrap">
+        <input type="text" class="ui5-shellbar__search" placeholder="🔍  Search…" />
+      </div>
+      <div class="ui5-shellbar__actions">
+        <button class="ui5-shellbar__action" title="Notifications">🔔<span class="ui5-shellbar__badge">3</span></button>
+        <button class="ui5-shellbar__action" title="Settings">⚙️</button>
+        <button class="ui5-shellbar__action" title="Help">❓</button>
+        <div class="ui5-shellbar__avatar">JD</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../../shared/base.js"></script>
+<script src="ShellBar.js"></script>
+</body>
+</html>

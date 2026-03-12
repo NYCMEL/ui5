@@ -1,0 +1,17 @@
+.ui5-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #3d4148;
+  display: inline-block;
+}
+.ui5-label--required::after {
+  content: " *";
+  color: #b00;
+}
+.ui5-label--colon::after {
+  content: ":";
+}
+.ui5-label--required.ui5-label--colon::after {
+  content: " *:";
+  color: #b00;
+}

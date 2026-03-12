@@ -1,0 +1,53 @@
+@use '../../shared/variables' as *;
+
+
+.ui5-calendar {
+  display: inline-block;
+  border: 1px solid $border;
+  border-radius: $radius-md;
+  background: $bg-surface;
+  overflow: hidden;
+  min-width: 300px;
+  font-size: 13px;
+  user-select: none;
+
+  &__header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 16px; background: $bg-sunken; border-bottom: 1px solid $border;
+  }
+
+  &__nav {
+    background: none; border: none; cursor: pointer; font-size: 18px;
+    color: $text-2; width: 32px; height: 32px; border-radius: $radius-sm;
+    display: flex; align-items: center; justify-content: center;
+    transition: background $t;
+    &:hover { background: $border; }
+  }
+
+  &__month-year { font-weight: 600; font-size: 14px; cursor: pointer;
+    &:hover { color: $color-primary; } }
+
+  &__weekdays {
+    display: grid; grid-template-columns: repeat(7, 1fr);
+    padding: 8px 8px 0;
+    span { text-align: center; font-size: 11px; font-weight: 600;
+           color: $text-3; padding: 4px 0; }
+  }
+
+  &__days {
+    display: grid; grid-template-columns: repeat(7, 1fr);
+    padding: 4px 8px 8px; gap: 2px;
+  }
+
+  &__day {
+    aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; cursor: pointer; font-size: 12px;
+    transition: all $t; color: $text-1;
+
+    &:hover { background: $color-primary-light; color: $color-primary; }
+    &--today { font-weight: 700; color: $color-primary; border: 2px solid $color-primary; }
+    &--selected { background: $color-primary; color: white; &:hover { background: $color-primary-hover; } }
+    &--other-month { color: $text-3; }
+    &--disabled { opacity: 0.3; cursor: not-allowed; pointer-events: none; }
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — BarcodeScannerDialog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="BarcodeScannerDialog.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">BarcodeScannerDialog</h1>
+  <p class="demo-desc">A dialog that provides barcode scanning capabilities using the device camera.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Barcode Scanner Dialog</div>
+  <div class="demo-block">
+    <button class="ui5-btn ui5-btn--default" id="open-barcode">📷 Open Scanner</button>
+    <div class="text-sm text-muted mt-8" id="barcode-state">No scan result</div>
+  </div>
+</div>
+<div class="ui5-overlay" id="barcode-dialog">
+  <div class="ui5-dialog" style="max-width:400px">
+    <div class="ui5-dialog__header"><span class="ui5-dialog__title">📷 Barcode Scanner</span><button class="ui5-dialog__close" id="close-barcode">×</button></div>
+    <div class="ui5-dialog__body" style="padding:0;overflow:hidden">
+      <div class="ui5-barcode-viewer">
+        <div class="ui5-barcode-viewer__frame">
+          <div class="ui5-barcode-viewer__line"></div>
+          <div class="ui5-barcode-viewer__corner ui5-barcode-viewer__corner--tl"></div>
+          <div class="ui5-barcode-viewer__corner ui5-barcode-viewer__corner--tr"></div>
+          <div class="ui5-barcode-viewer__corner ui5-barcode-viewer__corner--bl"></div>
+          <div class="ui5-barcode-viewer__corner ui5-barcode-viewer__corner--br"></div>
+        </div>
+        <p style="color:rgba(255,255,255,.7);font-size:12px;margin-top:16px">Position barcode within the frame</p>
+      </div>
+    </div>
+    <div class="ui5-dialog__footer">
+      <button class="ui5-btn ui5-btn--default" id="close-barcode2">Cancel</button>
+      <button class="ui5-btn ui5-btn--emphasized" id="simulate-scan">Simulate Scan</button>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../../shared/base.js"></script>
+<script src="BarcodeScannerDialog.js"></script>
+</body>
+</html>

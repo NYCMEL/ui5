@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="Page.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">Page</h1>
+  <p class="demo-desc">A page container with optional ShellBar header and footer bar for consistent layout.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Page Layout</div>
+  <div class="demo-block" style="padding:0;overflow:hidden;border-radius:8px;height:360px;display:flex;flex-direction:column">
+    <div class="ui5-page-header">
+      <button class="ui5-page-header__back">← Back</button>
+      <h2 class="ui5-page-header__title">Product Details</h2>
+      <div class="ui5-page-header__actions">
+        <button class="ui5-btn ui5-btn--transparent ui5-btn--sm">Edit</button>
+        <button class="ui5-btn ui5-btn--transparent ui5-btn--sm">⋯</button>
+      </div>
+    </div>
+    <div class="ui5-page-content">
+      <p style="font-size:14px;line-height:1.6;color:#3d4148">Page content area. This region scrolls independently. The header and footer remain fixed during scrolling.</p>
+      <div style="height:200px"></div>
+    </div>
+    <div class="ui5-page-footer">
+      <button class="ui5-btn ui5-btn--default ui5-btn--sm">Cancel</button>
+      <button class="ui5-btn ui5-btn--emphasized ui5-btn--sm">Save</button>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../../shared/base.js"></script>
+<script src="Page.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@use '../../shared/variables' as *;
+
+.ui5-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 16px;
+  height: 36px;
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: $radius-sm;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all $t;
+  text-decoration: none;
+  white-space: nowrap;
+  outline: none;
+  line-height: 1;
+
+  &:focus-visible { box-shadow: 0 0 0 3px rgba($color-primary, 0.3); }
+
+  &--default    { background: $bg-surface; border-color: $border; color: $text-1;
+                  &:hover { background: $bg-sunken; } &:active { background: darken($bg-sunken, 4%); } }
+  &--emphasized { background: $color-primary; border-color: $color-primary; color: $text-inv;
+                  &:hover { background: $color-primary-hover; } &:active { background: $color-primary-active; } }
+  &--positive   { background: $color-success; border-color: $color-success; color: $text-inv;
+                  &:hover { background: color.adjust($color-success, $lightness: -8%); } }
+  &--negative   { background: $color-error; border-color: $color-error; color: $text-inv;
+                  &:hover { background: color.adjust($color-error, $lightness: -8%); } }
+  &--transparent{ background: transparent; color: $color-primary;
+                  &:hover { background: $color-primary-light; } }
+  &--ghost      { background: transparent; border-color: $color-primary; color: $color-primary;
+                  &:hover { background: $color-primary-light; } }
+  &--attention  { background: $color-warning; border-color: $color-warning; color: $text-inv;
+                  &:hover { background: color.adjust($color-warning, $lightness: -8%); } }
+
+  &:disabled { opacity: 0.4; cursor: not-allowed; pointer-events: none; }
+
+  &--sm { height: 28px; padding: 0 12px; font-size: 12px; }
+  &--lg { height: 44px; padding: 0 20px; font-size: 15px; }
+}

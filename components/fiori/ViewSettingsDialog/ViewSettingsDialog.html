@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — ViewSettingsDialog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="ViewSettingsDialog.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">ViewSettingsDialog</h1>
+  <p class="demo-desc">A dialog for defining sorting, filtering, and grouping parameters for a view.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">View Settings</div>
+  <div class="demo-block">
+    <button class="ui5-btn ui5-btn--default" id="open-vsd">⚙️ View Settings</button>
+  </div>
+</div>
+<div class="ui5-overlay" id="vsd-dialog">
+  <div class="ui5-dialog">
+    <div class="ui5-dialog__header"><span class="ui5-dialog__title">View Settings</span><button class="ui5-dialog__close" id="close-vsd">×</button></div>
+    <div style="display:flex;height:300px">
+      <div class="ui5-settings-nav" style="width:140px">
+        <div class="ui5-settings-nav__item active" data-vsd="sort">Sort</div>
+        <div class="ui5-settings-nav__item" data-vsd="filter">Filter</div>
+        <div class="ui5-settings-nav__item" data-vsd="group">Group</div>
+      </div>
+      <div style="flex:1;padding:18px;overflow-y:auto">
+        <div class="vsd-pane active" id="vsd-sort">
+          <div class="ui5-input-wrap"><label>Sort by</label><select class="ui5-select"><option>Name</option><option>Date</option><option>Status</option><option>Priority</option></select></div>
+          <div style="display:flex;gap:16px;margin-top:14px">
+            <label class="ui5-radio"><input type="radio" name="sort-dir" checked /><span class="ui5-radio__dot"></span>Ascending</label>
+            <label class="ui5-radio"><input type="radio" name="sort-dir" /><span class="ui5-radio__dot"></span>Descending</label>
+          </div>
+        </div>
+        <div class="vsd-pane" id="vsd-filter">
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <label class="ui5-checkbox"><input type="checkbox" checked /><span class="ui5-checkbox__box"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/></svg></span>Active</label>
+            <label class="ui5-checkbox"><input type="checkbox" /><span class="ui5-checkbox__box"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/></svg></span>Pending</label>
+            <label class="ui5-checkbox"><input type="checkbox" checked /><span class="ui5-checkbox__box"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/></svg></span>Complete</label>
+          </div>
+        </div>
+        <div class="vsd-pane" id="vsd-group">
+          <div class="ui5-input-wrap"><label>Group by</label><select class="ui5-select"><option>None</option><option>Status</option><option>Priority</option><option>Assignee</option></select></div>
+        </div>
+      </div>
+    </div>
+    <div class="ui5-dialog__footer">
+      <button class="ui5-btn ui5-btn--transparent ui5-btn--sm" id="vsd-reset">Reset</button>
+      <button class="ui5-btn ui5-btn--default" id="close-vsd2">Cancel</button>
+      <button class="ui5-btn ui5-btn--emphasized" id="close-vsd3">OK</button>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../../shared/base.js"></script>
+<script src="ViewSettingsDialog.js"></script>
+</body>
+</html>

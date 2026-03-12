@@ -1,0 +1,41 @@
+@use '../../shared/variables' as *;
+
+.ui5-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: $text-1;
+  user-select: none;
+
+  input { display: none; }
+
+  &__box {
+    width: 18px; height: 18px;
+    border: 2px solid $border;
+    border-radius: 3px;
+    background: $bg-surface;
+    display: flex; align-items: center; justify-content: center;
+    transition: all $t; flex-shrink: 0;
+
+    svg { display: none; }
+  }
+
+  input:checked + .ui5-checkbox__box {
+    background: $color-primary;
+    border-color: $color-primary;
+    svg { display: block; }
+  }
+
+  &:hover .ui5-checkbox__box { border-color: $color-primary; }
+
+  &--indeterminate .ui5-checkbox__box {
+    background: $color-primary;
+    border-color: $color-primary;
+    &::after { content: ''; width: 10px; height: 2px; background: white; border-radius: 1px; }
+    svg { display: none; }
+  }
+
+  &--disabled { opacity: 0.4; cursor: not-allowed; }
+}

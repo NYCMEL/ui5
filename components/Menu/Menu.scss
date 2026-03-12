@@ -1,0 +1,32 @@
+@use '../../shared/variables' as *;
+
+.ui5-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 0 16px; height: 36px; font-family: $font-primary;
+  font-size: 14px; font-weight: 500; border-radius: $radius-sm;
+  border: 1px solid $border; background: $bg-surface; color: $text-1;
+  cursor: pointer; transition: all $t; outline: none;
+  &:hover { background: $bg-sunken; }
+}
+
+.ui5-menu-wrap { position: relative; display: inline-block; }
+
+.ui5-menu {
+  position: absolute; top: calc(100% + 4px); left: 0;
+  background: $bg-surface; border: 1px solid $border;
+  border-radius: $radius-md; box-shadow: $shadow-md;
+  min-width: 200px; z-index: 100;
+  opacity: 0; visibility: hidden; transform: translateY(-8px);
+  transition: all 0.2s ease;
+
+  &.open { opacity: 1; visibility: visible; transform: none; }
+
+  &__item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 9px 14px; font-size: 13px; cursor: pointer;
+    color: $text-1; transition: background $t; user-select: none;
+    &:hover { background: $color-primary-light; color: $color-primary; }
+    &--sep { height: 1px; background: $border; margin: 4px 0; pointer-events: none; padding: 0; }
+    &--disabled { opacity: 0.4; pointer-events: none; }
+  }
+}

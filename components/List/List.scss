@@ -1,0 +1,36 @@
+@use '../../shared/variables' as *;
+
+.ui5-tag {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 2px 10px; border-radius: $radius-pill;
+  font-size: 12px; font-weight: 500; line-height: 20px;
+  &--positive { background: #edfbf0; color: $color-success; border: 1px solid #a3d9a5; }
+  &--neutral  { background: $bg-sunken; color: $text-3; border: 1px solid $border; }
+  &--set4     { background: #feecec; color: $color-error; border: 1px solid #f5a5a5; }
+}
+
+.ui5-list {
+  border: 1px solid $border; border-radius: $radius-md;
+  overflow: hidden; background: $bg-surface;
+
+  &__header {
+    padding: 10px 16px; font-weight: 600; font-size: 13px;
+    background: $bg-sunken; border-bottom: 1px solid $border; color: $text-2;
+  }
+
+  &__item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 16px; border-bottom: 1px solid $border;
+    transition: background $t; cursor: pointer;
+
+    &:last-child { border-bottom: none; }
+    &:hover { background: $color-primary-light; }
+    &.selected { background: $color-primary-light; border-left: 3px solid $color-primary; }
+  }
+
+  &__icon    { font-size: 22px; flex-shrink: 0; }
+  &__content { flex: 1; min-width: 0; }
+  &__title   { font-size: 14px; font-weight: 500; }
+  &__desc    { font-size: 12px; color: $text-3; }
+  &__action  { flex-shrink: 0; }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — Toolbar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="Toolbar.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">Toolbar</h1>
+  <p class="demo-desc">An overflow-aware container for toolbar items including buttons, selects, and separators.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Editor Toolbar</div>
+  <div class="demo-block">
+    <div class="ui5-toolbar">
+      <button class="ui5-btn ui5-btn--transparent">↩</button>
+      <button class="ui5-btn ui5-btn--transparent">↪</button>
+      <div class="ui5-toolbar__sep"></div>
+      <button class="ui5-btn ui5-btn--transparent">✂️</button>
+      <button class="ui5-btn ui5-btn--transparent">📋</button>
+      <button class="ui5-btn ui5-btn--transparent">📌</button>
+      <div class="ui5-toolbar__sep"></div>
+      <select class="ui5-select" style="height:32px;font-size:13px;min-width:140px"><option>IBM Plex Sans</option><option>Monospace</option><option>Serif</option></select>
+      <select class="ui5-select" style="height:32px;min-width:70px;font-size:13px"><option>14</option><option>16</option><option>18</option><option>20</option></select>
+      <div class="ui5-toolbar__sep"></div>
+      <button class="ui5-btn ui5-btn--transparent" title="Bold"><strong>B</strong></button>
+      <button class="ui5-btn ui5-btn--transparent" title="Italic"><em>I</em></button>
+      <button class="ui5-btn ui5-btn--transparent" title="Underline"><u>U</u></button>
+      <div class="ui5-toolbar__spacer"></div>
+      <button class="ui5-btn ui5-btn--emphasized ui5-btn--sm">💾 Save</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="../../shared/base.js"></script>
+<script src="Toolbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@use '../../shared/variables' as *;
+
+.ui5-tag {
+  display: inline-flex; align-items: center; padding: 2px 10px;
+  border-radius: $radius-pill; font-size: 12px; font-weight: 500; line-height: 20px;
+  &--positive { background: #edfbf0; color: $color-success; border: 1px solid #a3d9a5; }
+  &--set1     { background: #e8f4fd; color: #0854a0;        border: 1px solid #b3d4f5; }
+  &--critical { background: #fff7ec; color: $color-warning; border: 1px solid #f5c48a; }
+}
+
+.ui5-table {
+  width: 100%; border-collapse: collapse; font-size: 13px;
+  border: 1px solid $border; border-radius: $radius-md; overflow: hidden;
+
+  thead { background: $bg-sunken;
+    th { padding: 10px 14px; text-align: left; font-weight: 600; color: $text-2;
+         border-bottom: 2px solid $border; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; } }
+
+  tbody tr {
+    border-bottom: 1px solid $border; transition: background $t; cursor: pointer;
+    &:last-child { border-bottom: none; }
+    &:hover { background: $color-primary-light; }
+    &.selected { background: lighten($color-primary-light, 2%); }
+    td { padding: 10px 14px; }
+  }
+}

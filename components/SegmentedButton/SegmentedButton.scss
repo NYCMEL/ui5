@@ -1,0 +1,18 @@
+@use '../../shared/variables' as *;
+
+.ui5-segmented {
+  display: inline-flex;
+  border: 1px solid $border; border-radius: $radius-sm; overflow: hidden;
+
+  &__btn {
+    padding: 0 16px; height: 36px;
+    border: none; border-right: 1px solid $border;
+    background: $bg-surface; font-family: $font-primary;
+    font-size: 13px; font-weight: 500; color: $text-2;
+    cursor: pointer; transition: all $t;
+
+    &:last-child { border-right: none; }
+    &:hover { background: $color-primary-light; color: $color-primary; }
+    &.active { background: $color-primary; color: white; }
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — Breadcrumbs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="Breadcrumbs.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">Breadcrumbs</h1>
+  <p class="demo-desc">Helps the user identify the path to the current page within the application hierarchy.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Default</div>
+  <div class="demo-block">
+    <nav class="ui5-breadcrumbs">
+      <a class="ui5-breadcrumbs__item" href="#">Home</a>
+      <span class="ui5-breadcrumbs__sep">›</span>
+      <a class="ui5-breadcrumbs__item" href="#">Products</a>
+      <span class="ui5-breadcrumbs__sep">›</span>
+      <a class="ui5-breadcrumbs__item" href="#">Category</a>
+      <span class="ui5-breadcrumbs__sep">›</span>
+      <span class="ui5-breadcrumbs__item">Current Page</span>
+    </nav>
+  </div>
+</div>
+<div class="demo-section">
+  <div class="demo-section__label">With Dropdown Hint</div>
+  <div class="demo-block">
+    <nav class="ui5-breadcrumbs">
+      <a class="ui5-breadcrumbs__item" href="#">⋯</a>
+      <span class="ui5-breadcrumbs__sep">›</span>
+      <a class="ui5-breadcrumbs__item" href="#">Subfolder</a>
+      <span class="ui5-breadcrumbs__sep">›</span>
+      <span class="ui5-breadcrumbs__item">Document</span>
+    </nav>
+  </div>
+</div>
+</div>
+
+<script src="../../shared/base.js"></script>
+<script src="Breadcrumbs.js"></script>
+</body>
+</html>

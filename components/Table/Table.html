@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="Table.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">Table</h1>
+  <p class="demo-desc">A table for displaying and working with structured data in rows and columns.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Data Table</div>
+  <div class="demo-block">
+    <table class="ui5-table">
+      <thead><tr><th><input type="checkbox" class="select-all" /></th><th>Product</th><th>Category</th><th>Status</th><th>Price</th><th>Stock</th></tr></thead>
+      <tbody>
+        <tr><td><input type="checkbox" class="row-select" /></td><td><strong>UI5 Pro Kit</strong></td><td>Components</td><td><span class="ui5-tag ui5-tag--positive">Active</span></td><td>$129.00</td><td>482</td></tr>
+        <tr><td><input type="checkbox" class="row-select" /></td><td><strong>Fiori Theme Pack</strong></td><td>Themes</td><td><span class="ui5-tag ui5-tag--set1">Beta</span></td><td>$49.00</td><td>1,204</td></tr>
+        <tr><td><input type="checkbox" class="row-select" /></td><td><strong>Icon Library</strong></td><td>Assets</td><td><span class="ui5-tag ui5-tag--positive">Active</span></td><td>$19.00</td><td>∞</td></tr>
+        <tr><td><input type="checkbox" class="row-select" /></td><td><strong>Legacy Compat</strong></td><td>Components</td><td><span class="ui5-tag ui5-tag--critical">Deprecated</span></td><td>—</td><td>—</td></tr>
+      </tbody>
+    </table>
+    <div class="text-sm text-muted mt-8 table-state">0 rows selected</div>
+  </div>
+</div>
+</div>
+
+<script src="../../shared/base.js"></script>
+<script src="Table.js"></script>
+</body>
+</html>

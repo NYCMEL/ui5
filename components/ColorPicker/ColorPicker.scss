@@ -1,0 +1,35 @@
+@use '../../shared/variables' as *;
+
+
+.ui5-input-wrap { display: flex; flex-direction: column; gap: 4px;
+  label { font-size: 11px; font-weight: 500; color: $text-3; } }
+.ui5-input {
+  height: 32px; padding: 0 8px; border: 1px solid $border; border-radius: $radius-sm;
+  font-family: $font-mono; font-size: 13px; color: $text-1; background: $bg-surface;
+  outline: none; width: 100%; transition: border-color $t;
+  &:focus { border-color: $border-focus; }
+}
+.ui5-color-picker {
+  display: flex; flex-direction: column; gap: 14px; max-width: 300px;
+  &__canvas {
+    height: 160px; border-radius: $radius-sm; position: relative; cursor: crosshair;
+    background: linear-gradient(to bottom, transparent, black),
+                linear-gradient(to right, white, hsl(217, 100%, 50%));
+    border: 1px solid $border;
+  }
+  &__handle {
+    position: absolute; width: 14px; height: 14px; border-radius: 50%;
+    border: 2px solid white; box-shadow: 0 0 0 1px rgba(0,0,0,.3);
+    transform: translate(-50%, -50%); pointer-events: none;
+    top: 30%; left: 70%;
+  }
+  &__hue-slider {
+    -webkit-appearance: none; appearance: none; width: 100%; height: 14px;
+    border-radius: $radius-pill; outline: none; cursor: pointer;
+    background: linear-gradient(to right,#f00,#ff0,#0f0,#0ff,#00f,#f0f,#f00);
+    &::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: white; border: 2px solid #999; cursor: pointer; }
+  }
+  &__inputs { display: flex; gap: 8px; flex-wrap: wrap; }
+  &__preview { display: flex; align-items: center; gap: 10px; }
+  &__preview-box { width: 36px; height: 36px; border-radius: $radius-sm; border: 1px solid $border; display: inline-block; background: #0a6ed1; }
+}

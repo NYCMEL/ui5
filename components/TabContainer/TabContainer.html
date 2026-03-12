@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — TabContainer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="TabContainer.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">TabContainer</h1>
+  <p class="demo-desc">A container component that holds a set of tabs with selectable content panels.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Default Tabs</div>
+  <div class="demo-block">
+    <div class="ui5-tabs">
+      <div class="ui5-tabs__nav">
+        <button class="ui5-tabs__tab active">Overview</button>
+        <button class="ui5-tabs__tab">Details</button>
+        <button class="ui5-tabs__tab">History</button>
+        <button class="ui5-tabs__tab" disabled>Disabled</button>
+      </div>
+      <div class="ui5-tabs__pane active"><p>📊 <strong>Overview</strong> — Summary information, current status and key metrics for this item.</p></div>
+      <div class="ui5-tabs__pane"><p>📝 <strong>Details</strong> — Technical specifications, parameters and configuration options.</p></div>
+      <div class="ui5-tabs__pane"><p>🕐 <strong>History</strong> — Audit trail showing all changes and actions taken.</p></div>
+      <div class="ui5-tabs__pane"><p>Disabled tab content.</p></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="../../shared/base.js"></script>
+<script src="TabContainer.js"></script>
+</body>
+</html>

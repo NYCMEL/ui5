@@ -1,0 +1,1 @@
+// IllustratedMessage — static illustration.

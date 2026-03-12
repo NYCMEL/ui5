@@ -1,0 +1,21 @@
+@use '../../shared/variables' as *;
+
+
+.ui5-btn {
+  display:inline-flex;align-items:center;gap:4px;padding:0 12px;height:28px;
+  font-family:$font-primary;font-size:12px;font-weight:500;border-radius:$radius-sm;
+  border:1px solid transparent;cursor:pointer;transition:all $t;outline:none;
+  &--transparent { background:transparent;color:$color-primary;&:hover{background:$color-primary-light;} }
+  &--sm { height:28px; }
+}
+.ui5-token {
+  display:inline-flex;align-items:center;gap:4px;background:$color-primary-light;color:$color-primary;
+  border:1px solid lighten($color-primary,20%);border-radius:$radius-sm;padding:3px 8px;font-size:12px;font-weight:500;
+  &__remove { background:none;border:none;cursor:pointer;color:$color-primary;font-size:13px;padding:0;opacity:.7;&:hover{opacity:1;} }
+}
+.ui5-tokenizer {
+  display:flex;flex-wrap:wrap;gap:6px;padding:8px;border:1px solid $border;border-radius:$radius-sm;
+  background:$bg-surface;min-height:44px;align-items:center;
+  &__overflow { background:$bg-sunken;color:$text-2;border:1px solid $border;border-radius:$radius-sm;padding:3px 8px;font-size:12px;cursor:pointer; }
+}
+.ui5-tokenizer-actions { margin-top:8px; }

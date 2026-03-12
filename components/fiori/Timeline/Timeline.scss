@@ -1,0 +1,21 @@
+@use '../../shared/variables' as *;
+
+
+.ui5-timeline {
+  position:relative;
+  &__item { display:flex;gap:0;padding-bottom:24px;position:relative;
+    &:last-child { padding-bottom:0; } }
+  &__connector { width:2px;background:$border;position:absolute;left:15px;top:28px;bottom:0;
+    &--dashed { background:repeating-linear-gradient(to bottom,$border 0,$border 6px,transparent 6px,transparent 12px); } }
+  &__node {
+    width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;font-size:12px;font-weight:700;z-index:1;margin-right:14px;
+    &--success { background:$color-success;color:white; }
+    &--primary { background:$color-primary;color:white; }
+    &--neutral  { background:$bg-sunken;color:$text-3;border:2px solid $border; }
+  }
+  &__content { flex:1;padding-top:4px; }
+  &__title { font-weight:600;font-size:14px;color:$text-1; }
+  &__desc { font-size:13px;color:$text-2;margin-top:3px;line-height:1.5; }
+  &__time { font-size:11px;color:$text-3;margin-top:4px;font-family:$font-mono; }
+}

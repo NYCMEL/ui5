@@ -1,0 +1,51 @@
+@use '../../shared/variables' as *;
+
+.ui5-busy {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  &__dots {
+    display: flex;
+    gap: 6px;
+
+    span {
+      border-radius: 50%;
+      background: $color-primary;
+      animation: busyBounce 1.2s infinite ease-in-out;
+
+      &:nth-child(2) { animation-delay: 0.2s; }
+      &:nth-child(3) { animation-delay: 0.4s; }
+    }
+  }
+
+  &__text { font-size: 12px; color: $text-3; }
+
+  &--sm .ui5-busy__dots span { width: 7px; height: 7px; }
+  & .ui5-busy__dots span    { width: 10px; height: 10px; }
+  &--lg .ui5-busy__dots span { width: 14px; height: 14px; }
+}
+
+@keyframes busyBounce {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+  40%            { transform: scale(1);   opacity: 1; }
+}
+
+.ui5-busy-overlay-demo {
+  position: relative;
+  min-height: 80px;
+
+  p { color: $text-3; font-size: 13px; }
+}
+
+.ui5-busy-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $radius-sm;
+  backdrop-filter: blur(2px);
+}

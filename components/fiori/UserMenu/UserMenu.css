@@ -1,0 +1,121 @@
+.ui5-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.ui5-avatar--sm {
+  width: 36px;
+  height: 36px;
+  font-size: 13px;
+}
+.ui5-avatar--lg {
+  width: 56px;
+  height: 56px;
+  font-size: 20px;
+}
+.ui5-avatar--accent-1 {
+  background: #d1e8ff;
+  color: #0a6ed1;
+}
+
+.ui5-usermenu-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.ui5-usermenu-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: 1px solid #c5c8cd;
+  border-radius: 4px;
+  padding: 6px 12px 6px 6px;
+  cursor: pointer;
+  transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ui5-usermenu-trigger:hover {
+  background: #e8eaee;
+}
+.ui5-usermenu-trigger__info {
+  text-align: left;
+}
+.ui5-usermenu-trigger__name {
+  font-size: 13px;
+  font-weight: 600;
+}
+.ui5-usermenu-trigger__role {
+  font-size: 11px;
+  color: #6a6d75;
+}
+
+.ui5-usermenu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 100;
+  background: #ffffff;
+  border: 1px solid #c5c8cd;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
+  min-width: 280px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: all 0.2s ease;
+}
+.ui5-usermenu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+.ui5-usermenu__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  background: linear-gradient(135deg, #d3e8fd, #e8f4ff);
+  border-radius: 12px 12px 0 0;
+}
+.ui5-usermenu__name {
+  font-weight: 700;
+  font-size: 15px;
+}
+.ui5-usermenu__email {
+  font-size: 12px;
+  color: #6a6d75;
+}
+.ui5-usermenu__role {
+  font-size: 12px;
+  color: #6a6d75;
+  margin-top: 1px;
+}
+.ui5-usermenu__items {
+  padding: 8px;
+}
+.ui5-usermenu__item {
+  padding: 10px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #1a1d23;
+  transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ui5-usermenu__item:hover {
+  background: #d3e8fd;
+  color: #0a6ed1;
+}
+.ui5-usermenu__item--signout {
+  color: #b00;
+}
+.ui5-usermenu__item--signout:hover {
+  background: #feecec;
+}
+.ui5-usermenu__sep {
+  height: 1px;
+  background: #c5c8cd;
+  margin: 4px 0;
+}

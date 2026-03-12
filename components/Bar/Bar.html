@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — Bar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="Bar.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">Bar</h1>
+  <p class="demo-desc">A container primarily used to hold titles, buttons and input elements with start/middle/end slots.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Default Bar</div>
+  <div class="demo-block">
+    <div class="ui5-bar">
+      <div class="ui5-bar__start">
+        <button class="ui5-btn ui5-btn--transparent">← Back</button>
+      </div>
+      <div class="ui5-bar__middle">
+        <span class="ui5-bar__title">Page Title</span>
+      </div>
+      <div class="ui5-bar__end">
+        <button class="ui5-btn ui5-btn--transparent">⋯</button>
+        <button class="ui5-btn ui5-btn--emphasized">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="demo-section">
+  <div class="demo-section__label">Footer Bar</div>
+  <div class="demo-block">
+    <div class="ui5-bar ui5-bar--footer">
+      <div class="ui5-bar__start">
+        <button class="ui5-btn ui5-btn--default">Cancel</button>
+      </div>
+      <div class="ui5-bar__spacer"></div>
+      <div class="ui5-bar__end">
+        <button class="ui5-btn ui5-btn--default">Back</button>
+        <button class="ui5-btn ui5-btn--emphasized">Next →</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="../../shared/base.js"></script>
+<script src="Bar.js"></script>
+</body>
+</html>

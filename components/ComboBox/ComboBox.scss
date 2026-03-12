@@ -1,0 +1,31 @@
+@use '../../shared/variables' as *;
+
+
+.ui5-input-wrap { display: flex; flex-direction: column; gap: 4px; min-width: 180px;
+  label { font-size: 12px; font-weight: 500; color: $text-2; } }
+.ui5-input {
+  height: 36px; padding: 0 10px; border: 1px solid $border; border-radius: $radius-sm;
+  font-family: $font-primary; font-size: 14px; color: $text-1; background: $bg-surface;
+  outline: none; width: 100%; transition: border-color $t, box-shadow $t;
+  &:focus { border-color: $border-focus; box-shadow: 0 0 0 2px rgba($color-primary,.2); }
+}
+.ui5-combo {
+  position: relative;
+  &__input { padding-right: 36px; }
+  &__arrow {
+    position: absolute; right: 0; top: 0; height: 100%; width: 36px;
+    background: none; border: none; cursor: pointer; color: $text-3; font-size: 12px;
+  }
+  &__dropdown {
+    position: absolute; top: calc(100% + 2px); left: 0; right: 0; z-index: 50;
+    background: $bg-surface; border: 1px solid $border; border-radius: $radius-sm;
+    box-shadow: $shadow-md; max-height: 200px; overflow-y: auto;
+    display: none;
+    &.open { display: block; }
+  }
+  &__item {
+    padding: 8px 12px; font-size: 13px; cursor: pointer; transition: background $t;
+    &:hover, &.highlighted { background: $color-primary-light; color: $color-primary; }
+    &.no-match { color: $text-3; cursor: default; font-style: italic; }
+  }
+}

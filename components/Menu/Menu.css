@@ -1,0 +1,72 @@
+.ui5-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 16px;
+  height: 36px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid #c5c8cd;
+  background: #ffffff;
+  color: #1a1d23;
+  cursor: pointer;
+  transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+.ui5-btn:hover {
+  background: #e8eaee;
+}
+
+.ui5-menu-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.ui5-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  background: #ffffff;
+  border: 1px solid #c5c8cd;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  min-width: 200px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: all 0.2s ease;
+}
+.ui5-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+.ui5-menu__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #1a1d23;
+  transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+.ui5-menu__item:hover {
+  background: #d3e8fd;
+  color: #0a6ed1;
+}
+.ui5-menu__item--sep {
+  height: 1px;
+  background: #c5c8cd;
+  margin: 4px 0;
+  pointer-events: none;
+  padding: 0;
+}
+.ui5-menu__item--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

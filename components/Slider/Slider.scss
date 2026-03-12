@@ -1,0 +1,33 @@
+@use '../../shared/variables' as *;
+
+.ui5-slider-wrap {
+  display: flex; flex-direction: column; gap: 8px; min-width: 280px;
+}
+
+.ui5-slider-row {
+  display: flex; align-items: center; gap: 12px; font-size: 14px;
+}
+
+.ui5-slider {
+  -webkit-appearance: none; appearance: none;
+  flex: 1; height: 4px; border-radius: 2px;
+  background: $border; outline: none; cursor: pointer;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none;
+    width: 20px; height: 20px; border-radius: 50%;
+    background: $color-primary; cursor: pointer;
+    border: 2px solid white; box-shadow: 0 1px 4px rgba($color-primary, 0.4);
+    transition: transform $t;
+    &:hover { transform: scale(1.15); }
+  }
+
+  &::-moz-range-thumb {
+    width: 20px; height: 20px; border-radius: 50%;
+    background: $color-primary; cursor: pointer; border: 2px solid white;
+  }
+
+  &:disabled { opacity: 0.4; cursor: not-allowed; }
+}
+
+.slider-val { font-family: $font-mono; font-size: 13px; color: $text-2; min-width: 36px; text-align: right; }

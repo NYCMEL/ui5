@@ -1,0 +1,17 @@
+@use '../../shared/variables' as *;
+
+.ui5-tag {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 2px 10px; border-radius: $radius-pill;
+  font-size: 12px; font-weight: 500; line-height: 22px;
+
+  &--default  { background: $bg-sunken;  color: $text-2;         border: 1px solid $border; }
+  &--set1     { background: #e8f4fd;     color: #0854a0;         border: 1px solid #b3d4f5; }
+  &--set2     { background: #eafaea;     color: #0a6630;         border: 1px solid #a3d9a5; }
+  &--set3     { background: #fff4e5;     color: #a14700;         border: 1px solid #f5c48a; }
+  &--set4     { background: #feecec;     color: $color-error;    border: 1px solid #f5a5a5; }
+  &--positive { background: #edfbf0;     color: $color-success;  border: 1px solid #a3d9a5; }
+  &--negative { background: #feecec;     color: $color-error;    border: 1px solid #f5a5a5; }
+  &--critical { background: #fff7ec;     color: $color-warning;  border: 1px solid #f5c48a; }
+  &--neutral  { background: $bg-sunken;  color: $text-3;         border: 1px solid $border; }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — SegmentedButton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="SegmentedButton.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">SegmentedButton</h1>
+  <p class="demo-desc">A button group where selections are mutually exclusive.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Segmented Groups</div>
+  <div class="demo-block">
+    <div class="demo-row" style="flex-direction:column;align-items:flex-start;gap:16px">
+      <div><div class="text-sm text-muted" style="margin-bottom:8px">View</div>
+        <div class="ui5-segmented"><button class="ui5-segmented__btn active">📋 List</button><button class="ui5-segmented__btn">⊞ Grid</button><button class="ui5-segmented__btn">📊 Table</button></div></div>
+      <div><div class="text-sm text-muted" style="margin-bottom:8px">Time Scale</div>
+        <div class="ui5-segmented"><button class="ui5-segmented__btn">Day</button><button class="ui5-segmented__btn active">Week</button><button class="ui5-segmented__btn">Month</button><button class="ui5-segmented__btn">Year</button></div></div>
+    </div>
+    <div class="text-sm text-muted mt-8 seg-state"></div>
+  </div>
+</div>
+</div>
+
+<script src="../../shared/base.js"></script>
+<script src="SegmentedButton.js"></script>
+</body>
+</html>

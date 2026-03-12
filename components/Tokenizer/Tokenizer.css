@@ -1,0 +1,75 @@
+.ui5-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 12px;
+  height: 28px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+.ui5-btn--transparent {
+  background: transparent;
+  color: #0a6ed1;
+}
+.ui5-btn--transparent:hover {
+  background: #d3e8fd;
+}
+.ui5-btn--sm {
+  height: 28px;
+}
+
+.ui5-token {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #d3e8fd;
+  color: #0a6ed1;
+  border: 1px solid rgb(74.6301369863, 160.9315068493, 246.3698630137);
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.ui5-token__remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0a6ed1;
+  font-size: 13px;
+  padding: 0;
+  opacity: 0.7;
+}
+.ui5-token__remove:hover {
+  opacity: 1;
+}
+
+.ui5-tokenizer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px;
+  border: 1px solid #c5c8cd;
+  border-radius: 4px;
+  background: #ffffff;
+  min-height: 44px;
+  align-items: center;
+}
+.ui5-tokenizer__overflow {
+  background: #e8eaee;
+  color: #3d4148;
+  border: 1px solid #c5c8cd;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.ui5-tokenizer-actions {
+  margin-top: 8px;
+}

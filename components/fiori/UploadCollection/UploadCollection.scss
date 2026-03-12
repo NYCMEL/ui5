@@ -1,0 +1,33 @@
+@use '../../shared/variables' as *;
+
+
+.ui5-btn {
+  display:inline-flex;align-items:center;gap:6px;padding:0 16px;height:36px;
+  font-family:$font-primary;font-size:14px;font-weight:500;border-radius:$radius-sm;
+  border:1px solid transparent;cursor:pointer;transition:all $t;outline:none;
+  &--default    { background:$bg-surface;border-color:$border;color:$text-1;&:hover{background:$bg-sunken;} }
+  &--emphasized { background:$color-primary;border-color:$color-primary;color:$text-inv;&:hover{background:$color-primary-hover;} }
+  &--transparent { background:transparent;color:$color-primary;&:hover{background:$color-primary-light;} }
+  &--negative   { background:$color-error;border-color:$color-error;color:$text-inv; }
+  &--sm { height:28px;padding:0 12px;font-size:12px; }
+}
+.ui5-upload-collection {
+  display:flex;flex-direction:column;gap:12px;max-width:560px;
+  &__dropzone {
+    border:2px dashed $border;border-radius:$radius-md;padding:32px;
+    display:flex;flex-direction:column;align-items:center;gap:8px;
+    cursor:pointer;transition:all $t;color:$text-3;text-align:center;
+    &:hover,&.drag { border-color:$color-primary;background:$color-primary-light;color:$color-primary; }
+  }
+  &__list { display:flex;flex-direction:column;gap:2px; }
+  &__item {
+    display:flex;align-items:center;gap:12px;padding:10px 14px;background:$bg-surface;
+    border:1px solid $border;border-radius:$radius-sm;transition:background $t;
+    &:hover { background:$color-primary-light; }
+  }
+  &__icon { font-size:22px;flex-shrink:0; }
+  &__info { flex:1;min-width:0; }
+  &__name { font-size:13px;font-weight:500;color:$text-1; }
+  &__meta { font-size:11px;color:$text-3; }
+  &__actions { display:flex;gap:2px;flex-shrink:0; }
+}

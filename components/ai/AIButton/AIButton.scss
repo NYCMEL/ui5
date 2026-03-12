@@ -1,0 +1,27 @@
+
+@use '../../../shared/variables' as *;
+$ai-gradient: linear-gradient(135deg, #6c2483, #0a6ed1, #107e3e);
+
+.ui5-ai-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 0 20px; height: 40px; border: none; border-radius: $radius-pill;
+  background: $ai-gradient; color: white; font-family: $font-primary;
+  font-size: 14px; font-weight: 600; cursor: pointer; position: relative;
+  transition: all $t; background-size: 200% 200%; animation: aiShimmer 3s ease infinite;
+
+  &::before {
+    content: ''; position: absolute; inset: -2px; border-radius: calc($radius-pill + 2px);
+    background: $ai-gradient; z-index: -1; opacity: 0.4; filter: blur(8px);
+    animation: aiGlow 2s ease-in-out infinite alternate;
+  }
+
+  &:hover { transform: translateY(-1px) scale(1.02); }
+  &:active { transform: scale(.98); }
+  &:disabled { opacity: .4; cursor: not-allowed; animation: none; &::before { display: none; } }
+
+  &--loading { background: linear-gradient(135deg, #444, #666); animation: none; cursor: wait; }
+  &--complete { background: linear-gradient(135deg, $color-success, #1aa356); animation: none; &::before { display: none; } }
+}
+
+@keyframes aiShimmer { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+@keyframes aiGlow    { 0% { opacity: .3; } 100% { opacity: .6; } }

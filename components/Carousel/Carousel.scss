@@ -1,0 +1,53 @@
+@use '../../shared/variables' as *;
+
+.ui5-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: $radius-lg;
+  border: 1px solid $border;
+
+  &__track {
+    display: flex;
+    transition: transform 0.35s ease;
+  }
+
+  &__slide {
+    min-width: 100%;
+    padding: 48px 32px;
+    background: $bg-surface;
+    text-align: center;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.92);
+    border: 1px solid $border;
+    border-radius: 50%;
+    width: 40px; height: 40px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; font-size: 20px;
+    box-shadow: $shadow-sm; transition: all $t; z-index: 1;
+
+    &:hover { background: white; box-shadow: $shadow-md; }
+    &--prev { left: 10px; }
+    &--next { right: 10px; }
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: 12px; left: 50%;
+    transform: translateX(-50%);
+    display: flex; gap: 8px;
+  }
+
+  &__dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.2);
+    cursor: pointer; transition: all $t;
+
+    &.active { background: $color-primary; transform: scale(1.2); }
+  }
+}

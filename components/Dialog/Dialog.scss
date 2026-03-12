@@ -1,0 +1,68 @@
+@use '../../shared/variables' as *;
+
+.ui5-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 0 16px; height: 36px;
+  font-family: $font-primary; font-size: 14px; font-weight: 500;
+  border-radius: $radius-sm; border: 1px solid transparent;
+  cursor: pointer; transition: all $t; outline: none;
+  &--default    { background: $bg-surface; border-color: $border; color: $text-1; &:hover { background: $bg-sunken; } }
+  &--emphasized { background: $color-primary; border-color: $color-primary; color: $text-inv; &:hover { background: $color-primary-hover; } }
+  &--negative   { background: $color-error; border-color: $color-error; color: $text-inv; }
+}
+
+.ui5-input-wrap { display: flex; flex-direction: column; gap: 4px;
+  label { font-size: 12px; font-weight: 500; color: $text-2; } }
+.ui5-input {
+  height: 36px; padding: 0 10px; border: 1px solid $border;
+  border-radius: $radius-sm; font-family: $font-primary; font-size: 14px;
+  outline: none; transition: border-color $t;
+  &:focus { border-color: $border-focus; box-shadow: 0 0 0 2px rgba($color-primary, 0.2); }
+}
+
+.ui5-overlay {
+  position: fixed; inset: 0;
+  background: $bg-overlay;
+  z-index: 500;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; visibility: hidden;
+  transition: opacity $t, visibility $t;
+
+  &.open {
+    opacity: 1; visibility: visible;
+    .ui5-dialog { transform: none; opacity: 1; }
+  }
+}
+
+.ui5-dialog {
+  background: $bg-surface;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-lg;
+  min-width: 320px; max-width: 540px;
+  width: calc(100% - 48px);
+  transform: translateY(-16px) scale(0.97);
+  opacity: 0;
+  transition: all 0.25s cubic-bezier(.2,0,0,1.2);
+
+  &__header {
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid $border;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+
+  &__title { font-size: 18px; font-weight: 600; }
+
+  &__close {
+    background: none; border: none; font-size: 20px; cursor: pointer;
+    color: $text-3; transition: color $t; padding: 4px;
+    &:hover { color: $text-1; }
+  }
+
+  &__body { padding: 20px 24px; font-size: 14px; line-height: 1.6; color: $text-2; }
+
+  &__footer {
+    padding: 16px 24px;
+    border-top: 1px solid $border;
+    display: flex; justify-content: flex-end; gap: 8px;
+  }
+}

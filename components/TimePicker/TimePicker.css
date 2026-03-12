@@ -1,0 +1,37 @@
+.ui5-input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 180px;
+}
+.ui5-input-wrap label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #3d4148;
+}
+
+.ui5-time-field {
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #c5c8cd;
+  border-radius: 4px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  color: #1a1d23;
+  background: #ffffff;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 180ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ui5-time-field:hover {
+  border-color: #9ea1a8;
+}
+.ui5-time-field:focus {
+  border-color: #0a6ed1;
+  box-shadow: 0 0 0 2px rgba(10, 110, 209, 0.2);
+}
+.ui5-time-field:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  background: #e8eaee;
+}

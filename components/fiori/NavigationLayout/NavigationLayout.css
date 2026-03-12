@@ -1,0 +1,44 @@
+.ui5-navlayout__shell {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 16px;
+  height: 44px;
+  background: #0a6ed1;
+  color: white;
+  flex-shrink: 0;
+}
+
+.ui5-navlayout__side {
+  width: 180px;
+  background: #ffffff;
+  border-right: 1px solid #c5c8cd;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  flex-shrink: 0;
+}
+
+.ui5-navlayout__item {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #1a1d23;
+  font-size: 13px;
+  transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ui5-navlayout__item:hover {
+  background: #d3e8fd;
+  color: #0a6ed1;
+}
+.ui5-navlayout__item.active {
+  background: #d3e8fd;
+  color: #0a6ed1;
+  border-left: 3px solid #0a6ed1;
+}
+
+.ui5-navlayout__main {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}

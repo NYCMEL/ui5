@@ -1,0 +1,1 @@
+// CalendarLegend is purely presentational.

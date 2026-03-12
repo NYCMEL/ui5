@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — TextArea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="TextArea.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">TextArea</h1>
+  <p class="demo-desc">Used to enter multiple rows of text with optional auto-grow.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">TextArea Variants</div>
+  <div class="demo-block">
+    <div class="demo-row" style="align-items:flex-start;flex-wrap:wrap;gap:20px">
+      <div class="ui5-input-wrap" style="min-width:280px"><label>Description</label><textarea class="ui5-textarea" rows="4" placeholder="Enter description…"></textarea></div>
+      <div class="ui5-input-wrap" style="min-width:280px"><label>Notes (resizable)</label><textarea class="ui5-textarea" rows="3" style="resize:vertical" placeholder="Drag to resize…"></textarea></div>
+      <div class="ui5-input-wrap" style="min-width:280px"><label>Disabled</label><textarea class="ui5-textarea" rows="2" disabled>This field is disabled.</textarea></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="../../shared/base.js"></script>
+<script src="TextArea.js"></script>
+</body>
+</html>

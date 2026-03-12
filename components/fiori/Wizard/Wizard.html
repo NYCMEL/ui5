@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — Wizard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="Wizard.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">Wizard</h1>
+  <p class="demo-desc">A step-by-step form guide that leads users through a multi-step process.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Step Wizard</div>
+  <div class="demo-block">
+    <div class="ui5-wizard">
+      <div class="ui5-wizard__steps">
+        <div class="ui5-wizard__step completed" data-step="1"><div class="ui5-wizard__step-circle">✓</div><div class="ui5-wizard__step-label">Account</div></div>
+        <div class="ui5-wizard__step-line completed"></div>
+        <div class="ui5-wizard__step active" data-step="2"><div class="ui5-wizard__step-circle">2</div><div class="ui5-wizard__step-label">Address</div></div>
+        <div class="ui5-wizard__step-line"></div>
+        <div class="ui5-wizard__step" data-step="3"><div class="ui5-wizard__step-circle">3</div><div class="ui5-wizard__step-label">Payment</div></div>
+        <div class="ui5-wizard__step-line"></div>
+        <div class="ui5-wizard__step" data-step="4"><div class="ui5-wizard__step-circle">4</div><div class="ui5-wizard__step-label">Confirm</div></div>
+      </div>
+      <div class="ui5-wizard__content">
+        <div class="ui5-wizard__pane" id="wiz-1">
+          <h3 style="font-weight:600;margin-bottom:14px">Account Information</h3>
+          <p class="text-sm text-muted" style="margin-bottom:14px">✓ This step is complete.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div class="ui5-input-wrap"><label>Email</label><input type="email" class="ui5-input" value="jane@example.com" /></div>
+            <div class="ui5-input-wrap"><label>Username</label><input type="text" class="ui5-input" value="janedoe" /></div>
+          </div>
+        </div>
+        <div class="ui5-wizard__pane active" id="wiz-2">
+          <h3 style="font-weight:600;margin-bottom:14px">Delivery Address</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div class="ui5-input-wrap" style="grid-column:1/-1"><label>Street Address</label><input type="text" class="ui5-input" placeholder="123 Main St…" /></div>
+            <div class="ui5-input-wrap"><label>City</label><input type="text" class="ui5-input" placeholder="City" /></div>
+            <div class="ui5-input-wrap"><label>Postal Code</label><input type="text" class="ui5-input" placeholder="00000" /></div>
+          </div>
+        </div>
+        <div class="ui5-wizard__pane" id="wiz-3">
+          <h3 style="font-weight:600;margin-bottom:14px">Payment Method</h3>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <label class="ui5-radio"><input type="radio" name="pay" checked /><span class="ui5-radio__dot"></span>💳 Credit Card</label>
+            <label class="ui5-radio"><input type="radio" name="pay" /><span class="ui5-radio__dot"></span>🏦 Bank Transfer</label>
+            <label class="ui5-radio"><input type="radio" name="pay" /><span class="ui5-radio__dot"></span>💰 Invoice</label>
+          </div>
+        </div>
+        <div class="ui5-wizard__pane" id="wiz-4">
+          <h3 style="font-weight:600;margin-bottom:14px">Confirm & Submit</h3>
+          <p class="text-sm" style="color:#3d4148">Review your details and click Submit to complete the process.</p>
+          <div class="ui5-msgstrip ui5-msgstrip--success" style="margin-top:14px"><span>✅</span><span>All required information has been provided.</span></div>
+        </div>
+      </div>
+      <div class="ui5-wizard__footer">
+        <button class="ui5-btn ui5-btn--default" id="wiz-prev">← Previous</button>
+        <div style="display:flex;gap:6px;align-items:center;font-size:13px;color:#6a6d75" id="wiz-counter">Step 2 of 4</div>
+        <button class="ui5-btn ui5-btn--emphasized" id="wiz-next">Next →</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../../shared/base.js"></script>
+<script src="Wizard.js"></script>
+</body>
+</html>

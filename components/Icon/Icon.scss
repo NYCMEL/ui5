@@ -1,0 +1,22 @@
+@use '../../shared/variables' as *;
+
+.ui5-icon-gallery {
+  display: flex; flex-wrap: wrap; gap: 12px;
+}
+
+.ui5-icon-item {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  padding: 14px; border: 1px solid $border;
+  border-radius: $radius-md; background: $bg-surface;
+  cursor: pointer; transition: all $t; min-width: 76px;
+
+  &:hover {
+    background: $color-primary-light;
+    border-color: $color-primary;
+    transform: translateY(-2px);
+    box-shadow: $shadow-sm;
+  }
+
+  &__glyph { font-size: 26px; }
+  &__name  { font-size: 10px; color: $text-3; text-align: center; }
+}

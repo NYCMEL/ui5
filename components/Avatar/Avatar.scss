@@ -1,0 +1,28 @@
+@use '../../shared/variables' as *;
+
+.ui5-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  &--xs  { width: 28px; height: 28px; font-size: 11px; }
+  &--sm  { width: 36px; height: 36px; font-size: 13px; }
+  &--md  { width: 48px; height: 48px; font-size: 16px; }
+  &--lg  { width: 64px; height: 64px; font-size: 20px; }
+  &--xl  { width: 80px; height: 80px; font-size: 24px; }
+
+  &--accent-1 { background: #d1e8ff; color: #0a6ed1; }
+  &--accent-2 { background: #ffd0e7; color: #aa0808; }
+  &--accent-3 { background: #d5f5e3; color: #107e3e; }
+  &--accent-4 { background: #fff3cd; color: #a35c00; }
+  &--accent-5 { background: #ede0f5; color: #6c2483; }
+  &--accent-6 { background: #fce8cc; color: #e9730c; }
+
+  &--square { border-radius: $radius-md; }
+
+  img { width: 100%; height: 100%; object-fit: cover; }
+}

@@ -1,0 +1,15 @@
+@use '../../shared/variables' as *;
+
+
+.ui5-cal-legend {
+  display: flex; flex-wrap: wrap; gap: 16px;
+  &__item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: $text-1; }
+  &__dot {
+    width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0;
+    &--today       { background: $color-primary; border: 2px solid $color-primary; }
+    &--selected    { background: $color-primary; }
+    &--working     { background: $color-success; }
+    &--non-working { background: $bg-sunken; border: 2px solid $border; }
+    &--holiday     { background: $color-error; }
+  }
+}

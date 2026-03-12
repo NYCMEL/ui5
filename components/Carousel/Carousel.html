@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — Carousel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="Carousel.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">Carousel</h1>
+  <p class="demo-desc">Allows the user to browse through a set of items with navigation controls.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Basic Carousel</div>
+  <div class="demo-block">
+    <div class="ui5-carousel">
+      <div class="ui5-carousel__track">
+        <div class="ui5-carousel__slide" style="background:linear-gradient(135deg,#e8f4ff,#d3e8fd)">
+          <div style="font-size:40px">🚀</div>
+          <h3 style="margin-top:12px;font-weight:700">Slide One</h3>
+          <p class="text-muted text-sm">Innovate with speed and confidence</p>
+        </div>
+        <div class="ui5-carousel__slide" style="background:linear-gradient(135deg,#edfbf0,#d5f5e3)">
+          <div style="font-size:40px">🌱</div>
+          <h3 style="margin-top:12px;font-weight:700">Slide Two</h3>
+          <p class="text-muted text-sm">Build sustainable solutions</p>
+        </div>
+        <div class="ui5-carousel__slide" style="background:linear-gradient(135deg,#fff8ec,#fce8cc)">
+          <div style="font-size:40px">💡</div>
+          <h3 style="margin-top:12px;font-weight:700">Slide Three</h3>
+          <p class="text-muted text-sm">Ideas that make a difference</p>
+        </div>
+      </div>
+      <button class="ui5-carousel__nav ui5-carousel__nav--prev">‹</button>
+      <button class="ui5-carousel__nav ui5-carousel__nav--next">›</button>
+      <div class="ui5-carousel__dots">
+        <div class="ui5-carousel__dot"></div>
+        <div class="ui5-carousel__dot"></div>
+        <div class="ui5-carousel__dot"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="../../shared/base.js"></script>
+<script src="Carousel.js"></script>
+</body>
+</html>

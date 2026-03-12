@@ -1,0 +1,35 @@
+@use '../../shared/variables' as *;
+
+.ui5-input-wrap {
+  display: flex; flex-direction: column; gap: 4px; min-width: 200px;
+  label { font-size: 12px; font-weight: 500; color: $text-2; }
+}
+
+.ui5-input-icon-wrap { position: relative;
+  .ui5-input { padding-right: 36px; }
+  .input-icon { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: $text-3; pointer-events: none; }
+}
+
+.ui5-input {
+  height: 36px; padding: 0 10px;
+  border: 1px solid $border; border-radius: $radius-sm;
+  font-family: $font-primary; font-size: 14px; color: $text-1;
+  background: $bg-surface; outline: none; width: 100%;
+  transition: border-color $t, box-shadow $t;
+
+  &::placeholder { color: $text-3; }
+  &:hover  { border-color: #9ea1a8; }
+  &:focus  { border-color: $border-focus; box-shadow: 0 0 0 2px rgba($color-primary, 0.2); }
+  &:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  &--error   { border-color: $color-error;   &:focus { box-shadow: 0 0 0 2px rgba($color-error, 0.2); } }
+  &--warning { border-color: $color-warning; }
+  &--success { border-color: $color-success; }
+}
+
+.ui5-input-msg {
+  font-size: 11px;
+  &--error   { color: $color-error; }
+  &--warning { color: $color-warning; }
+  &--success { color: $color-success; }
+}

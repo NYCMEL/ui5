@@ -1,0 +1,39 @@
+.ui5-input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 200px;
+}
+
+.ui5-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #3d4148;
+}
+
+.ui5-date-input {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ui5-date-field {
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #c5c8cd;
+  border-radius: 4px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  color: #1a1d23;
+  background: #ffffff;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 180ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ui5-date-field:hover {
+  border-color: #9ea1a8;
+}
+.ui5-date-field:focus {
+  border-color: #0a6ed1;
+  box-shadow: 0 0 0 2px rgba(10, 110, 209, 0.2);
+}

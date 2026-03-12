@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — Panel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="Panel.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">Panel</h1>
+  <p class="demo-desc">A container which has a collapsible header and a body area.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Panels</div>
+  <div class="demo-block" style="display:flex;flex-direction:column;gap:12px">
+    <div class="ui5-panel">
+      <div class="ui5-panel__header"><span class="ui5-panel__title">📋 Panel — Expanded (Default)</span><span class="ui5-panel__toggle">▼</span></div>
+      <div class="ui5-panel__body"><p class="text-sm">This panel is expanded. Click the header to collapse it.</p></div>
+    </div>
+    <div class="ui5-panel collapsed">
+      <div class="ui5-panel__header"><span class="ui5-panel__title">📁 Panel — Collapsed (Default)</span><span class="ui5-panel__toggle">▼</span></div>
+      <div class="ui5-panel__body"><p class="text-sm">This panel was collapsed by default.</p></div>
+    </div>
+    <div class="ui5-panel">
+      <div class="ui5-panel__header"><span class="ui5-panel__title">🔒 Fixed Panel (no collapse)</span></div>
+      <div class="ui5-panel__body"><p class="text-sm">This panel has no collapse toggle.</p></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="../../shared/base.js"></script>
+<script src="Panel.js"></script>
+</body>
+</html>

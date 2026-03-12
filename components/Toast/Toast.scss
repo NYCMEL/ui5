@@ -1,0 +1,42 @@
+@use '../../shared/variables' as *;
+
+.ui5-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 0 16px; height: 36px; font-family: $font-primary;
+  font-size: 14px; font-weight: 500; border-radius: $radius-sm;
+  border: 1px solid transparent; cursor: pointer; transition: all $t; outline: none;
+  &--default    { background: $bg-surface; border-color: $border; color: $text-1; &:hover { background: $bg-sunken; } }
+  &--positive   { background: $color-success; border-color: $color-success; color: $text-inv; }
+  &--negative   { background: $color-error;   border-color: $color-error;   color: $text-inv; }
+  &--attention  { background: $color-warning; border-color: $color-warning; color: $text-inv; }
+}
+
+.ui5-toast-container {
+  position: fixed; bottom: 32px; right: 32px;
+  display: flex; flex-direction: column; gap: 10px;
+  z-index: 9999; pointer-events: none;
+}
+
+.ui5-toast {
+  background: #1a1d23; color: #fff;
+  padding: 12px 20px; border-radius: $radius-md;
+  font-size: 13px; box-shadow: $shadow-lg;
+  display: flex; align-items: center; gap: 10px;
+  max-width: 360px; pointer-events: all;
+  animation: toastIn 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  &.hiding { opacity: 0; transform: translateX(20px); }
+
+  &--success { border-left: 3px solid $color-success; }
+  &--error   { border-left: 3px solid $color-error; }
+  &--warning { border-left: 3px solid $color-warning; }
+
+  &__icon { font-size: 16px; }
+  &__msg  { flex: 1; }
+}
+
+@keyframes toastIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: none; }
+}

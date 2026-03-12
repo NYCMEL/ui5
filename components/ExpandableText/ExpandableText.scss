@@ -1,0 +1,23 @@
+@use '../../shared/variables' as *;
+
+.ui5-expandable {
+  font-size: 14px;
+  line-height: 1.6;
+  color: $text-1;
+  max-width: 600px;
+
+  &__text {
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  &__toggle {
+    background: none; border: none;
+    color: $color-primary;
+    cursor: pointer; font-size: 13px;
+    padding: 6px 0; font-family: $font-primary;
+    transition: color $t;
+
+    &:hover { text-decoration: underline; color: $color-primary-hover; }
+  }
+}

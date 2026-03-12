@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — UploadCollection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="UploadCollection.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">UploadCollection</h1>
+  <p class="demo-desc">Allows users to upload files and manage a list of uploaded items with actions.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Upload Collection</div>
+  <div class="demo-block">
+    <div class="ui5-upload-collection">
+      <div class="ui5-upload-collection__dropzone" id="uc-drop">
+        <span style="font-size:36px">📤</span>
+        <span style="font-size:14px;font-weight:500">Drop files here or click to browse</span>
+        <input type="file" multiple id="uc-input" style="display:none" />
+      </div>
+      <div class="ui5-upload-collection__list" id="uc-list">
+        <div class="ui5-upload-collection__item">
+          <span class="ui5-upload-collection__icon">📄</span>
+          <div class="ui5-upload-collection__info"><div class="ui5-upload-collection__name">Annual Report.pdf</div><div class="ui5-upload-collection__meta">2.4 MB · Uploaded just now</div></div>
+          <div class="ui5-upload-collection__actions">
+            <button class="ui5-btn ui5-btn--transparent ui5-btn--sm">⬇️</button>
+            <button class="ui5-btn ui5-btn--transparent ui5-btn--sm uc-remove">🗑️</button>
+          </div>
+        </div>
+        <div class="ui5-upload-collection__item">
+          <span class="ui5-upload-collection__icon">🖼️</span>
+          <div class="ui5-upload-collection__info"><div class="ui5-upload-collection__name">product-banner.png</div><div class="ui5-upload-collection__meta">860 KB · Uploaded 2 min ago</div></div>
+          <div class="ui5-upload-collection__actions">
+            <button class="ui5-btn ui5-btn--transparent ui5-btn--sm">⬇️</button>
+            <button class="ui5-btn ui5-btn--transparent ui5-btn--sm uc-remove">🗑️</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../../shared/base.js"></script>
+<script src="UploadCollection.js"></script>
+</body>
+</html>

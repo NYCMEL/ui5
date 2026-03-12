@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — NotificationList</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="NotificationList.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">NotificationList</h1>
+  <p class="demo-desc">Displays a list of notification items with priority, description and action buttons.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Notifications</div>
+  <div class="demo-block" style="padding:0;overflow:hidden;border-radius:8px;max-width:520px">
+    <div class="ui5-notif-list">
+      <div class="ui5-notif-list__header"><span>Notifications</span><span class="ui5-tag ui5-tag--set1" style="font-size:11px">4 New</span></div>
+      <div class="ui5-notif ui5-notif--unread ui5-notif--high">
+        <div class="ui5-notif__priority">🔴</div>
+        <div class="ui5-notif__body"><div class="ui5-notif__title">Server CPU threshold exceeded</div><div class="ui5-notif__desc">Production server prod-02 CPU at 94% for 10 minutes.</div><div class="ui5-notif__meta">2 min ago · Monitoring</div></div>
+        <button class="ui5-notif__close">×</button>
+      </div>
+      <div class="ui5-notif ui5-notif--unread">
+        <div class="ui5-notif__priority">🟡</div>
+        <div class="ui5-notif__body"><div class="ui5-notif__title">Purchase order #45821 requires approval</div><div class="ui5-notif__desc">Order from Acme Corp, value $12,400.</div><div class="ui5-notif__meta">15 min ago · Procurement</div></div>
+        <button class="ui5-notif__close">×</button>
+      </div>
+      <div class="ui5-notif">
+        <div class="ui5-notif__priority">🟢</div>
+        <div class="ui5-notif__body"><div class="ui5-notif__title">Report generation complete</div><div class="ui5-notif__desc">Q4 Financial Summary is ready to download.</div><div class="ui5-notif__meta">1 hr ago · Finance</div></div>
+        <button class="ui5-notif__close">×</button>
+      </div>
+      <div class="ui5-notif">
+        <div class="ui5-notif__priority">⚪</div>
+        <div class="ui5-notif__body"><div class="ui5-notif__title">System maintenance scheduled</div><div class="ui5-notif__desc">Planned downtime Saturday 02:00–04:00 UTC.</div><div class="ui5-notif__meta">3 hr ago · IT</div></div>
+        <button class="ui5-notif__close">×</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../../shared/base.js"></script>
+<script src="NotificationList.js"></script>
+</body>
+</html>

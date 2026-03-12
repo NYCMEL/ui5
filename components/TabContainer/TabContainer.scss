@@ -1,0 +1,31 @@
+@use '../../shared/variables' as *;
+
+.ui5-tabs {
+  &__nav {
+    display: flex; border-bottom: 2px solid $border; overflow-x: auto;
+    &::-webkit-scrollbar { display: none; }
+  }
+
+  &__tab {
+    padding: 10px 20px; font-size: 14px; font-weight: 500;
+    color: $text-2; cursor: pointer; border: none; background: none;
+    border-bottom: 3px solid transparent; margin-bottom: -2px;
+    transition: all $t; white-space: nowrap; font-family: $font-primary;
+
+    &:hover { color: $color-primary; background: $color-primary-light; }
+    &.active { color: $color-primary; border-bottom-color: $color-primary; }
+    &:disabled { opacity: 0.4; cursor: not-allowed; }
+  }
+
+  &__pane {
+    display: none; padding: 20px 0;
+    animation: fadeIn 0.2s ease;
+    font-size: 14px; line-height: 1.6;
+    &.active { display: block; }
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: none; }
+}

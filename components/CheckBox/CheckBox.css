@@ -1,0 +1,55 @@
+.ui5-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #1a1d23;
+  user-select: none;
+}
+.ui5-checkbox input {
+  display: none;
+}
+.ui5-checkbox__box {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #c5c8cd;
+  border-radius: 3px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+.ui5-checkbox__box svg {
+  display: none;
+}
+.ui5-checkbox input:checked + .ui5-checkbox__box {
+  background: #0a6ed1;
+  border-color: #0a6ed1;
+}
+.ui5-checkbox input:checked + .ui5-checkbox__box svg {
+  display: block;
+}
+.ui5-checkbox:hover .ui5-checkbox__box {
+  border-color: #0a6ed1;
+}
+.ui5-checkbox--indeterminate .ui5-checkbox__box {
+  background: #0a6ed1;
+  border-color: #0a6ed1;
+}
+.ui5-checkbox--indeterminate .ui5-checkbox__box::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: white;
+  border-radius: 1px;
+}
+.ui5-checkbox--indeterminate .ui5-checkbox__box svg {
+  display: none;
+}
+.ui5-checkbox--disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

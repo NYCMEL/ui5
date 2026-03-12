@@ -1,0 +1,97 @@
+.ui5-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 16px;
+  height: 36px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  white-space: nowrap;
+  outline: none;
+  line-height: 1;
+}
+.ui5-btn:focus-visible {
+  box-shadow: 0 0 0 3px rgba(10, 110, 209, 0.3);
+}
+.ui5-btn--default {
+  background: #ffffff;
+  border-color: #c5c8cd;
+  color: #1a1d23;
+}
+.ui5-btn--default:hover {
+  background: #e8eaee;
+}
+.ui5-btn--default:active {
+  background: rgb(220.27, 223.29, 229.33);
+}
+.ui5-btn--emphasized {
+  background: #0a6ed1;
+  border-color: #0a6ed1;
+  color: #ffffff;
+}
+.ui5-btn--emphasized:hover {
+  background: #085caf;
+}
+.ui5-btn--emphasized:active {
+  background: #0854a0;
+}
+.ui5-btn--positive {
+  background: #107e3e;
+  border-color: #107e3e;
+  color: #ffffff;
+}
+.ui5-btn--positive:hover {
+  background: rgb(11.4028169014, 89.7971830986, 44.185915493);
+}
+.ui5-btn--negative {
+  background: #b00;
+  border-color: #b00;
+  color: #ffffff;
+}
+.ui5-btn--negative:hover {
+  background: rgb(146.2, 0, 0);
+}
+.ui5-btn--transparent {
+  background: transparent;
+  color: #0a6ed1;
+}
+.ui5-btn--transparent:hover {
+  background: #d3e8fd;
+}
+.ui5-btn--ghost {
+  background: transparent;
+  border-color: #0a6ed1;
+  color: #0a6ed1;
+}
+.ui5-btn--ghost:hover {
+  background: #d3e8fd;
+}
+.ui5-btn--attention {
+  background: #e9730c;
+  border-color: #e9730c;
+  color: #ffffff;
+}
+.ui5-btn--attention:hover {
+  background: rgb(194.1983673469, 95.8489795918, 10.0016326531);
+}
+.ui5-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.ui5-btn--sm {
+  height: 28px;
+  padding: 0 12px;
+  font-size: 12px;
+}
+.ui5-btn--lg {
+  height: 44px;
+  padding: 0 20px;
+  font-size: 15px;
+}

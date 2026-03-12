@@ -1,0 +1,40 @@
+@use '../../shared/variables' as *;
+
+.ui5-label {
+  font-size: 12px; font-weight: 500; color: $text-2;
+  &--required::after { content: ' *'; color: $color-error; }
+}
+
+.ui5-input {
+  height: 36px; padding: 0 10px;
+  border: 1px solid $border; border-radius: $radius-sm;
+  font-family: $font-primary; font-size: 14px; color: $text-1;
+  background: $bg-surface; outline: none; width: 100%;
+  transition: border-color $t, box-shadow $t;
+  &::placeholder { color: $text-3; }
+  &:hover { border-color: #9ea1a8; }
+  &:focus { border-color: $border-focus; box-shadow: 0 0 0 2px rgba($color-primary, 0.2); }
+}
+
+.ui5-select {
+  appearance: none; height: 36px; padding: 0 36px 0 10px;
+  border: 1px solid $border; border-radius: $radius-sm;
+  font-family: $font-primary; font-size: 14px; color: $text-1;
+  background: $bg-surface url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236a6d75' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat right 8px center;
+  cursor: pointer; outline: none; width: 100%;
+  &:focus { border-color: $border-focus; }
+}
+
+.ui5-form {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+
+  &__group {
+    grid-column: 1 / -1;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.5px;
+    text-transform: uppercase; color: $text-3;
+    padding-bottom: 4px; border-bottom: 1px solid $border;
+    margin-top: 8px;
+  }
+
+  &__field { display: flex; flex-direction: column; gap: 4px; }
+}

@@ -1,0 +1,29 @@
+@use '../../shared/variables' as *;
+
+.ui5-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  flex-wrap: wrap;
+
+  &__item {
+    color: $color-primary;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color $t;
+    border-radius: $radius-sm;
+    padding: 2px 4px;
+
+    &:hover { text-decoration: underline; background: $color-primary-light; }
+
+    &:last-child {
+      color: $text-2;
+      font-weight: 500;
+      cursor: default;
+      &:hover { text-decoration: none; background: none; }
+    }
+  }
+
+  &__sep { color: $text-3; font-size: 14px; user-select: none; }
+}

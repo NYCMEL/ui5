@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — Tokenizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="Tokenizer.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">Tokenizer</h1>
+  <p class="demo-desc">A container for Token components that manages overflow and displays tokens in a row.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Tokenizer</div>
+  <div class="demo-block">
+    <div class="ui5-tokenizer">
+      <span class="ui5-token">React<button class="ui5-token__remove">×</button></span>
+      <span class="ui5-token">TypeScript<button class="ui5-token__remove">×</button></span>
+      <span class="ui5-token">SCSS<button class="ui5-token__remove">×</button></span>
+      <span class="ui5-token">Node.js<button class="ui5-token__remove">×</button></span>
+      <span class="ui5-token">GraphQL<button class="ui5-token__remove">×</button></span>
+      <span class="ui5-tokenizer__overflow" id="tok-overflow" style="display:none"></span>
+    </div>
+    <div class="ui5-tokenizer-actions">
+      <button class="ui5-btn ui5-btn--transparent ui5-btn--sm" id="add-token">+ Add Token</button>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../../shared/base.js"></script>
+<script src="Tokenizer.js"></script>
+</body>
+</html>

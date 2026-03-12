@@ -1,0 +1,36 @@
+@use '../../shared/variables' as *;
+
+
+.ui5-btn {
+  display:inline-flex;align-items:center;gap:6px;padding:0 16px;height:36px;
+  font-family:$font-primary;font-size:14px;font-weight:500;border-radius:$radius-sm;
+  border:1px solid transparent;cursor:pointer;transition:all $t;outline:none;
+  &--default    { background:$bg-surface;border-color:$border;color:$text-1;&:hover{background:$bg-sunken;} }
+  &--emphasized { background:$color-primary;border-color:$color-primary;color:$text-inv;&:hover{background:$color-primary-hover;} }
+  &--transparent { background:transparent;color:$color-primary;&:hover{background:$color-primary-light;} }
+  &--negative   { background:$color-error;border-color:$color-error;color:$text-inv; }
+  &--sm { height:28px;padding:0 12px;font-size:12px; }
+}
+.ui5-input-wrap{display:flex;flex-direction:column;gap:4px;label{font-size:12px;font-weight:500;color:$text-2;}}
+.ui5-input{height:36px;padding:0 10px;border:1px solid $border;border-radius:$radius-sm;font-family:$font-primary;font-size:14px;color:$text-1;background:$bg-surface;outline:none;width:100%;transition:border-color $t;&:focus{border-color:$border-focus;box-shadow:0 0 0 2px rgba($color-primary,.2);}}
+.ui5-radio{display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:14px;user-select:none; input{display:none;}
+  &__dot{width:18px;height:18px;border:2px solid $border;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all $t;&::after{content:'';width:8px;height:8px;border-radius:50%;background:$color-primary;transform:scale(0);transition:transform $t;}}
+  input:checked+.ui5-radio__dot{border-color:$color-primary;&::after{transform:scale(1);}}}
+.ui5-msgstrip{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;border-radius:$radius-sm;border-left:4px solid;font-size:13px;
+  &--success{background:#edfbf0;border-color:$color-success;color:$color-success;}}
+.ui5-wizard {
+  &__steps { display:flex;align-items:center;padding:20px 0;margin-bottom:20px;justify-content:center; }
+  &__step { display:flex;flex-direction:column;align-items:center;gap:6px;
+    &-circle { width:32px;height:32px;border-radius:50%;border:2px solid $border;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:$text-3;background:$bg-surface;transition:all $t; }
+    &-label { font-size:11px;color:$text-3;white-space:nowrap;font-weight:500; }
+    &-line { flex:1;height:2px;background:$border;min-width:40px;transition:background $t;
+      &.completed { background:$color-primary; } }
+    &.active .ui5-wizard__step-circle { border-color:$color-primary;color:$color-primary;background:$color-primary-light; }
+    &.completed .ui5-wizard__step-circle { background:$color-primary;border-color:$color-primary;color:white; }
+    &.active .ui5-wizard__step-label,&.completed .ui5-wizard__step-label { color:$color-primary;font-weight:600; }
+  }
+  &__content { min-height:160px;margin-bottom:20px; }
+  &__pane { display:none;&.active{display:block;animation:fadeIn .2s ease;} }
+  &__footer { display:flex;justify-content:space-between;align-items:center;padding-top:16px;border-top:1px solid $border; }
+}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:none;}}

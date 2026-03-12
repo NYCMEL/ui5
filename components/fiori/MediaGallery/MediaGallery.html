@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — MediaGallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="MediaGallery.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">MediaGallery</h1>
+  <p class="demo-desc">Displays a collection of media items (images) in a gallery with thumbnail navigation.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Media Gallery</div>
+  <div class="demo-block">
+    <div class="ui5-mediagallery">
+      <div class="ui5-mediagallery__main" id="mg-main">
+        <img src="https://picsum.photos/seed/ui5a/600/360" alt="Main" />
+      </div>
+      <div class="ui5-mediagallery__thumbs">
+        <div class="ui5-mediagallery__thumb active" data-src="https://picsum.photos/seed/ui5a/600/360"><img src="https://picsum.photos/seed/ui5a/80/60" /></div>
+        <div class="ui5-mediagallery__thumb" data-src="https://picsum.photos/seed/ui5b/600/360"><img src="https://picsum.photos/seed/ui5b/80/60" /></div>
+        <div class="ui5-mediagallery__thumb" data-src="https://picsum.photos/seed/ui5c/600/360"><img src="https://picsum.photos/seed/ui5c/80/60" /></div>
+        <div class="ui5-mediagallery__thumb" data-src="https://picsum.photos/seed/ui5d/600/360"><img src="https://picsum.photos/seed/ui5d/80/60" /></div>
+        <div class="ui5-mediagallery__thumb" data-src="https://picsum.photos/seed/ui5e/600/360"><img src="https://picsum.photos/seed/ui5e/80/60" /></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../../shared/base.js"></script>
+<script src="MediaGallery.js"></script>
+</body>
+</html>

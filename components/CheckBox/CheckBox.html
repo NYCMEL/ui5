@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — CheckBox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="CheckBox.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">CheckBox</h1>
+  <p class="demo-desc">Allows the user to set a binary value — checked, unchecked or indeterminate.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">States</div>
+  <div class="demo-block">
+    <div class="demo-row">
+      <label class="ui5-checkbox">
+        <input type="checkbox" checked />
+        <span class="ui5-checkbox__box"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"><polyline points="1,5 4,8 11,1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Checked
+      </label>
+      <label class="ui5-checkbox">
+        <input type="checkbox" />
+        <span class="ui5-checkbox__box"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"><polyline points="1,5 4,8 11,1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Unchecked
+      </label>
+      <label class="ui5-checkbox ui5-checkbox--indeterminate">
+        <input type="checkbox" />
+        <span class="ui5-checkbox__box"></span>
+        Indeterminate
+      </label>
+      <label class="ui5-checkbox ui5-checkbox--disabled">
+        <input type="checkbox" disabled />
+        <span class="ui5-checkbox__box"></span>
+        Disabled
+      </label>
+    </div>
+    <div class="text-sm text-muted mt-8 checkbox-state"></div>
+  </div>
+</div>
+</div>
+
+<script src="../../shared/base.js"></script>
+<script src="CheckBox.js"></script>
+</body>
+</html>

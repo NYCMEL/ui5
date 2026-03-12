@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — DateRangePicker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="DateRangePicker.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">DateRangePicker</h1>
+  <p class="demo-desc">Enables users to enter a date range using start and end date fields with calendar support.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Date Range</div>
+  <div class="demo-block">
+    <div class="ui5-input-wrap" style="min-width:320px">
+      <label>Date Range</label>
+      <div class="ui5-daterange">
+        <input type="date" class="ui5-date-field" id="dr-start" />
+        <span class="ui5-daterange__sep">→</span>
+        <input type="date" class="ui5-date-field" id="dr-end" />
+      </div>
+    </div>
+    <div class="text-sm text-muted mt-8" id="dr-state">Select a date range</div>
+  </div>
+</div>
+</div>
+<script src="../../shared/base.js"></script>
+<script src="DateRangePicker.js"></script>
+</body>
+</html>

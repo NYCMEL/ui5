@@ -1,0 +1,37 @@
+@use '../../shared/variables' as *;
+
+.ui5-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 0 16px; height: 36px; font-family: $font-primary;
+  font-size: 14px; font-weight: 500; border-radius: $radius-sm;
+  border: 1px solid transparent; cursor: pointer; transition: all $t; outline: none;
+  &--default    { background: $bg-surface; border-color: $border; color: $text-1; &:hover { background: $bg-sunken; } }
+  &--emphasized { background: $color-primary; border-color: $color-primary; color: $text-inv; &:hover { background: $color-primary-hover; } }
+}
+
+.ui5-split-btn {
+  display: inline-flex; position: relative;
+
+  .split-main { border-radius: $radius-sm 0 0 $radius-sm; border-right: none; }
+  .split-arrow { border-radius: 0 $radius-sm $radius-sm 0; padding: 0 10px; border-left: 1px solid rgba(255,255,255,0.25); min-width: 32px; }
+  .ui5-btn--default.split-arrow { border-left-color: $border; }
+}
+
+.ui5-menu-wrap { position: relative; display: inline-block; }
+
+.ui5-menu {
+  position: absolute; top: calc(100% + 4px); left: 0;
+  background: $bg-surface; border: 1px solid $border;
+  border-radius: $radius-md; box-shadow: $shadow-md;
+  min-width: 200px; z-index: 100;
+  opacity: 0; visibility: hidden; transform: translateY(-8px);
+  transition: all 0.2s ease;
+
+  &.open { opacity: 1; visibility: visible; transform: none; }
+
+  &__item { display: flex; align-items: center; gap: 10px;
+    padding: 9px 14px; font-size: 13px; cursor: pointer;
+    color: $text-1; transition: background $t;
+    &:hover { background: $color-primary-light; color: $color-primary; }
+  }
+}

@@ -1,0 +1,23 @@
+@use '../../shared/variables' as *;
+
+.ui5-step-input {
+  display: inline-flex; align-items: center;
+  border: 1px solid $border; border-radius: $radius-sm;
+  overflow: hidden; height: 36px;
+
+  button {
+    width: 36px; height: 100%; border: none; background: $bg-sunken;
+    cursor: pointer; font-size: 18px; color: $text-2; transition: background $t;
+    &:hover  { background: darken($bg-sunken, 6%); }
+    &:active { background: darken($bg-sunken, 12%); }
+    &:disabled { opacity: 0.4; cursor: not-allowed; }
+  }
+
+  input {
+    width: 64px; height: 100%; border: none;
+    border-left: 1px solid $border; border-right: 1px solid $border;
+    text-align: center; font-family: $font-mono;
+    font-size: 14px; color: $text-1; outline: none; background: $bg-surface;
+    &:disabled { opacity: 0.5; background: $bg-sunken; cursor: not-allowed; }
+  }
+}

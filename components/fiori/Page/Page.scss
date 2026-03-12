@@ -1,0 +1,25 @@
+@use '../../shared/variables' as *;
+
+
+.ui5-btn {
+  display:inline-flex;align-items:center;gap:6px;padding:0 16px;height:36px;
+  font-family:$font-primary;font-size:14px;font-weight:500;border-radius:$radius-sm;
+  border:1px solid transparent;cursor:pointer;transition:all $t;outline:none;
+  &--default    { background:$bg-surface;border-color:$border;color:$text-1;&:hover{background:$bg-sunken;} }
+  &--emphasized { background:$color-primary;border-color:$color-primary;color:$text-inv;&:hover{background:$color-primary-hover;} }
+  &--transparent { background:transparent;color:$color-primary;&:hover{background:$color-primary-light;} }
+  &--negative   { background:$color-error;border-color:$color-error;color:$text-inv; }
+  &--sm { height:28px;padding:0 12px;font-size:12px; }
+}
+.ui5-page-header {
+  display:flex;align-items:center;gap:12px;padding:0 16px;height:48px;
+  background:$bg-surface;border-bottom:1px solid $border;flex-shrink:0;
+  &__back { background:none;border:none;cursor:pointer;color:$color-primary;font-size:13px;font-family:$font-primary;padding:0;transition:color $t;&:hover{text-decoration:underline;} }
+  &__title { font-size:16px;font-weight:600;flex:1; }
+  &__actions { display:flex;gap:4px;align-items:center; }
+}
+.ui5-page-content { flex:1;overflow-y:auto;padding:20px; }
+.ui5-page-footer {
+  display:flex;justify-content:flex-end;gap:8px;padding:10px 16px;
+  background:$bg-surface;border-top:1px solid $border;flex-shrink:0;
+}

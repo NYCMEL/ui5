@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="Slider.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">Slider</h1>
+  <p class="demo-desc">Represents a numerical range and a handle for the user to select a value.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Slider</div>
+  <div class="demo-block" style="display:flex;flex-direction:column;gap:24px">
+    <div class="ui5-slider-wrap">
+      <label class="text-sm fw-600">Value</label>
+      <div class="ui5-slider-row"><input type="range" class="ui5-slider" min="0" max="100" value="40" /><span class="slider-val">40</span></div>
+    </div>
+    <div class="ui5-slider-wrap">
+      <label class="text-sm fw-600">Volume</label>
+      <div class="ui5-slider-row">
+        <span>🔇</span>
+        <input type="range" class="ui5-slider" min="0" max="100" value="75" />
+        <span>🔊</span>
+        <span class="slider-val">75</span>
+      </div>
+    </div>
+    <div class="ui5-slider-wrap">
+      <label class="text-sm fw-600">Disabled</label>
+      <div class="ui5-slider-row"><input type="range" class="ui5-slider" min="0" max="100" value="30" disabled /><span class="slider-val">30</span></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="../../shared/base.js"></script>
+<script src="Slider.js"></script>
+</body>
+</html>

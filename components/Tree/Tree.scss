@@ -1,0 +1,35 @@
+@use '../../shared/variables' as *;
+
+.ui5-tree {
+  font-size: 13px; border: 1px solid $border;
+  border-radius: $radius-md; overflow: hidden; background: $bg-surface;
+
+  &__item {
+    display: flex; align-items: center; gap: 6px;
+    padding: 8px 12px; border-bottom: 1px solid $border;
+    cursor: pointer; transition: background $t;
+    &:last-child { border-bottom: none; }
+    &:hover { background: $color-primary-light; }
+  }
+
+  &__toggle {
+    width: 20px; height: 20px; display: inline-flex;
+    align-items: center; justify-content: center;
+    font-size: 10px; color: $text-3; transition: transform $t;
+    border-radius: 3px; flex-shrink: 0;
+    &:hover { background: $bg-sunken; }
+    &.invisible { visibility: hidden; }
+  }
+
+  &__icon  { font-size: 16px; flex-shrink: 0; }
+  &__label { flex: 1; }
+
+  &__children {
+    display: none;
+    .ui5-tree__item { padding-left: 32px; }
+    .ui5-tree__children .ui5-tree__item { padding-left: 52px; }
+  }
+
+  &__item.expanded + .ui5-tree__children { display: block; }
+  &__item.expanded .ui5-tree__toggle { transform: rotate(90deg); }
+}

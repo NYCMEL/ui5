@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — UserSettingsDialog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="UserSettingsDialog.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">UserSettingsDialog</h1>
+  <p class="demo-desc">A dialog for managing user settings including theme, language, and account preferences.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">User Settings</div>
+  <div class="demo-block">
+    <button class="ui5-btn ui5-btn--default" id="open-settings">⚙️ Open Settings</button>
+  </div>
+</div>
+<div class="ui5-overlay" id="settings-dialog">
+  <div class="ui5-dialog ui5-dialog--wide">
+    <div class="ui5-dialog__header">
+      <span class="ui5-dialog__title">⚙️ User Settings</span>
+      <button class="ui5-dialog__close" id="close-settings">×</button>
+    </div>
+    <div class="ui5-settings-layout">
+      <div class="ui5-settings-nav">
+        <div class="ui5-settings-nav__item active" data-tab="profile">👤 Profile</div>
+        <div class="ui5-settings-nav__item" data-tab="appearance">🎨 Appearance</div>
+        <div class="ui5-settings-nav__item" data-tab="language">🌍 Language & Region</div>
+        <div class="ui5-settings-nav__item" data-tab="notifications">🔔 Notifications</div>
+      </div>
+      <div class="ui5-settings-content">
+        <div class="ui5-settings-pane active" id="tab-profile">
+          <h3 style="font-size:15px;font-weight:600;margin-bottom:16px">Profile Information</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+            <div class="ui5-input-wrap"><label>First Name</label><input type="text" class="ui5-input" value="Jane" /></div>
+            <div class="ui5-input-wrap"><label>Last Name</label><input type="text" class="ui5-input" value="Doe" /></div>
+            <div class="ui5-input-wrap"><label>Email</label><input type="email" class="ui5-input" value="jane.doe@company.com" /></div>
+            <div class="ui5-input-wrap"><label>Role</label><input type="text" class="ui5-input" value="Product Manager" /></div>
+          </div>
+        </div>
+        <div class="ui5-settings-pane" id="tab-appearance">
+          <h3 style="font-size:15px;font-weight:600;margin-bottom:16px">Appearance</h3>
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <div class="ui5-input-wrap"><label>Theme</label><select class="ui5-select"><option>Morning Horizon</option><option>Evening Horizon</option><option>High Contrast Black</option></select></div>
+            <div class="ui5-input-wrap"><label>Content Density</label><select class="ui5-select"><option>Cozy</option><option>Compact</option></select></div>
+          </div>
+        </div>
+        <div class="ui5-settings-pane" id="tab-language">
+          <h3 style="font-size:15px;font-weight:600;margin-bottom:16px">Language & Region</h3>
+          <div class="ui5-input-wrap"><label>Language</label><select class="ui5-select"><option>English (US)</option><option>German</option><option>French</option><option>Japanese</option></select></div>
+        </div>
+        <div class="ui5-settings-pane" id="tab-notifications">
+          <h3 style="font-size:15px;font-weight:600;margin-bottom:16px">Notifications</h3>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <label class="ui5-settings-toggle"><span>Email notifications</span><label class="ui5-switch"><input type="checkbox" checked /><span class="ui5-switch__track"></span></label></label>
+            <label class="ui5-settings-toggle"><span>Push notifications</span><label class="ui5-switch"><input type="checkbox" /><span class="ui5-switch__track"></span></label></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui5-dialog__footer">
+      <button class="ui5-btn ui5-btn--default" id="cancel-settings">Cancel</button>
+      <button class="ui5-btn ui5-btn--emphasized">Save Changes</button>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../../shared/base.js"></script>
+<script src="UserSettingsDialog.js"></script>
+</body>
+</html>

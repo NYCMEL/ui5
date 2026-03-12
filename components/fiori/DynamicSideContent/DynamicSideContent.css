@@ -1,0 +1,25 @@
+.ui5-dsc {
+  display: flex;
+  gap: 0;
+}
+.ui5-dsc__main {
+  flex: 2;
+  padding: 24px;
+  background: #ffffff;
+}
+.ui5-dsc__side {
+  flex: 1;
+  padding: 20px;
+  background: #e8eaee;
+  border-left: 1px solid #c5c8cd;
+  min-width: 200px;
+}
+@media (max-width: 600px) {
+  .ui5-dsc {
+    flex-direction: column;
+  }
+  .ui5-dsc__side {
+    border-left: none;
+    border-top: 1px solid #c5c8cd;
+  }
+}

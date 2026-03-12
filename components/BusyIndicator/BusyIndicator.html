@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI5 — BusyIndicator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/_base.css" />
+  <link rel="stylesheet" href="BusyIndicator.css" />
+</head>
+<body>
+<div class="demo-wrap">
+  <h1 class="demo-title">BusyIndicator</h1>
+  <p class="demo-desc">Signals that some operation is going on and that the user must wait.</p>
+  
+<div class="demo-section">
+  <div class="demo-section__label">Sizes</div>
+  <div class="demo-block">
+    <div class="demo-row" style="align-items:flex-end">
+      <div class="ui5-busy ui5-busy--sm">
+        <div class="ui5-busy__dots"><span></span><span></span><span></span></div>
+        <div class="ui5-busy__text">Small</div>
+      </div>
+      <div class="ui5-busy">
+        <div class="ui5-busy__dots"><span></span><span></span><span></span></div>
+        <div class="ui5-busy__text">Loading…</div>
+      </div>
+      <div class="ui5-busy ui5-busy--lg">
+        <div class="ui5-busy__dots"><span></span><span></span><span></span></div>
+        <div class="ui5-busy__text">Large</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="demo-section">
+  <div class="demo-section__label">Overlay on content</div>
+  <div class="demo-block">
+    <div class="ui5-busy-overlay-demo">
+      <p>Some content underneath the busy state. It is obscured while loading.</p>
+      <div class="ui5-busy-overlay">
+        <div class="ui5-busy">
+          <div class="ui5-busy__dots"><span></span><span></span><span></span></div>
+          <div class="ui5-busy__text">Loading data…</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="../../shared/base.js"></script>
+<script src="BusyIndicator.js"></script>
+</body>
+</html>

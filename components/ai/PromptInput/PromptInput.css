@@ -1,0 +1,113 @@
+.ui5-prompt-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 520px;
+}
+
+.ui5-prompt {
+  border: 2px solid #6c2483;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ui5-prompt:focus-within {
+  box-shadow: 0 0 0 3px rgba(108, 36, 131, 0.15);
+}
+.ui5-prompt__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #f5e8fd;
+  border-bottom: 1px solid rgba(108, 36, 131, 0.2);
+}
+.ui5-prompt__label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6c2483;
+}
+.ui5-prompt__model {
+  font-size: 11px;
+  background: white;
+  border: 1px solid rgba(108, 36, 131, 0.3);
+  padding: 2px 8px;
+  border-radius: 50px;
+  color: #6c2483;
+  font-family: "IBM Plex Mono", monospace;
+}
+.ui5-prompt__input {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  outline: none;
+  resize: vertical;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  color: #1a1d23;
+  line-height: 1.6;
+  min-height: 100px;
+  background: white;
+}
+.ui5-prompt__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background: #f5e8fd;
+  border-top: 1px solid rgba(108, 36, 131, 0.2);
+}
+.ui5-prompt__meta {
+  font-size: 11px;
+  color: rgba(108, 36, 131, 0.7);
+  font-family: "IBM Plex Mono", monospace;
+}
+.ui5-prompt__clear {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6c2483;
+  font-size: 12px;
+  font-family: "IBM Plex Sans", sans-serif;
+  transition: opacity 180ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.7;
+}
+.ui5-prompt__clear:hover {
+  opacity: 1;
+}
+.ui5-prompt__submit {
+  background: linear-gradient(135deg, #6c2483, #0a6ed1);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 6px 18px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ui5-prompt__submit:hover {
+  opacity: 0.9;
+}
+.ui5-prompt__sugg-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ui5-prompt__sugg {
+  padding: 10px 14px;
+  background: #f5e8fd;
+  border: 1px solid rgba(108, 36, 131, 0.2);
+  border-radius: 4px;
+  font-size: 12px;
+  color: #3d4148;
+  cursor: pointer;
+  transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 1.5;
+}
+.ui5-prompt__sugg:hover {
+  background: white;
+  border-color: #6c2483;
+  color: #1a1d23;
+}

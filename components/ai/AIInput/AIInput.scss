@@ -1,0 +1,37 @@
+
+@use '../../../shared/variables' as *;
+$ai-color: #6c2483;
+$ai-light:  #f5e8fd;
+
+.ui5-ai-input-wrap { display: flex; flex-direction: column; gap: 8px; max-width: 420px; }
+.ui5-ai-label { font-size: 12px; font-weight: 600; color: $ai-color; }
+
+.ui5-ai-input {
+  display: flex; align-items: center; gap: 0;
+  border: 2px solid $ai-color; border-radius: $radius-pill;
+  overflow: hidden; transition: box-shadow $t;
+
+  &:focus-within { box-shadow: 0 0 0 3px rgba($ai-color, .2); }
+
+  &__icon { padding: 0 8px 0 14px; font-size: 16px; color: $ai-color; flex-shrink: 0; }
+
+  input { flex: 1; border: none; outline: none; font-family: $font-primary;
+          font-size: 14px; padding: 10px 0; background: none; color: $text-1; }
+
+  &__btn {
+    background: linear-gradient(135deg, $ai-color, #0a6ed1); color: white;
+    border: none; padding: 0 18px; height: 100%; cursor: pointer;
+    font-family: $font-primary; font-size: 13px; font-weight: 600;
+    transition: opacity $t; min-height: 40px;
+    &:hover { opacity: .9; }
+  }
+}
+
+.ui5-ai-suggestions { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.ui5-ai-chip {
+  padding: 4px 12px; border-radius: $radius-pill; font-size: 12px; font-weight: 500;
+  background: $ai-light; color: $ai-color; border: 1px solid rgba($ai-color, .3);
+  cursor: pointer; transition: all $t;
+  &:hover { background: $ai-color; color: white; }
+}

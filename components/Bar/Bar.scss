@@ -1,0 +1,35 @@
+@use '../../shared/variables' as *;
+
+.ui5-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 0 16px; height: 36px;
+  font-family: $font-primary; font-size: 14px; font-weight: 500;
+  border-radius: $radius-sm; border: 1px solid transparent;
+  cursor: pointer; transition: all $t; outline: none;
+
+  &--default    { background: $bg-surface; border-color: $border; color: $text-1; &:hover { background: $bg-sunken; } }
+  &--emphasized { background: $color-primary; border-color: $color-primary; color: $text-inv; &:hover { background: $color-primary-hover; } }
+  &--transparent { background: transparent; color: $color-primary; &:hover { background: $color-primary-light; } }
+}
+
+.ui5-bar {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: $bg-surface;
+  border: 1px solid $border;
+  border-radius: $radius-sm;
+  gap: 8px;
+  min-height: 52px;
+
+  &--footer {
+    border-radius: 0;
+    border-top: 2px solid $border;
+  }
+
+  &__start { display: flex; align-items: center; gap: 8px; }
+  &__middle { flex: 1; display: flex; justify-content: center; }
+  &__end { display: flex; align-items: center; gap: 8px; }
+  &__spacer { flex: 1; }
+  &__title { font-size: 16px; font-weight: 600; }
+}

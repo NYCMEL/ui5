@@ -1,0 +1,43 @@
+
+@use '../../../shared/variables' as *;
+$ai-color: #6c2483;
+$ai-light:  #f5e8fd;
+
+.ui5-prompt-wrap { display: flex; flex-direction: column; gap: 16px; max-width: 520px; }
+
+.ui5-prompt {
+  border: 2px solid $ai-color; border-radius: $radius-md; overflow: hidden;
+  transition: box-shadow $t;
+  &:focus-within { box-shadow: 0 0 0 3px rgba($ai-color, .15); }
+
+  &__header { display: flex; align-items: center; justify-content: space-between;
+              padding: 10px 14px; background: $ai-light; border-bottom: 1px solid rgba($ai-color,.2); }
+  &__label  { font-size: 12px; font-weight: 700; color: $ai-color; }
+  &__model  { font-size: 11px; background: white; border: 1px solid rgba($ai-color,.3);
+              padding: 2px 8px; border-radius: $radius-pill; color: $ai-color; font-family: $font-mono; }
+
+  &__input  { width: 100%; padding: 14px; border: none; outline: none; resize: vertical;
+              font-family: $font-primary; font-size: 14px; color: $text-1; line-height: 1.6;
+              min-height: 100px; background: white; }
+
+  &__footer { display: flex; align-items: center; justify-content: space-between;
+              padding: 8px 14px; background: $ai-light; border-top: 1px solid rgba($ai-color,.2); }
+  &__meta   { font-size: 11px; color: rgba($ai-color,.7); font-family: $font-mono; }
+
+  &__clear  { background: none; border: none; cursor: pointer; color: $ai-color; font-size: 12px;
+              font-family: $font-primary; transition: opacity $t; opacity: .7; &:hover { opacity: 1; } }
+  &__submit {
+    background: linear-gradient(135deg, $ai-color, #0a6ed1); color: white;
+    border: none; border-radius: $radius-pill; padding: 6px 18px;
+    font-family: $font-primary; font-size: 13px; font-weight: 600; cursor: pointer;
+    transition: opacity $t; &:hover { opacity: .9; }
+  }
+
+  &__sugg-list { display: flex; flex-direction: column; gap: 6px; }
+  &__sugg {
+    padding: 10px 14px; background: $ai-light; border: 1px solid rgba($ai-color,.2);
+    border-radius: $radius-sm; font-size: 12px; color: $text-2; cursor: pointer;
+    transition: all $t; line-height: 1.5;
+    &:hover { background: white; border-color: $ai-color; color: $text-1; }
+  }
+}
