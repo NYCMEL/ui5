@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-radio {
+.mtk-radio {
   display: inline-flex; align-items: center; gap: 8px;
   cursor: pointer; font-size: 14px; color: $text-1; user-select: none;
 
@@ -14,10 +14,10 @@
     &::after { content: ''; width: 8px; height: 8px; border-radius: 50%; background: $color-primary; transform: scale(0); transition: transform $t; }
   }
 
-  input:checked + .ui5-radio__dot {
+  input:checked + .mtk-radio__dot {
     border-color: $color-primary;
     &::after { transform: scale(1); }
   }
 
-  &:hover .ui5-radio__dot { border-color: $color-primary; }
+  &:hover .mtk-radio__dot { border-color: $color-primary; }
 }

@@ -1,7 +1,7 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-dsc {
+.mtk-dsc {
   display:flex;gap:0;
   &__main { flex:2;padding:24px;background:$bg-surface; }
   &__side { flex:1;padding:20px;background:$bg-sunken;border-left:1px solid $border;min-width:200px; }

@@ -1,4 +1,4 @@
-.ui5-btn {
+.mtk-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -13,52 +13,52 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.ui5-btn--default {
+.mtk-btn--default {
   background: #ffffff;
   border-color: #c5c8cd;
   color: #1a1d23;
 }
-.ui5-btn--default:hover {
+.mtk-btn--default:hover {
   background: #e8eaee;
 }
-.ui5-btn--emphasized {
+.mtk-btn--emphasized {
   background: #0a6ed1;
   border-color: #0a6ed1;
   color: #ffffff;
 }
-.ui5-btn--emphasized:hover {
+.mtk-btn--emphasized:hover {
   background: #085caf;
 }
-.ui5-btn--transparent {
+.mtk-btn--transparent {
   background: transparent;
   color: #0a6ed1;
 }
-.ui5-btn--transparent:hover {
+.mtk-btn--transparent:hover {
   background: #d3e8fd;
 }
-.ui5-btn--negative {
+.mtk-btn--negative {
   background: #b00;
   border-color: #b00;
   color: #ffffff;
 }
-.ui5-btn--sm {
+.mtk-btn--sm {
   height: 28px;
   padding: 0 12px;
   font-size: 12px;
 }
 
-.ui5-input-wrap {
+.mtk-input-wrap {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.ui5-input-wrap label {
+.mtk-input-wrap label {
   font-size: 12px;
   font-weight: 500;
   color: #3d4148;
 }
 
-.ui5-input {
+.mtk-input {
   height: 36px;
   padding: 0 10px;
   border: 1px solid #c5c8cd;
@@ -71,12 +71,12 @@
   width: 100%;
   transition: border-color 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-input:focus {
+.mtk-input:focus {
   border-color: #0a6ed1;
   box-shadow: 0 0 0 2px rgba(10, 110, 209, 0.2);
 }
 
-.ui5-radio {
+.mtk-radio {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -84,10 +84,10 @@
   font-size: 14px;
   user-select: none;
 }
-.ui5-radio input {
+.mtk-radio input {
   display: none;
 }
-.ui5-radio__dot {
+.mtk-radio__dot {
   width: 18px;
   height: 18px;
   border: 2px solid #c5c8cd;
@@ -98,7 +98,7 @@
   flex-shrink: 0;
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-radio__dot::after {
+.mtk-radio__dot::after {
   content: "";
   width: 8px;
   height: 8px;
@@ -107,14 +107,14 @@
   transform: scale(0);
   transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-radio input:checked + .ui5-radio__dot {
+.mtk-radio input:checked + .mtk-radio__dot {
   border-color: #0a6ed1;
 }
-.ui5-radio input:checked + .ui5-radio__dot::after {
+.mtk-radio input:checked + .mtk-radio__dot::after {
   transform: scale(1);
 }
 
-.ui5-msgstrip {
+.mtk-msgstrip {
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -123,26 +123,26 @@
   border-left: 4px solid;
   font-size: 13px;
 }
-.ui5-msgstrip--success {
+.mtk-msgstrip--success {
   background: #edfbf0;
   border-color: #107e3e;
   color: #107e3e;
 }
 
-.ui5-wizard__steps {
+.mtk-wizard__steps {
   display: flex;
   align-items: center;
   padding: 20px 0;
   margin-bottom: 20px;
   justify-content: center;
 }
-.ui5-wizard__step {
+.mtk-wizard__step {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6px;
 }
-.ui5-wizard__step-circle {
+.mtk-wizard__step-circle {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -156,48 +156,48 @@
   background: #ffffff;
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-wizard__step-label {
+.mtk-wizard__step-label {
   font-size: 11px;
   color: #6a6d75;
   white-space: nowrap;
   font-weight: 500;
 }
-.ui5-wizard__step-line {
+.mtk-wizard__step-line {
   flex: 1;
   height: 2px;
   background: #c5c8cd;
   min-width: 40px;
   transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-wizard__step-line.completed {
+.mtk-wizard__step-line.completed {
   background: #0a6ed1;
 }
-.ui5-wizard__step.active .ui5-wizard__step-circle {
+.mtk-wizard__step.active .mtk-wizard__step-circle {
   border-color: #0a6ed1;
   color: #0a6ed1;
   background: #d3e8fd;
 }
-.ui5-wizard__step.completed .ui5-wizard__step-circle {
+.mtk-wizard__step.completed .mtk-wizard__step-circle {
   background: #0a6ed1;
   border-color: #0a6ed1;
   color: white;
 }
-.ui5-wizard__step.active .ui5-wizard__step-label, .ui5-wizard__step.completed .ui5-wizard__step-label {
+.mtk-wizard__step.active .mtk-wizard__step-label, .mtk-wizard__step.completed .mtk-wizard__step-label {
   color: #0a6ed1;
   font-weight: 600;
 }
-.ui5-wizard__content {
+.mtk-wizard__content {
   min-height: 160px;
   margin-bottom: 20px;
 }
-.ui5-wizard__pane {
+.mtk-wizard__pane {
   display: none;
 }
-.ui5-wizard__pane.active {
+.mtk-wizard__pane.active {
   display: block;
   animation: fadeIn 0.2s ease;
 }
-.ui5-wizard__footer {
+.mtk-wizard__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;

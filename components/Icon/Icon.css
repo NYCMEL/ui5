@@ -1,10 +1,10 @@
-.ui5-icon-gallery {
+.mtk-icon-gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
 
-.ui5-icon-item {
+.mtk-icon-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,16 +17,16 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   min-width: 76px;
 }
-.ui5-icon-item:hover {
+.mtk-icon-item:hover {
   background: #d3e8fd;
   border-color: #0a6ed1;
   transform: translateY(-2px);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
-.ui5-icon-item__glyph {
+.mtk-icon-item__glyph {
   font-size: 26px;
 }
-.ui5-icon-item__name {
+.mtk-icon-item__name {
   font-size: 10px;
   color: #6a6d75;
   text-align: center;

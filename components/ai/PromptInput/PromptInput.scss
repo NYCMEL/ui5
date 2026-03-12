@@ -3,9 +3,9 @@
 $ai-color: #6c2483;
 $ai-light:  #f5e8fd;
 
-.ui5-prompt-wrap { display: flex; flex-direction: column; gap: 16px; max-width: 520px; }
+.mtk-prompt-wrap { display: flex; flex-direction: column; gap: 16px; max-width: 520px; }
 
-.ui5-prompt {
+.mtk-prompt {
   border: 2px solid $ai-color; border-radius: $radius-md; overflow: hidden;
   transition: box-shadow $t;
   &:focus-within { box-shadow: 0 0 0 3px rgba($ai-color, .15); }

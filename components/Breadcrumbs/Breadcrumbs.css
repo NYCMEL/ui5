@@ -1,11 +1,11 @@
-.ui5-breadcrumbs {
+.mtk-breadcrumbs {
   display: flex;
   align-items: center;
   gap: 4px;
   font-size: 13px;
   flex-wrap: wrap;
 }
-.ui5-breadcrumbs__item {
+.mtk-breadcrumbs__item {
   color: #0a6ed1;
   cursor: pointer;
   text-decoration: none;
@@ -13,20 +13,20 @@
   border-radius: 4px;
   padding: 2px 4px;
 }
-.ui5-breadcrumbs__item:hover {
+.mtk-breadcrumbs__item:hover {
   text-decoration: underline;
   background: #d3e8fd;
 }
-.ui5-breadcrumbs__item:last-child {
+.mtk-breadcrumbs__item:last-child {
   color: #3d4148;
   font-weight: 500;
   cursor: default;
 }
-.ui5-breadcrumbs__item:last-child:hover {
+.mtk-breadcrumbs__item:last-child:hover {
   text-decoration: none;
   background: none;
 }
-.ui5-breadcrumbs__sep {
+.mtk-breadcrumbs__sep {
   color: #6a6d75;
   font-size: 14px;
   user-select: none;

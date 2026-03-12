@@ -1,5 +1,5 @@
-document.querySelectorAll('.ui5-rating:not(.ui5-rating--readonly)').forEach(rating => {
-  const stars   = rating.querySelectorAll('.ui5-rating__star');
+document.querySelectorAll('.mtk-rating:not(.mtk-rating--readonly)').forEach(rating => {
+  const stars   = rating.querySelectorAll('.mtk-rating__star');
   const stateEl = rating.closest('.demo-block')?.querySelector('.rating-state');
   let current   = parseInt(rating.dataset.value || 3);
 

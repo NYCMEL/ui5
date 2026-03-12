@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-btn {
+.mtk-btn {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 0 16px; height: 36px;
   font-family: $font-primary; font-size: 14px; font-weight: 500;
@@ -11,16 +11,16 @@
   &--negative   { background: $color-error; border-color: $color-error; color: $text-inv; }
 }
 
-.ui5-input-wrap { display: flex; flex-direction: column; gap: 4px;
+.mtk-input-wrap { display: flex; flex-direction: column; gap: 4px;
   label { font-size: 12px; font-weight: 500; color: $text-2; } }
-.ui5-input {
+.mtk-input {
   height: 36px; padding: 0 10px; border: 1px solid $border;
   border-radius: $radius-sm; font-family: $font-primary; font-size: 14px;
   outline: none; transition: border-color $t;
   &:focus { border-color: $border-focus; box-shadow: 0 0 0 2px rgba($color-primary, 0.2); }
 }
 
-.ui5-overlay {
+.mtk-overlay {
   position: fixed; inset: 0;
   background: $bg-overlay;
   z-index: 500;
@@ -30,11 +30,11 @@
 
   &.open {
     opacity: 1; visibility: visible;
-    .ui5-dialog { transform: none; opacity: 1; }
+    .mtk-dialog { transform: none; opacity: 1; }
   }
 }
 
-.ui5-dialog {
+.mtk-dialog {
   background: $bg-surface;
   border-radius: $radius-lg;
   box-shadow: $shadow-lg;

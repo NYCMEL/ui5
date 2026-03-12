@@ -1,4 +1,4 @@
-.ui5-btn {
+.mtk-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -13,31 +13,31 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.ui5-btn--default {
+.mtk-btn--default {
   background: #ffffff;
   border-color: #c5c8cd;
   color: #1a1d23;
 }
-.ui5-btn--default:hover {
+.mtk-btn--default:hover {
   background: #e8eaee;
 }
-.ui5-btn--positive {
+.mtk-btn--positive {
   background: #107e3e;
   border-color: #107e3e;
   color: #ffffff;
 }
-.ui5-btn--negative {
+.mtk-btn--negative {
   background: #b00;
   border-color: #b00;
   color: #ffffff;
 }
-.ui5-btn--attention {
+.mtk-btn--attention {
   background: #e9730c;
   border-color: #e9730c;
   color: #ffffff;
 }
 
-.ui5-toast-container {
+.mtk-toast-container {
   position: fixed;
   bottom: 32px;
   right: 32px;
@@ -48,7 +48,7 @@
   pointer-events: none;
 }
 
-.ui5-toast {
+.mtk-toast {
   background: #1a1d23;
   color: #fff;
   padding: 12px 20px;
@@ -63,23 +63,23 @@
   animation: toastIn 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.ui5-toast.hiding {
+.mtk-toast.hiding {
   opacity: 0;
   transform: translateX(20px);
 }
-.ui5-toast--success {
+.mtk-toast--success {
   border-left: 3px solid #107e3e;
 }
-.ui5-toast--error {
+.mtk-toast--error {
   border-left: 3px solid #b00;
 }
-.ui5-toast--warning {
+.mtk-toast--warning {
   border-left: 3px solid #e9730c;
 }
-.ui5-toast__icon {
+.mtk-toast__icon {
   font-size: 16px;
 }
-.ui5-toast__msg {
+.mtk-toast__msg {
   flex: 1;
 }
 

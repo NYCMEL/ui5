@@ -1,14 +1,14 @@
-.ui5-switch {
+.mtk-switch {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
   user-select: none;
 }
-.ui5-switch input {
+.mtk-switch input {
   display: none;
 }
-.ui5-switch__track {
+.mtk-switch__track {
   width: 50px;
   height: 26px;
   background: #c5c8cd;
@@ -17,7 +17,7 @@
   transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgb(175.0888888889, 179.2222222222, 186.1111111111);
 }
-.ui5-switch__track::after {
+.mtk-switch__track::after {
   content: "";
   position: absolute;
   width: 20px;
@@ -29,14 +29,14 @@
   transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
-.ui5-switch input:checked + .ui5-switch__track {
+.mtk-switch input:checked + .mtk-switch__track {
   background: #0a6ed1;
   border-color: #0a6ed1;
 }
-.ui5-switch input:checked + .ui5-switch__track::after {
+.mtk-switch input:checked + .mtk-switch__track::after {
   transform: translateX(24px);
 }
-.ui5-switch__label {
+.mtk-switch__label {
   font-size: 14px;
   color: #1a1d23;
   min-width: 70px;

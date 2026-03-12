@@ -1,14 +1,14 @@
 @use '../../shared/variables' as *;
 
-.ui5-slider-wrap {
+.mtk-slider-wrap {
   display: flex; flex-direction: column; gap: 8px; min-width: 280px;
 }
 
-.ui5-slider-row {
+.mtk-slider-row {
   display: flex; align-items: center; gap: 12px; font-size: 14px;
 }
 
-.ui5-slider {
+.mtk-slider {
   -webkit-appearance: none; appearance: none;
   flex: 1; height: 4px; border-radius: 2px;
   background: $border; outline: none; cursor: pointer;

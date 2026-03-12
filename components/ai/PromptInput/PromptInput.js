@@ -8,7 +8,7 @@ promptInput?.addEventListener('input', () => {
   if (len > MAX) promptInput.value = promptInput.value.slice(0, MAX);
 });
 document.getElementById('prompt-clear')?.addEventListener('click', () => { if (promptInput) { promptInput.value = ''; promptInput.dispatchEvent(new Event('input')); } });
-document.querySelectorAll('.ui5-prompt__sugg').forEach(s => {
+document.querySelectorAll('.mtk-prompt__sugg').forEach(s => {
   s.addEventListener('click', () => { if (promptInput) { promptInput.value = s.textContent.trim(); promptInput.dispatchEvent(new Event('input')); } });
 });
 document.getElementById('prompt-submit')?.addEventListener('click', () => {

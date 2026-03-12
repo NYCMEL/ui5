@@ -1,16 +1,16 @@
-.ui5-input-wrap {
+.mtk-input-wrap {
   display: flex;
   flex-direction: column;
   gap: 4px;
   min-width: 160px;
 }
-.ui5-input-wrap label {
+.mtk-input-wrap label {
   font-size: 12px;
   font-weight: 500;
   color: #3d4148;
 }
 
-.ui5-select {
+.mtk-select {
   appearance: none;
   height: 36px;
   padding: 0 36px 0 10px;
@@ -25,14 +25,14 @@
   transition: border-color 180ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 180ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
 }
-.ui5-select:hover {
+.mtk-select:hover {
   border-color: #9ea1a8;
 }
-.ui5-select:focus {
+.mtk-select:focus {
   border-color: #0a6ed1;
   box-shadow: 0 0 0 2px rgba(10, 110, 209, 0.2);
 }
-.ui5-select:disabled {
+.mtk-select:disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }

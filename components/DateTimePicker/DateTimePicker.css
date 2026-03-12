@@ -1,16 +1,16 @@
-.ui5-input-wrap {
+.mtk-input-wrap {
   display: flex;
   flex-direction: column;
   gap: 4px;
   min-width: 220px;
 }
-.ui5-input-wrap label {
+.mtk-input-wrap label {
   font-size: 12px;
   font-weight: 500;
   color: #3d4148;
 }
 
-.ui5-date-field--full {
+.mtk-date-field--full {
   height: 36px;
   padding: 0 10px;
   border: 1px solid #c5c8cd;
@@ -24,14 +24,14 @@
   transition: border-color 180ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 180ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
 }
-.ui5-date-field--full:hover {
+.mtk-date-field--full:hover {
   border-color: #9ea1a8;
 }
-.ui5-date-field--full:focus {
+.mtk-date-field--full:focus {
   border-color: #0a6ed1;
   box-shadow: 0 0 0 2px rgba(10, 110, 209, 0.2);
 }
-.ui5-date-field--full:disabled {
+.mtk-date-field--full:disabled {
   opacity: 0.4;
   cursor: not-allowed;
   background: #e8eaee;

@@ -21,9 +21,9 @@ function getRange(key) {
   return ranges[key];
 }
 
-document.querySelectorAll('.ui5-ddr__preset').forEach(btn => {
+document.querySelectorAll('.mtk-ddr__preset').forEach(btn => {
   btn.addEventListener('click', function() {
-    document.querySelectorAll('.ui5-ddr__preset').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.mtk-ddr__preset').forEach(b => b.classList.remove('active'));
     this.classList.add('active');
     if (this.dataset.range === 'custom') {
       cust.style.display = 'flex';

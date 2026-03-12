@@ -1,10 +1,10 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-avatar { display:inline-flex;align-items:center;justify-content:center;border-radius:50%;font-weight:600;flex-shrink:0;
+.mtk-avatar { display:inline-flex;align-items:center;justify-content:center;border-radius:50%;font-weight:600;flex-shrink:0;
   &--md { width:48px;height:48px;font-size:16px; }
   &--accent-1 { background:#d1e8ff;color:#0a6ed1; } }
-.ui5-btn {
+.mtk-btn {
   display:inline-flex;align-items:center;gap:6px;padding:0 16px;height:36px;font-family:$font-primary;
   font-size:14px;font-weight:500;border-radius:$radius-sm;border:1px solid transparent;cursor:pointer;transition:all $t;outline:none;
   &--default    { background:$bg-surface;border-color:$border;color:$text-1;&:hover{background:$bg-sunken;} }
@@ -12,8 +12,8 @@
   &--transparent { background:transparent;color:$color-primary;&:hover{background:$color-primary-light;} }
   &--sm { height:28px;padding:0 12px;font-size:12px; }
 }
-.ui5-rpopover-wrap { position:relative;display:inline-block; }
-.ui5-rpopover {
+.mtk-rpopover-wrap { position:relative;display:inline-block; }
+.mtk-rpopover {
   position:absolute;top:calc(100% + 8px);left:0;z-index:100;
   background:$bg-surface;border:1px solid $border;border-radius:$radius-lg;
   box-shadow:$shadow-lg;min-width:280px;

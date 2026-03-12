@@ -1,6 +1,6 @@
-document.querySelectorAll('.ui5-tabs').forEach(tabs => {
-  const btns  = tabs.querySelectorAll('.ui5-tabs__tab');
-  const panes = tabs.querySelectorAll('.ui5-tabs__pane');
+document.querySelectorAll('.mtk-tabs').forEach(tabs => {
+  const btns  = tabs.querySelectorAll('.mtk-tabs__tab');
+  const panes = tabs.querySelectorAll('.mtk-tabs__pane');
   btns.forEach((btn, i) => {
     btn.addEventListener('click', () => {
       if (btn.disabled) return;

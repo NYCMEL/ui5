@@ -1,7 +1,7 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-shellbar {
+.mtk-shellbar {
   display:flex;align-items:center;gap:16px;padding:0 16px;
   background:$color-primary;color:white;height:48px;
 

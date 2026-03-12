@@ -3,10 +3,10 @@
 $ai-color: #6c2483;
 $ai-light:  #f5e8fd;
 
-.ui5-ai-input-wrap { display: flex; flex-direction: column; gap: 8px; max-width: 420px; }
-.ui5-ai-label { font-size: 12px; font-weight: 600; color: $ai-color; }
+.mtk-ai-input-wrap { display: flex; flex-direction: column; gap: 8px; max-width: 420px; }
+.mtk-ai-label { font-size: 12px; font-weight: 600; color: $ai-color; }
 
-.ui5-ai-input {
+.mtk-ai-input {
   display: flex; align-items: center; gap: 0;
   border: 2px solid $ai-color; border-radius: $radius-pill;
   overflow: hidden; transition: box-shadow $t;
@@ -27,9 +27,9 @@ $ai-light:  #f5e8fd;
   }
 }
 
-.ui5-ai-suggestions { display: flex; flex-wrap: wrap; gap: 6px; }
+.mtk-ai-suggestions { display: flex; flex-wrap: wrap; gap: 6px; }
 
-.ui5-ai-chip {
+.mtk-ai-chip {
   padding: 4px 12px; border-radius: $radius-pill; font-size: 12px; font-weight: 500;
   background: $ai-light; color: $ai-color; border: 1px solid rgba($ai-color, .3);
   cursor: pointer; transition: all $t;

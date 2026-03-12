@@ -1,20 +1,20 @@
-.ui5-prompt-wrap {
+.mtk-prompt-wrap {
   display: flex;
   flex-direction: column;
   gap: 16px;
   max-width: 520px;
 }
 
-.ui5-prompt {
+.mtk-prompt {
   border: 2px solid #6c2483;
   border-radius: 8px;
   overflow: hidden;
   transition: box-shadow 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-prompt:focus-within {
+.mtk-prompt:focus-within {
   box-shadow: 0 0 0 3px rgba(108, 36, 131, 0.15);
 }
-.ui5-prompt__header {
+.mtk-prompt__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,12 +22,12 @@
   background: #f5e8fd;
   border-bottom: 1px solid rgba(108, 36, 131, 0.2);
 }
-.ui5-prompt__label {
+.mtk-prompt__label {
   font-size: 12px;
   font-weight: 700;
   color: #6c2483;
 }
-.ui5-prompt__model {
+.mtk-prompt__model {
   font-size: 11px;
   background: white;
   border: 1px solid rgba(108, 36, 131, 0.3);
@@ -36,7 +36,7 @@
   color: #6c2483;
   font-family: "IBM Plex Mono", monospace;
 }
-.ui5-prompt__input {
+.mtk-prompt__input {
   width: 100%;
   padding: 14px;
   border: none;
@@ -49,7 +49,7 @@
   min-height: 100px;
   background: white;
 }
-.ui5-prompt__footer {
+.mtk-prompt__footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,12 +57,12 @@
   background: #f5e8fd;
   border-top: 1px solid rgba(108, 36, 131, 0.2);
 }
-.ui5-prompt__meta {
+.mtk-prompt__meta {
   font-size: 11px;
   color: rgba(108, 36, 131, 0.7);
   font-family: "IBM Plex Mono", monospace;
 }
-.ui5-prompt__clear {
+.mtk-prompt__clear {
   background: none;
   border: none;
   cursor: pointer;
@@ -72,10 +72,10 @@
   transition: opacity 180ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0.7;
 }
-.ui5-prompt__clear:hover {
+.mtk-prompt__clear:hover {
   opacity: 1;
 }
-.ui5-prompt__submit {
+.mtk-prompt__submit {
   background: linear-gradient(135deg, #6c2483, #0a6ed1);
   color: white;
   border: none;
@@ -87,15 +87,15 @@
   cursor: pointer;
   transition: opacity 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-prompt__submit:hover {
+.mtk-prompt__submit:hover {
   opacity: 0.9;
 }
-.ui5-prompt__sugg-list {
+.mtk-prompt__sugg-list {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-.ui5-prompt__sugg {
+.mtk-prompt__sugg {
   padding: 10px 14px;
   background: #f5e8fd;
   border: 1px solid rgba(108, 36, 131, 0.2);
@@ -106,7 +106,7 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.5;
 }
-.ui5-prompt__sugg:hover {
+.mtk-prompt__sugg:hover {
   background: white;
   border-color: #6c2483;
   color: #1a1d23;

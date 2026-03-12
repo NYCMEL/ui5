@@ -1,4 +1,4 @@
-.ui5-avatar {
+.mtk-avatar {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -10,44 +10,44 @@
   height: 48px;
   font-size: 16px;
 }
-.ui5-avatar--accent-1 {
+.mtk-avatar--accent-1 {
   background: #d1e8ff;
   color: #0a6ed1;
 }
-.ui5-avatar--accent-2 {
+.mtk-avatar--accent-2 {
   background: #ffd0e7;
   color: #aa0808;
 }
-.ui5-avatar--accent-3 {
+.mtk-avatar--accent-3 {
   background: #d5f5e3;
   color: #107e3e;
 }
-.ui5-avatar--accent-4 {
+.mtk-avatar--accent-4 {
   background: #fff3cd;
   color: #a35c00;
 }
-.ui5-avatar--accent-5 {
+.mtk-avatar--accent-5 {
   background: #ede0f5;
   color: #6c2483;
 }
 
-.ui5-avatar-group {
+.mtk-avatar-group {
   display: flex;
 }
-.ui5-avatar-group .ui5-avatar {
+.mtk-avatar-group .mtk-avatar {
   border: 2px solid #ffffff;
   margin-left: -12px;
   transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-.ui5-avatar-group .ui5-avatar:first-child {
+.mtk-avatar-group .mtk-avatar:first-child {
   margin-left: 0;
 }
-.ui5-avatar-group .ui5-avatar:hover {
+.mtk-avatar-group .mtk-avatar:hover {
   transform: translateY(-4px);
   z-index: 1;
 }
-.ui5-avatar-group__overflow {
+.mtk-avatar-group__overflow {
   background: #e8eaee;
   color: #3d4148;
   font-size: 12px;

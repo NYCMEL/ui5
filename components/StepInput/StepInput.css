@@ -1,4 +1,4 @@
-.ui5-step-input {
+.mtk-step-input {
   display: inline-flex;
   align-items: center;
   border: 1px solid #c5c8cd;
@@ -6,7 +6,7 @@
   overflow: hidden;
   height: 36px;
 }
-.ui5-step-input button {
+.mtk-step-input button {
   width: 36px;
   height: 100%;
   border: none;
@@ -16,17 +16,17 @@
   color: #3d4148;
   transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-step-input button:hover {
+.mtk-step-input button:hover {
   background: rgb(214.405, 217.935, 224.995);
 }
-.ui5-step-input button:active {
+.mtk-step-input button:active {
   background: rgb(196.81, 201.87, 211.99);
 }
-.ui5-step-input button:disabled {
+.mtk-step-input button:disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }
-.ui5-step-input input {
+.mtk-step-input input {
   width: 64px;
   height: 100%;
   border: none;
@@ -39,7 +39,7 @@
   outline: none;
   background: #ffffff;
 }
-.ui5-step-input input:disabled {
+.mtk-step-input input:disabled {
   opacity: 0.5;
   background: #e8eaee;
   cursor: not-allowed;

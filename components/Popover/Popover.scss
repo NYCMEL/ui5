@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-btn {
+.mtk-btn {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 0 16px; height: 36px; font-family: $font-primary;
   font-size: 14px; font-weight: 500; border-radius: $radius-sm;
@@ -9,9 +9,9 @@
   &--emphasized { background: $color-primary; border-color: $color-primary; color: $text-inv; &:hover { background: $color-primary-hover; } }
 }
 
-.ui5-popover-wrap { position: relative; display: inline-block; }
+.mtk-popover-wrap { position: relative; display: inline-block; }
 
-.ui5-popover {
+.mtk-popover {
   position: absolute;
   bottom: calc(100% + 10px); left: 50%;
   transform: translateX(-50%) translateY(8px);
@@ -30,7 +30,7 @@
   &.open { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
 }
 
-.ui5-popover-item {
+.mtk-popover-item {
   padding: 8px 10px; cursor: pointer; border-radius: $radius-sm;
   transition: background $t; font-size: 13px;
   &:hover { background: $color-primary-light; }

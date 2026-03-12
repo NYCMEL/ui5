@@ -1,15 +1,15 @@
-.ui5-input-wrap {
+.mtk-input-wrap {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.ui5-input-wrap label {
+.mtk-input-wrap label {
   font-size: 11px;
   font-weight: 500;
   color: #6a6d75;
 }
 
-.ui5-input {
+.mtk-input {
   height: 32px;
   padding: 0 8px;
   border: 1px solid #c5c8cd;
@@ -22,17 +22,17 @@
   width: 100%;
   transition: border-color 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-input:focus {
+.mtk-input:focus {
   border-color: #0a6ed1;
 }
 
-.ui5-color-picker {
+.mtk-color-picker {
   display: flex;
   flex-direction: column;
   gap: 14px;
   max-width: 300px;
 }
-.ui5-color-picker__canvas {
+.mtk-color-picker__canvas {
   height: 160px;
   border-radius: 4px;
   position: relative;
@@ -40,7 +40,7 @@
   background: linear-gradient(to bottom, transparent, black), linear-gradient(to right, white, hsl(217, 100%, 50%));
   border: 1px solid #c5c8cd;
 }
-.ui5-color-picker__handle {
+.mtk-color-picker__handle {
   position: absolute;
   width: 14px;
   height: 14px;
@@ -52,7 +52,7 @@
   top: 30%;
   left: 70%;
 }
-.ui5-color-picker__hue-slider {
+.mtk-color-picker__hue-slider {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
@@ -62,7 +62,7 @@
   cursor: pointer;
   background: linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
 }
-.ui5-color-picker__hue-slider::-webkit-slider-thumb {
+.mtk-color-picker__hue-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 18px;
   height: 18px;
@@ -71,17 +71,17 @@
   border: 2px solid #999;
   cursor: pointer;
 }
-.ui5-color-picker__inputs {
+.mtk-color-picker__inputs {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
 }
-.ui5-color-picker__preview {
+.mtk-color-picker__preview {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.ui5-color-picker__preview-box {
+.mtk-color-picker__preview-box {
   width: 36px;
   height: 36px;
   border-radius: 4px;

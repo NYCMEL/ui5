@@ -1,7 +1,7 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-btn {
+.mtk-btn {
   display:inline-flex;align-items:center;gap:6px;padding:0 16px;height:36px;
   font-family:$font-primary;font-size:14px;font-weight:500;border-radius:$radius-sm;
   border:1px solid transparent;cursor:pointer;transition:all $t;outline:none;
@@ -11,15 +11,15 @@
   &--negative   { background:$color-error;border-color:$color-error;color:$text-inv; }
   &--sm { height:28px;padding:0 12px;font-size:12px; }
 }
-.ui5-overlay{position:fixed;inset:0;background:rgba(0,0,0,.48);z-index:500;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity $t,visibility $t;
-  &.open{opacity:1;visibility:visible;.ui5-dialog{transform:none;opacity:1;}}}
-.ui5-dialog{background:$bg-surface;border-radius:$radius-lg;box-shadow:$shadow-lg;min-width:300px;max-width:420px;width:calc(100% - 48px);transform:translateY(-16px) scale(.97);opacity:0;transition:all .25s cubic-bezier(.2,0,0,1.2);overflow:hidden;
+.mtk-overlay{position:fixed;inset:0;background:rgba(0,0,0,.48);z-index:500;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity $t,visibility $t;
+  &.open{opacity:1;visibility:visible;.mtk-dialog{transform:none;opacity:1;}}}
+.mtk-dialog{background:$bg-surface;border-radius:$radius-lg;box-shadow:$shadow-lg;min-width:300px;max-width:420px;width:calc(100% - 48px);transform:translateY(-16px) scale(.97);opacity:0;transition:all .25s cubic-bezier(.2,0,0,1.2);overflow:hidden;
   &__header{padding:16px 20px 12px;border-bottom:1px solid $border;display:flex;align-items:center;justify-content:space-between;}
   &__title{font-size:16px;font-weight:600;}
   &__close{background:none;border:none;font-size:20px;cursor:pointer;color:$text-3;padding:4px;}
   &__body{padding:20px;}
   &__footer{padding:14px 20px;border-top:1px solid $border;display:flex;justify-content:flex-end;gap:8px;}}
-.ui5-barcode-viewer {
+.mtk-barcode-viewer {
   background:#111;height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;
   &__frame { position:relative;width:200px;height:160px; }
   &__line { position:absolute;top:0;left:0;right:0;height:2px;background:$color-primary;box-shadow:0 0 8px $color-primary;animation:scanLine 2s linear infinite; }

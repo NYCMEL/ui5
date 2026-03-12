@@ -1,9 +1,9 @@
 @use '../../shared/variables' as *;
 
-.ui5-input-wrap { display: flex; flex-direction: column; gap: 4px;
+.mtk-input-wrap { display: flex; flex-direction: column; gap: 4px;
   label { font-size: 12px; font-weight: 500; color: $text-2; } }
 
-.ui5-textarea {
+.mtk-textarea {
   padding: 8px 10px; border: 1px solid $border; border-radius: $radius-sm;
   font-family: $font-primary; font-size: 14px; color: $text-1;
   background: $bg-surface; outline: none; resize: vertical; min-height: 72px;

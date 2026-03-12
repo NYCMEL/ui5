@@ -1,4 +1,4 @@
-.ui5-link {
+.mtk-link {
   color: #0a6ed1;
   text-decoration: none;
   font-size: 14px;
@@ -6,24 +6,24 @@
   transition: color 180ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 2px;
 }
-.ui5-link:hover {
+.mtk-link:hover {
   text-decoration: underline;
   color: #085caf;
 }
-.ui5-link:focus-visible {
+.mtk-link:focus-visible {
   outline: 2px solid #0a6ed1;
   border-radius: 2px;
 }
-.ui5-link--subtle {
+.mtk-link--subtle {
   color: #6a6d75;
 }
-.ui5-link--subtle:hover {
+.mtk-link--subtle:hover {
   color: #1a1d23;
   text-decoration: underline;
 }
-.ui5-link--visited {
+.mtk-link--visited {
   color: #6c2483;
 }
-.ui5-link--visited:hover {
+.mtk-link--visited:hover {
   color: rgb(75.0179640719, 25.005988024, 90.994011976);
 }

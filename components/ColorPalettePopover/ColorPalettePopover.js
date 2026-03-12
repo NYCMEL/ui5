@@ -8,7 +8,7 @@ btn.addEventListener('click', e => { e.stopPropagation(); pop.classList.toggle('
 document.addEventListener('click', () => pop.classList.remove('open'));
 pop.addEventListener('click', e => e.stopPropagation());
 
-document.querySelectorAll('.ui5-color-palette__swatch').forEach(sw => {
+document.querySelectorAll('.mtk-color-palette__swatch').forEach(sw => {
   sw.addEventListener('click', () => {
     const color = sw.style.background;
     swatch.style.background = color;

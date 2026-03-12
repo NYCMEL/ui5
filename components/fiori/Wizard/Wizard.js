@@ -1,8 +1,8 @@
 
 let step = 2, total = 4;
-const steps = document.querySelectorAll('.ui5-wizard__step');
-const lines = document.querySelectorAll('.ui5-wizard__step-line');
-const panes = document.querySelectorAll('.ui5-wizard__pane');
+const steps = document.querySelectorAll('.mtk-wizard__step');
+const lines = document.querySelectorAll('.mtk-wizard__step-line');
+const panes = document.querySelectorAll('.mtk-wizard__pane');
 const counter = document.getElementById('wiz-counter');
 const prevBtn = document.getElementById('wiz-prev');
 const nextBtn = document.getElementById('wiz-next');

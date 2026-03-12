@@ -1,16 +1,16 @@
-.ui5-aitextarea-wrap {
+.mtk-aitextarea-wrap {
   max-width: 520px;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.ui5-aitextarea {
+.mtk-aitextarea {
   border: 2px solid #6c2483;
   border-radius: 8px;
   overflow: hidden;
 }
-.ui5-aitextarea__field {
+.mtk-aitextarea__field {
   width: 100%;
   padding: 14px;
   border: none;
@@ -22,7 +22,7 @@
   line-height: 1.6;
   min-height: 100px;
 }
-.ui5-aitextarea__toolbar {
+.mtk-aitextarea__toolbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +32,7 @@
   flex-wrap: wrap;
   gap: 6px;
 }
-.ui5-aitextarea__action {
+.mtk-aitextarea__action {
   background: white;
   border: 1px solid rgba(108, 36, 131, 0.3);
   border-radius: 50px;
@@ -44,11 +44,11 @@
   color: #6c2483;
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-aitextarea__action:hover {
+.mtk-aitextarea__action:hover {
   background: #6c2483;
   color: white;
 }
-.ui5-aitextarea__status {
+.mtk-aitextarea__status {
   font-size: 12px;
   color: #6c2483;
   min-height: 18px;

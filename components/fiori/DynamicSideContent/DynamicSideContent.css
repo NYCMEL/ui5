@@ -1,13 +1,13 @@
-.ui5-dsc {
+.mtk-dsc {
   display: flex;
   gap: 0;
 }
-.ui5-dsc__main {
+.mtk-dsc__main {
   flex: 2;
   padding: 24px;
   background: #ffffff;
 }
-.ui5-dsc__side {
+.mtk-dsc__side {
   flex: 1;
   padding: 20px;
   background: #e8eaee;
@@ -15,10 +15,10 @@
   min-width: 200px;
 }
 @media (max-width: 600px) {
-  .ui5-dsc {
+  .mtk-dsc {
     flex-direction: column;
   }
-  .ui5-dsc__side {
+  .mtk-dsc__side {
     border-left: none;
     border-top: 1px solid #c5c8cd;
   }

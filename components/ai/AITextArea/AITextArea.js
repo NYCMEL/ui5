@@ -7,7 +7,7 @@ const TRANSFORMS = {
   shorter:  t => t.split(' ').slice(0, Math.ceil(t.split(' ').length * .6)).join(' ') + '…',
   expand:   t => t + '\n\nFurthermore, this enhanced perspective provides additional context and detail that enriches our understanding of the subject matter.',
 };
-document.querySelectorAll('.ui5-aitextarea__action').forEach(btn => {
+document.querySelectorAll('.mtk-aitextarea__action').forEach(btn => {
   btn.addEventListener('click', function() {
     if (!ta?.value) return;
     const fn = TRANSFORMS[this.dataset.action];

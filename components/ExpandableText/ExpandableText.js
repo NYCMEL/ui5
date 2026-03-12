@@ -1,6 +1,6 @@
-document.querySelectorAll('.ui5-expandable').forEach(ex => {
-  const text   = ex.querySelector('.ui5-expandable__text');
-  const toggle = ex.querySelector('.ui5-expandable__toggle');
+document.querySelectorAll('.mtk-expandable').forEach(ex => {
+  const text   = ex.querySelector('.mtk-expandable__text');
+  const toggle = ex.querySelector('.mtk-expandable__toggle');
   const maxH   = text.dataset.maxHeight || '48px';
   let expanded = false;
   text.style.maxHeight = maxH;

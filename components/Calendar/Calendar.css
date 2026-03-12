@@ -1,4 +1,4 @@
-.ui5-calendar {
+.mtk-calendar {
   display: inline-block;
   border: 1px solid #c5c8cd;
   border-radius: 8px;
@@ -8,7 +8,7 @@
   font-size: 13px;
   user-select: none;
 }
-.ui5-calendar__header {
+.mtk-calendar__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,7 +16,7 @@
   background: #e8eaee;
   border-bottom: 1px solid #c5c8cd;
 }
-.ui5-calendar__nav {
+.mtk-calendar__nav {
   background: none;
   border: none;
   cursor: pointer;
@@ -30,36 +30,36 @@
   justify-content: center;
   transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-calendar__nav:hover {
+.mtk-calendar__nav:hover {
   background: #c5c8cd;
 }
-.ui5-calendar__month-year {
+.mtk-calendar__month-year {
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
 }
-.ui5-calendar__month-year:hover {
+.mtk-calendar__month-year:hover {
   color: #0a6ed1;
 }
-.ui5-calendar__weekdays {
+.mtk-calendar__weekdays {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   padding: 8px 8px 0;
 }
-.ui5-calendar__weekdays span {
+.mtk-calendar__weekdays span {
   text-align: center;
   font-size: 11px;
   font-weight: 600;
   color: #6a6d75;
   padding: 4px 0;
 }
-.ui5-calendar__days {
+.mtk-calendar__days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   padding: 4px 8px 8px;
   gap: 2px;
 }
-.ui5-calendar__day {
+.mtk-calendar__day {
   aspect-ratio: 1;
   display: flex;
   align-items: center;
@@ -70,26 +70,26 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #1a1d23;
 }
-.ui5-calendar__day:hover {
+.mtk-calendar__day:hover {
   background: #d3e8fd;
   color: #0a6ed1;
 }
-.ui5-calendar__day--today {
+.mtk-calendar__day--today {
   font-weight: 700;
   color: #0a6ed1;
   border: 2px solid #0a6ed1;
 }
-.ui5-calendar__day--selected {
+.mtk-calendar__day--selected {
   background: #0a6ed1;
   color: white;
 }
-.ui5-calendar__day--selected:hover {
+.mtk-calendar__day--selected:hover {
   background: #085caf;
 }
-.ui5-calendar__day--other-month {
+.mtk-calendar__day--other-month {
   color: #6a6d75;
 }
-.ui5-calendar__day--disabled {
+.mtk-calendar__day--disabled {
   opacity: 0.3;
   cursor: not-allowed;
   pointer-events: none;

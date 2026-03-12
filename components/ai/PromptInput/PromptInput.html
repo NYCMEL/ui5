@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UI5 — PromptInput</title>
+  <title>MTK — PromptInput</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -18,29 +18,29 @@
 <div class="demo-section">
   <div class="demo-section__label">Prompt Input</div>
   <div class="demo-block">
-    <div class="ui5-prompt-wrap">
-      <div class="ui5-prompt">
-        <div class="ui5-prompt__header">
-          <span class="ui5-prompt__label">✨ AI Prompt</span>
-          <span class="ui5-prompt__model">claude-sonnet-4</span>
+    <div class="mtk-prompt-wrap">
+      <div class="mtk-prompt">
+        <div class="mtk-prompt__header">
+          <span class="mtk-prompt__label">✨ AI Prompt</span>
+          <span class="mtk-prompt__model">claude-sonnet-4</span>
         </div>
-        <textarea class="ui5-prompt__input" id="prompt-input" placeholder="Write your prompt here… Be specific for better results." rows="5"></textarea>
-        <div class="ui5-prompt__footer">
-          <div class="ui5-prompt__meta">
+        <textarea class="mtk-prompt__input" id="prompt-input" placeholder="Write your prompt here… Be specific for better results." rows="5"></textarea>
+        <div class="mtk-prompt__footer">
+          <div class="mtk-prompt__meta">
             <span id="prompt-chars">0 / 4000 chars</span>
           </div>
           <div style="display:flex;gap:8px">
-            <button class="ui5-prompt__clear" id="prompt-clear">Clear</button>
-            <button class="ui5-prompt__submit" id="prompt-submit">✨ Generate</button>
+            <button class="mtk-prompt__clear" id="prompt-clear">Clear</button>
+            <button class="mtk-prompt__submit" id="prompt-submit">✨ Generate</button>
           </div>
         </div>
       </div>
-      <div class="ui5-prompt__suggestions">
+      <div class="mtk-prompt__suggestions">
         <div class="text-sm fw-600" style="color:#6c2483;margin-bottom:8px">Try these prompts:</div>
-        <div class="ui5-prompt__sugg-list">
-          <div class="ui5-prompt__sugg">Summarize the key points from the uploaded document in bullet format</div>
-          <div class="ui5-prompt__sugg">Write a professional email declining a meeting request politely</div>
-          <div class="ui5-prompt__sugg">Analyze the data and identify the top 3 trends</div>
+        <div class="mtk-prompt__sugg-list">
+          <div class="mtk-prompt__sugg">Summarize the key points from the uploaded document in bullet format</div>
+          <div class="mtk-prompt__sugg">Write a professional email declining a meeting request politely</div>
+          <div class="mtk-prompt__sugg">Analyze the data and identify the top 3 trends</div>
         </div>
       </div>
     </div>

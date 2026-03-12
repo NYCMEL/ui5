@@ -1,7 +1,7 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-cal-legend {
+.mtk-cal-legend {
   display: flex; flex-wrap: wrap; gap: 16px;
   &__item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: $text-1; }
   &__dot {

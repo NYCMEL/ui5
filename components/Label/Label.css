@@ -1,17 +1,17 @@
-.ui5-label {
+.mtk-label {
   font-size: 13px;
   font-weight: 500;
   color: #3d4148;
   display: inline-block;
 }
-.ui5-label--required::after {
+.mtk-label--required::after {
   content: " *";
   color: #b00;
 }
-.ui5-label--colon::after {
+.mtk-label--colon::after {
   content: ":";
 }
-.ui5-label--required.ui5-label--colon::after {
+.mtk-label--required.mtk-label--colon::after {
   content: " *:";
   color: #b00;
 }

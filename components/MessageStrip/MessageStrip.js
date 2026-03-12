@@ -1,6 +1,6 @@
-document.querySelectorAll('.ui5-msgstrip__close').forEach(btn => {
+document.querySelectorAll('.mtk-msgstrip__close').forEach(btn => {
   btn.addEventListener('click', () => {
-    const strip = btn.closest('.ui5-msgstrip');
+    const strip = btn.closest('.mtk-msgstrip');
     strip.style.transition = 'opacity 0.2s, transform 0.2s';
     strip.style.opacity = '0';
     strip.style.transform = 'translateX(10px)';

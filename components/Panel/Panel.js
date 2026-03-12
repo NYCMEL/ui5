@@ -1,4 +1,4 @@
-document.querySelectorAll('.ui5-panel__header').forEach(header => {
-  if (!header.querySelector('.ui5-panel__toggle')) return;
-  header.addEventListener('click', () => header.closest('.ui5-panel').classList.toggle('collapsed'));
+document.querySelectorAll('.mtk-panel__header').forEach(header => {
+  if (!header.querySelector('.mtk-panel__toggle')) return;
+  header.addEventListener('click', () => header.closest('.mtk-panel').classList.toggle('collapsed'));
 });

@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-tree {
+.mtk-tree {
   font-size: 13px; border: 1px solid $border;
   border-radius: $radius-md; overflow: hidden; background: $bg-surface;
 
@@ -26,10 +26,10 @@
 
   &__children {
     display: none;
-    .ui5-tree__item { padding-left: 32px; }
-    .ui5-tree__children .ui5-tree__item { padding-left: 52px; }
+    .mtk-tree__item { padding-left: 32px; }
+    .mtk-tree__children .mtk-tree__item { padding-left: 52px; }
   }
 
-  &__item.expanded + .ui5-tree__children { display: block; }
-  &__item.expanded .ui5-tree__toggle { transform: rotate(90deg); }
+  &__item.expanded + .mtk-tree__children { display: block; }
+  &__item.expanded .mtk-tree__toggle { transform: rotate(90deg); }
 }

@@ -1,4 +1,4 @@
-.ui5-sidenav {
+.mtk-sidenav {
   width: 220px;
   background: #ffffff;
   border-right: 1px solid #c5c8cd;
@@ -8,23 +8,23 @@
   overflow: hidden;
   position: relative;
 }
-.ui5-sidenav.collapsed {
+.mtk-sidenav.collapsed {
   width: 52px;
 }
-.ui5-sidenav.collapsed .sidenav-text {
+.mtk-sidenav.collapsed .sidenav-text {
   display: none;
 }
-.ui5-sidenav.collapsed .ui5-sidenav__group-header {
+.mtk-sidenav.collapsed .mtk-sidenav__group-header {
   padding: 10px;
   justify-content: center;
 }
-.ui5-sidenav.collapsed .ui5-sidenav__group-header span:first-child {
+.mtk-sidenav.collapsed .mtk-sidenav__group-header span:first-child {
   font-size: 18px;
 }
-.ui5-sidenav.collapsed .ui5-sidenav__item--sub {
+.mtk-sidenav.collapsed .mtk-sidenav__item--sub {
   display: none;
 }
-.ui5-sidenav__toggle {
+.mtk-sidenav__toggle {
   position: absolute;
   right: -12px;
   top: 20px;
@@ -42,23 +42,23 @@
   transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
-.ui5-sidenav__toggle:hover {
+.mtk-sidenav__toggle:hover {
   background: #d3e8fd;
 }
-.ui5-sidenav.collapsed .ui5-sidenav__toggle {
+.mtk-sidenav.collapsed .mtk-sidenav__toggle {
   transform: scaleX(-1);
   right: -12px;
 }
-.ui5-sidenav__items {
+.mtk-sidenav__items {
   flex: 1;
   padding: 8px 0;
   overflow-y: auto;
 }
-.ui5-sidenav__footer {
+.mtk-sidenav__footer {
   padding: 8px 0;
   border-top: 1px solid #c5c8cd;
 }
-.ui5-sidenav__group-header {
+.mtk-sidenav__group-header {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -69,7 +69,7 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-.ui5-sidenav__item {
+.mtk-sidenav__item {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -82,22 +82,22 @@
   white-space: nowrap;
   overflow: hidden;
 }
-.ui5-sidenav__item:hover {
+.mtk-sidenav__item:hover {
   background: #d3e8fd;
   color: #0a6ed1;
 }
-.ui5-sidenav__item.active {
+.mtk-sidenav__item.active {
   background: #d3e8fd;
   color: #0a6ed1;
   border-left: 3px solid #0a6ed1;
 }
-.ui5-sidenav__item--sub {
+.mtk-sidenav__item--sub {
   padding-left: 40px;
 }
-.ui5-sidenav__item .sidenav-icon {
+.mtk-sidenav__item .sidenav-icon {
   font-size: 18px;
   flex-shrink: 0;
 }
-.ui5-sidenav__item .sidenav-text {
+.mtk-sidenav__item .sidenav-text {
   font-size: 13px;
 }

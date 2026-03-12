@@ -1,37 +1,37 @@
-.ui5-busy {
+.mtk-busy {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
-.ui5-busy__dots {
+.mtk-busy__dots {
   display: flex;
   gap: 6px;
 }
-.ui5-busy__dots span {
+.mtk-busy__dots span {
   border-radius: 50%;
   background: #0a6ed1;
   animation: busyBounce 1.2s infinite ease-in-out;
 }
-.ui5-busy__dots span:nth-child(2) {
+.mtk-busy__dots span:nth-child(2) {
   animation-delay: 0.2s;
 }
-.ui5-busy__dots span:nth-child(3) {
+.mtk-busy__dots span:nth-child(3) {
   animation-delay: 0.4s;
 }
-.ui5-busy__text {
+.mtk-busy__text {
   font-size: 12px;
   color: #6a6d75;
 }
-.ui5-busy--sm .ui5-busy__dots span {
+.mtk-busy--sm .mtk-busy__dots span {
   width: 7px;
   height: 7px;
 }
-.ui5-busy .ui5-busy__dots span {
+.mtk-busy .mtk-busy__dots span {
   width: 10px;
   height: 10px;
 }
-.ui5-busy--lg .ui5-busy__dots span {
+.mtk-busy--lg .mtk-busy__dots span {
   width: 14px;
   height: 14px;
 }
@@ -46,16 +46,16 @@
     opacity: 1;
   }
 }
-.ui5-busy-overlay-demo {
+.mtk-busy-overlay-demo {
   position: relative;
   min-height: 80px;
 }
-.ui5-busy-overlay-demo p {
+.mtk-busy-overlay-demo p {
   color: #6a6d75;
   font-size: 13px;
 }
 
-.ui5-busy-overlay {
+.mtk-busy-overlay {
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.8);

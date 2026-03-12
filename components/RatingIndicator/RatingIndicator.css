@@ -1,27 +1,27 @@
-.ui5-rating {
+.mtk-rating {
   display: inline-flex;
   gap: 4px;
   cursor: pointer;
 }
-.ui5-rating__star {
+.mtk-rating__star {
   font-size: 24px;
   color: #c5c8cd;
   transition: color 180ms cubic-bezier(0.4, 0, 0.2, 1), transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   line-height: 1;
 }
-.ui5-rating__star.filled {
+.mtk-rating__star.filled {
   color: #faad14;
 }
-.ui5-rating__star:hover {
+.mtk-rating__star:hover {
   transform: scale(1.15);
 }
-.ui5-rating--readonly {
+.mtk-rating--readonly {
   cursor: default;
 }
-.ui5-rating--readonly .ui5-rating__star {
+.mtk-rating--readonly .mtk-rating__star {
   cursor: default;
 }
-.ui5-rating--readonly .ui5-rating__star:hover {
+.mtk-rating--readonly .mtk-rating__star:hover {
   transform: none;
 }

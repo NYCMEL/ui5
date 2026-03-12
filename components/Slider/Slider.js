@@ -1,5 +1,5 @@
-document.querySelectorAll('.ui5-slider').forEach(slider => {
-  const wrap  = slider.closest('.ui5-slider-wrap');
+document.querySelectorAll('.mtk-slider').forEach(slider => {
+  const wrap  = slider.closest('.mtk-slider-wrap');
   const valEl = wrap?.querySelector('.slider-val');
   const update = () => {
     if (valEl) valEl.textContent = slider.value;

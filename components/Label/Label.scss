@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-label {
+.mtk-label {
   font-size: 13px;
   font-weight: 500;
   color: $text-2;
@@ -9,5 +9,5 @@
   &--required::after { content: ' *'; color: $color-error; }
   &--colon::after    { content: ':'; }
 
-  &--required.ui5-label--colon::after { content: ' *:'; color: $color-error; }
+  &--required.mtk-label--colon::after { content: ' *:'; color: $color-error; }
 }

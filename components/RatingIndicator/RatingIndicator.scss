@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-rating {
+.mtk-rating {
   display: inline-flex; gap: 4px; cursor: pointer;
 
   &__star {
@@ -11,6 +11,6 @@
   }
 
   &--readonly { cursor: default;
-    .ui5-rating__star { cursor: default; &:hover { transform: none; } }
+    .mtk-rating__star { cursor: default; &:hover { transform: none; } }
   }
 }

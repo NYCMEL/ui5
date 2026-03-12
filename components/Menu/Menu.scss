@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-btn {
+.mtk-btn {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 0 16px; height: 36px; font-family: $font-primary;
   font-size: 14px; font-weight: 500; border-radius: $radius-sm;
@@ -9,9 +9,9 @@
   &:hover { background: $bg-sunken; }
 }
 
-.ui5-menu-wrap { position: relative; display: inline-block; }
+.mtk-menu-wrap { position: relative; display: inline-block; }
 
-.ui5-menu {
+.mtk-menu {
   position: absolute; top: calc(100% + 4px); left: 0;
   background: $bg-surface; border: 1px solid $border;
   border-radius: $radius-md; box-shadow: $shadow-md;

@@ -1,10 +1,10 @@
-.ui5-segmented {
+.mtk-segmented {
   display: inline-flex;
   border: 1px solid #c5c8cd;
   border-radius: 4px;
   overflow: hidden;
 }
-.ui5-segmented__btn {
+.mtk-segmented__btn {
   padding: 0 16px;
   height: 36px;
   border: none;
@@ -17,14 +17,14 @@
   cursor: pointer;
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-segmented__btn:last-child {
+.mtk-segmented__btn:last-child {
   border-right: none;
 }
-.ui5-segmented__btn:hover {
+.mtk-segmented__btn:hover {
   background: #d3e8fd;
   color: #0a6ed1;
 }
-.ui5-segmented__btn.active {
+.mtk-segmented__btn.active {
   background: #0a6ed1;
   color: white;
 }

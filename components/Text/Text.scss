@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-title {
+.mtk-title {
   font-weight: 700; color: $text-1;
   &--h1 { font-size: 28px; letter-spacing: -0.5px; }
   &--h2 { font-size: 22px; }
@@ -10,7 +10,7 @@
   &--h6 { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
 }
 
-.ui5-text {
+.mtk-text {
   font-size: 14px; line-height: 1.6; color: $text-1;
   &--max2 {
     overflow: hidden; display: -webkit-box;

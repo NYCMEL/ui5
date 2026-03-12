@@ -1,8 +1,8 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-search-wrap { position:relative;max-width:420px; }
-.ui5-search {
+.mtk-search-wrap { position:relative;max-width:420px; }
+.mtk-search {
   display:flex;align-items:center;border:2px solid $border;border-radius:$radius-pill;
   background:$bg-surface;overflow:hidden;transition:border-color $t,box-shadow $t;
   &:focus-within { border-color:$color-primary;box-shadow:0 0 0 3px rgba($color-primary,.15); }

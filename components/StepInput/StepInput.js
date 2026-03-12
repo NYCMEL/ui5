@@ -1,4 +1,4 @@
-document.querySelectorAll('.ui5-step-input').forEach(si => {
+document.querySelectorAll('.mtk-step-input').forEach(si => {
   const input = si.querySelector('input');
   si.querySelector('.step-down')?.addEventListener('click', () => {
     const min = parseFloat(input.min ?? -Infinity);

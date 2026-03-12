@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-panel {
+.mtk-panel {
   border: 1px solid $border; border-radius: $radius-md;
   background: $bg-surface; overflow: hidden;
 
@@ -20,9 +20,9 @@
   &__body { padding: 16px; animation: panelOpen 0.2s ease; }
 
   &.collapsed {
-    .ui5-panel__body   { display: none; }
-    .ui5-panel__toggle { transform: rotate(-90deg); }
-    .ui5-panel__header { border-bottom: none; }
+    .mtk-panel__body   { display: none; }
+    .mtk-panel__toggle { transform: rotate(-90deg); }
+    .mtk-panel__header { border-bottom: none; }
   }
 }
 

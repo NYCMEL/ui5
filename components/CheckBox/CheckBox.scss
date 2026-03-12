@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-checkbox {
+.mtk-checkbox {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -22,15 +22,15 @@
     svg { display: none; }
   }
 
-  input:checked + .ui5-checkbox__box {
+  input:checked + .mtk-checkbox__box {
     background: $color-primary;
     border-color: $color-primary;
     svg { display: block; }
   }
 
-  &:hover .ui5-checkbox__box { border-color: $color-primary; }
+  &:hover .mtk-checkbox__box { border-color: $color-primary; }
 
-  &--indeterminate .ui5-checkbox__box {
+  &--indeterminate .mtk-checkbox__box {
     background: $color-primary;
     border-color: $color-primary;
     &::after { content: ''; width: 10px; height: 2px; background: white; border-radius: 1px; }

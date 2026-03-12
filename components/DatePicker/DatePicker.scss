@@ -1,14 +1,14 @@
 @use '../../shared/variables' as *;
 
-.ui5-input-wrap {
+.mtk-input-wrap {
   display: flex; flex-direction: column; gap: 4px; min-width: 200px;
 }
 
-.ui5-label { font-size: 12px; font-weight: 500; color: $text-2; }
+.mtk-label { font-size: 12px; font-weight: 500; color: $text-2; }
 
-.ui5-date-input { display: flex; align-items: center; gap: 4px; }
+.mtk-date-input { display: flex; align-items: center; gap: 4px; }
 
-.ui5-date-field {
+.mtk-date-field {
   height: 36px;
   padding: 0 10px;
   border: 1px solid $border;

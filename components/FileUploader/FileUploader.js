@@ -1,5 +1,5 @@
-document.querySelectorAll('.ui5-file-uploader').forEach(uploader => {
-  const drop  = uploader.querySelector('.ui5-file-uploader__drop');
+document.querySelectorAll('.mtk-file-uploader').forEach(uploader => {
+  const drop  = uploader.querySelector('.mtk-file-uploader__drop');
   const input = uploader.querySelector('input[type=file]');
   const stateEl = uploader.closest('.demo-block')?.querySelector('.file-state');
 

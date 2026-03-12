@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-file-uploader {
+.mtk-file-uploader {
   position: relative;
 
   input[type="file"] { position: absolute; opacity: 0; width: 0; height: 0; }

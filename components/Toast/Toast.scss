@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-btn {
+.mtk-btn {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 0 16px; height: 36px; font-family: $font-primary;
   font-size: 14px; font-weight: 500; border-radius: $radius-sm;
@@ -11,13 +11,13 @@
   &--attention  { background: $color-warning; border-color: $color-warning; color: $text-inv; }
 }
 
-.ui5-toast-container {
+.mtk-toast-container {
   position: fixed; bottom: 32px; right: 32px;
   display: flex; flex-direction: column; gap: 10px;
   z-index: 9999; pointer-events: none;
 }
 
-.ui5-toast {
+.mtk-toast {
   background: #1a1d23; color: #fff;
   padding: 12px 20px; border-radius: $radius-md;
   font-size: 13px; box-shadow: $shadow-lg;

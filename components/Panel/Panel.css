@@ -1,10 +1,10 @@
-.ui5-panel {
+.mtk-panel {
   border: 1px solid #c5c8cd;
   border-radius: 8px;
   background: #ffffff;
   overflow: hidden;
 }
-.ui5-panel__header {
+.mtk-panel__header {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -15,30 +15,30 @@
   border-bottom: 1px solid #c5c8cd;
   transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-panel__header:hover {
+.mtk-panel__header:hover {
   background: rgb(223.2025, 225.9675, 231.4975);
 }
-.ui5-panel__title {
+.mtk-panel__title {
   font-weight: 600;
   font-size: 14px;
   flex: 1;
 }
-.ui5-panel__toggle {
+.mtk-panel__toggle {
   font-size: 12px;
   color: #6a6d75;
   transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-panel__body {
+.mtk-panel__body {
   padding: 16px;
   animation: panelOpen 0.2s ease;
 }
-.ui5-panel.collapsed .ui5-panel__body {
+.mtk-panel.collapsed .mtk-panel__body {
   display: none;
 }
-.ui5-panel.collapsed .ui5-panel__toggle {
+.mtk-panel.collapsed .mtk-panel__toggle {
   transform: rotate(-90deg);
 }
-.ui5-panel.collapsed .ui5-panel__header {
+.mtk-panel.collapsed .mtk-panel__header {
   border-bottom: none;
 }
 

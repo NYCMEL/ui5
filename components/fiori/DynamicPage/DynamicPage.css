@@ -1,4 +1,4 @@
-.ui5-btn {
+.mtk-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -13,76 +13,76 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.ui5-btn--default {
+.mtk-btn--default {
   background: #ffffff;
   border-color: #c5c8cd;
   color: #1a1d23;
 }
-.ui5-btn--default:hover {
+.mtk-btn--default:hover {
   background: #e8eaee;
 }
-.ui5-btn--emphasized {
+.mtk-btn--emphasized {
   background: #0a6ed1;
   border-color: #0a6ed1;
   color: #ffffff;
 }
-.ui5-btn--emphasized:hover {
+.mtk-btn--emphasized:hover {
   background: #085caf;
 }
-.ui5-btn--transparent {
+.mtk-btn--transparent {
   background: transparent;
   color: #0a6ed1;
 }
-.ui5-btn--transparent:hover {
+.mtk-btn--transparent:hover {
   background: #d3e8fd;
 }
-.ui5-btn--negative {
+.mtk-btn--negative {
   background: #b00;
   border-color: #b00;
   color: #ffffff;
 }
-.ui5-btn--sm {
+.mtk-btn--sm {
   height: 28px;
   padding: 0 12px;
   font-size: 12px;
 }
 
-.ui5-dynpage {
+.mtk-dynpage {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.ui5-dynpage__header {
+.mtk-dynpage__header {
   background: #ffffff;
   border-bottom: 1px solid #c5c8cd;
   transition: all 0.3s ease;
 }
-.ui5-dynpage__title-bar {
+.mtk-dynpage__title-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 20px;
 }
-.ui5-dynpage__title {
+.mtk-dynpage__title {
   font-size: 18px;
   font-weight: 700;
 }
-.ui5-dynpage__subtitle {
+.mtk-dynpage__subtitle {
   font-size: 12px;
   color: #6a6d75;
   margin-top: 2px;
 }
-.ui5-dynpage__header-content {
+.mtk-dynpage__header-content {
   overflow: hidden;
   transition: max-height 0.3s ease;
   max-height: 200px;
   padding: 0 20px;
 }
-.ui5-dynpage__header-content.collapsed {
+.mtk-dynpage__header-content.collapsed {
   max-height: 0;
   padding: 0 20px;
 }
-.ui5-dynpage__collapse-btn {
+.mtk-dynpage__collapse-btn {
   background: none;
   border: 1px solid #c5c8cd;
   border-radius: 4px;
@@ -92,13 +92,13 @@
   color: #6a6d75;
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-dynpage__collapse-btn:hover {
+.mtk-dynpage__collapse-btn:hover {
   background: #e8eaee;
 }
-.ui5-dynpage__collapse-btn.collapsed {
+.mtk-dynpage__collapse-btn.collapsed {
   transform: scaleY(-1);
 }
-.ui5-dynpage__content {
+.mtk-dynpage__content {
   flex: 1;
   overflow-y: auto;
   padding: 20px;

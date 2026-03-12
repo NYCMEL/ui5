@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-btn {
+.mtk-btn {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 0 16px; height: 36px;
   font-family: $font-primary; font-size: 14px; font-weight: 500;
@@ -12,7 +12,7 @@
   &--transparent { background: transparent; color: $color-primary; &:hover { background: $color-primary-light; } }
 }
 
-.ui5-bar {
+.mtk-bar {
   display: flex;
   align-items: center;
   padding: 8px 16px;

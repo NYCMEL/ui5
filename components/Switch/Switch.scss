@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-switch {
+.mtk-switch {
   display: inline-flex; align-items: center; gap: 10px;
   cursor: pointer; user-select: none;
 
@@ -20,7 +20,7 @@
     }
   }
 
-  input:checked + .ui5-switch__track {
+  input:checked + .mtk-switch__track {
     background: $color-primary; border-color: $color-primary;
     &::after { transform: translateX(24px); }
   }

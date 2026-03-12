@@ -1,9 +1,9 @@
 @use '../../shared/variables' as *;
 
-.ui5-input-wrap { display: flex; flex-direction: column; gap: 4px;
+.mtk-input-wrap { display: flex; flex-direction: column; gap: 4px;
   label { font-size: 12px; font-weight: 500; color: $text-2; } }
 
-.ui5-multi-input {
+.mtk-multi-input {
   border: 1px solid $border; border-radius: $radius-sm;
   padding: 4px 8px; min-height: 36px;
   display: flex; flex-wrap: wrap; gap: 4px; align-items: center;
@@ -15,7 +15,7 @@
   input { border: none; outline: none; font-family: $font-primary; font-size: 14px; min-width: 100px; flex: 1; background: none; }
 }
 
-.ui5-token {
+.mtk-token {
   display: inline-flex; align-items: center; gap: 4px;
   background: $color-primary-light; color: $color-primary;
   border: 1px solid lighten($color-primary, 20%);

@@ -1,4 +1,4 @@
-.ui5-btn {
+.mtk-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -13,29 +13,29 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.ui5-btn--default {
+.mtk-btn--default {
   background: #ffffff;
   border-color: #c5c8cd;
   color: #1a1d23;
 }
-.ui5-btn--default:hover {
+.mtk-btn--default:hover {
   background: #e8eaee;
 }
-.ui5-btn--emphasized {
+.mtk-btn--emphasized {
   background: #0a6ed1;
   border-color: #0a6ed1;
   color: #ffffff;
 }
-.ui5-btn--emphasized:hover {
+.mtk-btn--emphasized:hover {
   background: #085caf;
 }
 
-.ui5-popover-wrap {
+.mtk-popover-wrap {
   position: relative;
   display: inline-block;
 }
 
-.ui5-popover {
+.mtk-popover {
   position: absolute;
   bottom: calc(100% + 10px);
   left: 50%;
@@ -52,7 +52,7 @@
   z-index: 50;
   font-size: 13px;
 }
-.ui5-popover::after {
+.mtk-popover::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -61,19 +61,19 @@
   border: 7px solid transparent;
   border-top-color: #ffffff;
 }
-.ui5-popover.open {
+.mtk-popover.open {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
 }
 
-.ui5-popover-item {
+.mtk-popover-item {
   padding: 8px 10px;
   cursor: pointer;
   border-radius: 4px;
   transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 13px;
 }
-.ui5-popover-item:hover {
+.mtk-popover-item:hover {
   background: #d3e8fd;
 }

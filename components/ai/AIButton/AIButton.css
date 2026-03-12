@@ -1,4 +1,4 @@
-.ui5-ai-btn {
+.mtk-ai-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -17,7 +17,7 @@
   background-size: 200% 200%;
   animation: aiShimmer 3s ease infinite;
 }
-.ui5-ai-btn::before {
+.mtk-ai-btn::before {
   content: "";
   position: absolute;
   inset: -2px;
@@ -28,30 +28,30 @@
   filter: blur(8px);
   animation: aiGlow 2s ease-in-out infinite alternate;
 }
-.ui5-ai-btn:hover {
+.mtk-ai-btn:hover {
   transform: translateY(-1px) scale(1.02);
 }
-.ui5-ai-btn:active {
+.mtk-ai-btn:active {
   transform: scale(0.98);
 }
-.ui5-ai-btn:disabled {
+.mtk-ai-btn:disabled {
   opacity: 0.4;
   cursor: not-allowed;
   animation: none;
 }
-.ui5-ai-btn:disabled::before {
+.mtk-ai-btn:disabled::before {
   display: none;
 }
-.ui5-ai-btn--loading {
+.mtk-ai-btn--loading {
   background: linear-gradient(135deg, #444, #666);
   animation: none;
   cursor: wait;
 }
-.ui5-ai-btn--complete {
+.mtk-ai-btn--complete {
   background: linear-gradient(135deg, #107e3e, #1aa356);
   animation: none;
 }
-.ui5-ai-btn--complete::before {
+.mtk-ai-btn--complete::before {
   display: none;
 }
 

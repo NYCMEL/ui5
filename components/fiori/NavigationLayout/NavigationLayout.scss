@@ -1,18 +1,18 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-navlayout__shell {
+.mtk-navlayout__shell {
   display:flex;align-items:center;gap:16px;padding:0 16px;height:44px;
   background:$color-primary;color:white;flex-shrink:0;
 }
-.ui5-navlayout__side {
+.mtk-navlayout__side {
   width:180px;background:$bg-surface;border-right:1px solid $border;
   display:flex;flex-direction:column;padding:8px 0;flex-shrink:0;
 }
-.ui5-navlayout__item {
+.mtk-navlayout__item {
   display:block;padding:10px 16px;text-decoration:none;color:$text-1;font-size:13px;
   transition:background $t;
   &:hover { background:$color-primary-light;color:$color-primary; }
   &.active { background:$color-primary-light;color:$color-primary;border-left:3px solid $color-primary; }
 }
-.ui5-navlayout__main { flex:1;padding:24px;overflow-y:auto; }
+.mtk-navlayout__main { flex:1;padding:24px;overflow-y:auto; }

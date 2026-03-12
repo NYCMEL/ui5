@@ -1,7 +1,7 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-title {
+.mtk-title {
   font-family: $font-primary; font-weight: 700; color: $text-1; line-height: 1.2;
   &--h1 { font-size: 28px; letter-spacing: -.5px; }
   &--h2 { font-size: 22px; }

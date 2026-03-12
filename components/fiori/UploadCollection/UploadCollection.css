@@ -1,4 +1,4 @@
-.ui5-btn {
+.mtk-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -13,47 +13,47 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.ui5-btn--default {
+.mtk-btn--default {
   background: #ffffff;
   border-color: #c5c8cd;
   color: #1a1d23;
 }
-.ui5-btn--default:hover {
+.mtk-btn--default:hover {
   background: #e8eaee;
 }
-.ui5-btn--emphasized {
+.mtk-btn--emphasized {
   background: #0a6ed1;
   border-color: #0a6ed1;
   color: #ffffff;
 }
-.ui5-btn--emphasized:hover {
+.mtk-btn--emphasized:hover {
   background: #085caf;
 }
-.ui5-btn--transparent {
+.mtk-btn--transparent {
   background: transparent;
   color: #0a6ed1;
 }
-.ui5-btn--transparent:hover {
+.mtk-btn--transparent:hover {
   background: #d3e8fd;
 }
-.ui5-btn--negative {
+.mtk-btn--negative {
   background: #b00;
   border-color: #b00;
   color: #ffffff;
 }
-.ui5-btn--sm {
+.mtk-btn--sm {
   height: 28px;
   padding: 0 12px;
   font-size: 12px;
 }
 
-.ui5-upload-collection {
+.mtk-upload-collection {
   display: flex;
   flex-direction: column;
   gap: 12px;
   max-width: 560px;
 }
-.ui5-upload-collection__dropzone {
+.mtk-upload-collection__dropzone {
   border: 2px dashed #c5c8cd;
   border-radius: 8px;
   padding: 32px;
@@ -66,17 +66,17 @@
   color: #6a6d75;
   text-align: center;
 }
-.ui5-upload-collection__dropzone:hover, .ui5-upload-collection__dropzone.drag {
+.mtk-upload-collection__dropzone:hover, .mtk-upload-collection__dropzone.drag {
   border-color: #0a6ed1;
   background: #d3e8fd;
   color: #0a6ed1;
 }
-.ui5-upload-collection__list {
+.mtk-upload-collection__list {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
-.ui5-upload-collection__item {
+.mtk-upload-collection__item {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -86,27 +86,27 @@
   border-radius: 4px;
   transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-upload-collection__item:hover {
+.mtk-upload-collection__item:hover {
   background: #d3e8fd;
 }
-.ui5-upload-collection__icon {
+.mtk-upload-collection__icon {
   font-size: 22px;
   flex-shrink: 0;
 }
-.ui5-upload-collection__info {
+.mtk-upload-collection__info {
   flex: 1;
   min-width: 0;
 }
-.ui5-upload-collection__name {
+.mtk-upload-collection__name {
   font-size: 13px;
   font-weight: 500;
   color: #1a1d23;
 }
-.ui5-upload-collection__meta {
+.mtk-upload-collection__meta {
   font-size: 11px;
   color: #6a6d75;
 }
-.ui5-upload-collection__actions {
+.mtk-upload-collection__actions {
   display: flex;
   gap: 2px;
   flex-shrink: 0;

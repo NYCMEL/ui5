@@ -1,8 +1,8 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-range-slider-wrap { display: flex; flex-direction: column; gap: 10px; }
-.ui5-range-slider {
+.mtk-range-slider-wrap { display: flex; flex-direction: column; gap: 10px; }
+.mtk-range-slider {
   position: relative; height: 20px; display: flex; align-items: center;
   &__track {
     position: absolute; left: 0; right: 0; height: 4px; background: $border; border-radius: 2px;
@@ -22,7 +22,7 @@
     }
   }
 }
-.ui5-range-slider__labels {
+.mtk-range-slider__labels {
   display: flex; justify-content: space-between;
   font-size: 12px; color: $text-2; font-family: $font-mono;
 }

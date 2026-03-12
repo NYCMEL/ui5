@@ -1,9 +1,9 @@
 @use '../../shared/variables' as *;
 
-.ui5-input-wrap { display: flex; flex-direction: column; gap: 4px; min-width: 160px;
+.mtk-input-wrap { display: flex; flex-direction: column; gap: 4px; min-width: 160px;
   label { font-size: 12px; font-weight: 500; color: $text-2; } }
 
-.ui5-select {
+.mtk-select {
   appearance: none; height: 36px; padding: 0 36px 0 10px;
   border: 1px solid $border; border-radius: $radius-sm;
   font-family: $font-primary; font-size: 14px; color: $text-1;

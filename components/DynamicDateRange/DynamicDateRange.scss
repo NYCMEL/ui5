@@ -1,12 +1,12 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-date-field {
+.mtk-date-field {
   height: 32px; padding: 0 10px; border: 1px solid $border; border-radius: $radius-sm;
   font-family: $font-primary; font-size: 13px; color: $text-1; background: $bg-surface; outline: none;
   &:focus { border-color: $border-focus; }
 }
-.ui5-ddr {
+.mtk-ddr {
   display: flex; flex-direction: column; gap: 14px; max-width: 480px;
   &__presets { display: flex; flex-wrap: wrap; gap: 6px; }
   &__preset {

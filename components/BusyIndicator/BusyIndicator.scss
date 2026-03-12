@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-busy {
+.mtk-busy {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -22,9 +22,9 @@
 
   &__text { font-size: 12px; color: $text-3; }
 
-  &--sm .ui5-busy__dots span { width: 7px; height: 7px; }
-  & .ui5-busy__dots span    { width: 10px; height: 10px; }
-  &--lg .ui5-busy__dots span { width: 14px; height: 14px; }
+  &--sm .mtk-busy__dots span { width: 7px; height: 7px; }
+  & .mtk-busy__dots span    { width: 10px; height: 10px; }
+  &--lg .mtk-busy__dots span { width: 14px; height: 14px; }
 }
 
 @keyframes busyBounce {
@@ -32,14 +32,14 @@
   40%            { transform: scale(1);   opacity: 1; }
 }
 
-.ui5-busy-overlay-demo {
+.mtk-busy-overlay-demo {
   position: relative;
   min-height: 80px;
 
   p { color: $text-3; font-size: 13px; }
 }
 
-.ui5-busy-overlay {
+.mtk-busy-overlay {
   position: absolute;
   inset: 0;
   background: rgba(255,255,255,0.8);

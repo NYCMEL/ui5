@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-btn {
+.mtk-btn {
   display: inline-flex; align-items: center; padding: 0 16px; height: 36px;
   font-family: $font-primary; font-size: 14px; font-weight: 500;
   border-radius: $radius-sm; border: 1px solid transparent;
@@ -8,7 +8,7 @@
   &--emphasized { background: $color-primary; border-color: $color-primary; color: $text-inv; &:hover { background: $color-primary-hover; } }
 }
 
-.ui5-progress {
+.mtk-progress {
   display: flex; flex-direction: column; gap: 4px;
 
   &__bar { height: 10px; background: $bg-sunken; border-radius: $radius-pill; overflow: hidden; }

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.ui5-color-palette {
+.mtk-color-palette {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -9,7 +9,7 @@
   background: #ffffff;
   max-width: 240px;
 }
-.ui5-color-palette__swatch {
+.mtk-color-palette__swatch {
   width: 28px;
   height: 28px;
   border-radius: 4px;
@@ -18,16 +18,16 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
-.ui5-color-palette__swatch:hover {
+.mtk-color-palette__swatch:hover {
   transform: scale(1.2);
   border-color: white;
   box-shadow: 0 0 0 2px #0a6ed1;
 }
-.ui5-color-palette__swatch.selected {
+.mtk-color-palette__swatch.selected {
   border-color: white;
   box-shadow: 0 0 0 2px #0a6ed1;
 }
-.ui5-color-palette__swatch.selected::after {
+.mtk-color-palette__swatch.selected::after {
   content: "✓";
   position: absolute;
   inset: 0;

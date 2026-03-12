@@ -1,4 +1,4 @@
-.ui5-btn {
+.mtk-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -13,52 +13,52 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.ui5-btn--default {
+.mtk-btn--default {
   background: #ffffff;
   border-color: #c5c8cd;
   color: #1a1d23;
 }
-.ui5-btn--default:hover {
+.mtk-btn--default:hover {
   background: #e8eaee;
 }
-.ui5-btn--emphasized {
+.mtk-btn--emphasized {
   background: #0a6ed1;
   border-color: #0a6ed1;
   color: #ffffff;
 }
-.ui5-btn--emphasized:hover {
+.mtk-btn--emphasized:hover {
   background: #085caf;
 }
-.ui5-btn--transparent {
+.mtk-btn--transparent {
   background: transparent;
   color: #0a6ed1;
 }
-.ui5-btn--transparent:hover {
+.mtk-btn--transparent:hover {
   background: #d3e8fd;
 }
-.ui5-btn--negative {
+.mtk-btn--negative {
   background: #b00;
   border-color: #b00;
   color: #ffffff;
 }
-.ui5-btn--sm {
+.mtk-btn--sm {
   height: 28px;
   padding: 0 12px;
   font-size: 12px;
 }
 
-.ui5-input-wrap {
+.mtk-input-wrap {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.ui5-input-wrap label {
+.mtk-input-wrap label {
   font-size: 12px;
   font-weight: 500;
   color: #3d4148;
 }
 
-.ui5-select {
+.mtk-select {
   appearance: none;
   height: 36px;
   padding: 0 36px 0 10px;
@@ -73,7 +73,7 @@
   width: 100%;
 }
 
-.ui5-radio {
+.mtk-radio {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -81,10 +81,10 @@
   font-size: 14px;
   user-select: none;
 }
-.ui5-radio input {
+.mtk-radio input {
   display: none;
 }
-.ui5-radio__dot {
+.mtk-radio__dot {
   width: 18px;
   height: 18px;
   border: 2px solid #c5c8cd;
@@ -95,7 +95,7 @@
   flex-shrink: 0;
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-radio__dot::after {
+.mtk-radio__dot::after {
   content: "";
   width: 8px;
   height: 8px;
@@ -104,14 +104,14 @@
   transform: scale(0);
   transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-radio input:checked + .ui5-radio__dot {
+.mtk-radio input:checked + .mtk-radio__dot {
   border-color: #0a6ed1;
 }
-.ui5-radio input:checked + .ui5-radio__dot::after {
+.mtk-radio input:checked + .mtk-radio__dot::after {
   transform: scale(1);
 }
 
-.ui5-checkbox {
+.mtk-checkbox {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -119,10 +119,10 @@
   font-size: 14px;
   user-select: none;
 }
-.ui5-checkbox input {
+.mtk-checkbox input {
   display: none;
 }
-.ui5-checkbox__box {
+.mtk-checkbox__box {
   width: 18px;
   height: 18px;
   border: 2px solid #c5c8cd;
@@ -134,35 +134,35 @@
   flex-shrink: 0;
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-checkbox__box svg {
+.mtk-checkbox__box svg {
   display: none;
 }
-.ui5-checkbox input:checked + .ui5-checkbox__box {
+.mtk-checkbox input:checked + .mtk-checkbox__box {
   background: #0a6ed1;
   border-color: #0a6ed1;
 }
-.ui5-checkbox input:checked + .ui5-checkbox__box svg {
+.mtk-checkbox input:checked + .mtk-checkbox__box svg {
   display: block;
 }
 
-.ui5-settings-nav {
+.mtk-settings-nav {
   border-right: 1px solid #c5c8cd;
   padding: 8px 0;
   background: #e8eaee;
   flex-shrink: 0;
 }
-.ui5-settings-nav__item {
+.mtk-settings-nav__item {
   padding: 10px 16px;
   font-size: 13px;
   cursor: pointer;
   color: #3d4148;
   transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-settings-nav__item:hover {
+.mtk-settings-nav__item:hover {
   background: #d3e8fd;
   color: #0a6ed1;
 }
-.ui5-settings-nav__item.active {
+.mtk-settings-nav__item.active {
   background: #d3e8fd;
   color: #0a6ed1;
   border-left: 3px solid #0a6ed1;
@@ -175,7 +175,7 @@
   display: block;
 }
 
-.ui5-overlay {
+.mtk-overlay {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.48);
@@ -187,16 +187,16 @@
   visibility: hidden;
   transition: opacity 180ms cubic-bezier(0.4, 0, 0.2, 1), visibility 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-overlay.open {
+.mtk-overlay.open {
   opacity: 1;
   visibility: visible;
 }
-.ui5-overlay.open .ui5-dialog {
+.mtk-overlay.open .mtk-dialog {
   transform: none;
   opacity: 1;
 }
 
-.ui5-dialog {
+.mtk-dialog {
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
@@ -208,18 +208,18 @@
   transition: all 0.25s cubic-bezier(0.2, 0, 0, 1.2);
   overflow: hidden;
 }
-.ui5-dialog__header {
+.mtk-dialog__header {
   padding: 18px 24px 14px;
   border-bottom: 1px solid #c5c8cd;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.ui5-dialog__title {
+.mtk-dialog__title {
   font-size: 16px;
   font-weight: 600;
 }
-.ui5-dialog__close {
+.mtk-dialog__close {
   background: none;
   border: none;
   font-size: 20px;
@@ -227,10 +227,10 @@
   color: #6a6d75;
   padding: 4px;
 }
-.ui5-dialog__close:hover {
+.mtk-dialog__close:hover {
   color: #1a1d23;
 }
-.ui5-dialog__footer {
+.mtk-dialog__footer {
   padding: 14px 20px;
   border-top: 1px solid #c5c8cd;
   display: flex;

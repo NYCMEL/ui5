@@ -1,10 +1,10 @@
-document.querySelectorAll('.ui5-multi-input').forEach(mi => {
+document.querySelectorAll('.mtk-multi-input').forEach(mi => {
   const input = mi.querySelector('input');
   const addToken = (val) => {
     const token = document.createElement('span');
-    token.className = 'ui5-token';
-    token.innerHTML = `${val}<button class="ui5-token__remove">×</button>`;
-    token.querySelector('.ui5-token__remove').addEventListener('click', () => token.remove());
+    token.className = 'mtk-token';
+    token.innerHTML = `${val}<button class="mtk-token__remove">×</button>`;
+    token.querySelector('.mtk-token__remove').addEventListener('click', () => token.remove());
     mi.insertBefore(token, input);
   };
   input.addEventListener('keydown', e => {
@@ -13,9 +13,9 @@ document.querySelectorAll('.ui5-multi-input').forEach(mi => {
       input.value = '';
     }
     if (e.key === 'Backspace' && !input.value) {
-      const tokens = mi.querySelectorAll('.ui5-token');
+      const tokens = mi.querySelectorAll('.mtk-token');
       tokens[tokens.length - 1]?.remove();
     }
   });
-  mi.querySelectorAll('.ui5-token__remove').forEach(btn => btn.addEventListener('click', () => btn.closest('.ui5-token').remove()));
+  mi.querySelectorAll('.mtk-token__remove').forEach(btn => btn.addEventListener('click', () => btn.closest('.mtk-token').remove()));
 });

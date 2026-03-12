@@ -1,15 +1,15 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-input-wrap { display: flex; flex-direction: column; gap: 4px; min-width: 180px;
+.mtk-input-wrap { display: flex; flex-direction: column; gap: 4px; min-width: 180px;
   label { font-size: 12px; font-weight: 500; color: $text-2; } }
-.ui5-input {
+.mtk-input {
   height: 36px; padding: 0 10px; border: 1px solid $border; border-radius: $radius-sm;
   font-family: $font-primary; font-size: 14px; color: $text-1; background: $bg-surface;
   outline: none; width: 100%; transition: border-color $t, box-shadow $t;
   &:focus { border-color: $border-focus; box-shadow: 0 0 0 2px rgba($color-primary,.2); }
 }
-.ui5-combo {
+.mtk-combo {
   position: relative;
   &__input { padding-right: 36px; }
   &__arrow {

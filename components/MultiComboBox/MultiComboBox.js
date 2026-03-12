@@ -1,17 +1,17 @@
 
-document.querySelectorAll('.ui5-mcombo').forEach(mc => {
-  const field    = mc.querySelector('.ui5-mcombo__field');
-  const input    = mc.querySelector('.ui5-mcombo__input');
-  const arrow    = mc.querySelector('.ui5-mcombo__arrow');
-  const dropdown = mc.querySelector('.ui5-mcombo__dropdown');
-  const tokWrap  = mc.querySelector('.ui5-mcombo__tokens');
+document.querySelectorAll('.mtk-mcombo').forEach(mc => {
+  const field    = mc.querySelector('.mtk-mcombo__field');
+  const input    = mc.querySelector('.mtk-mcombo__input');
+  const arrow    = mc.querySelector('.mtk-mcombo__arrow');
+  const dropdown = mc.querySelector('.mtk-mcombo__dropdown');
+  const tokWrap  = mc.querySelector('.mtk-mcombo__tokens');
   const allItems = (mc.dataset.items || '').split(',').map(s => s.trim());
   let selected   = new Set();
 
   function renderDropdown(filter = '') {
     const list = filter ? allItems.filter(i => i.toLowerCase().includes(filter.toLowerCase())) : allItems;
-    dropdown.innerHTML = list.map(i => `<div class="ui5-mcombo__item${selected.has(i) ? ' checked' : ''}" data-val="${i}">${i}</div>`).join('');
-    dropdown.querySelectorAll('.ui5-mcombo__item').forEach(el => {
+    dropdown.innerHTML = list.map(i => `<div class="mtk-mcombo__item${selected.has(i) ? ' checked' : ''}" data-val="${i}">${i}</div>`).join('');
+    dropdown.querySelectorAll('.mtk-mcombo__item').forEach(el => {
       el.addEventListener('click', e => { e.stopPropagation(); toggle(el.dataset.val); });
     });
     dropdown.classList.add('open');
@@ -24,9 +24,9 @@ document.querySelectorAll('.ui5-mcombo').forEach(mc => {
 
   function renderTokens() {
     tokWrap.innerHTML = [...selected].map(v =>
-      `<span class="ui5-token">${v}<button class="ui5-token__remove" data-val="${v}">×</button></span>`
+      `<span class="mtk-token">${v}<button class="mtk-token__remove" data-val="${v}">×</button></span>`
     ).join('');
-    tokWrap.querySelectorAll('.ui5-token__remove').forEach(btn => {
+    tokWrap.querySelectorAll('.mtk-token__remove').forEach(btn => {
       btn.addEventListener('click', e => { e.stopPropagation(); selected.delete(btn.dataset.val); renderTokens(); });
     });
   }

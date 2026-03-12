@@ -1,7 +1,7 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-btn {
+.mtk-btn {
   display: inline-flex; align-items: center; gap: 6px; padding: 0 16px; height: 36px;
   font-family: $font-primary; font-size: 14px; font-weight: 500; border-radius: $radius-sm;
   border: 1px solid transparent; cursor: pointer; transition: all $t; outline: none;
@@ -9,8 +9,8 @@
   &--transparent { background: transparent; color: $color-primary; &:hover { background: $color-primary-light; } }
   &--sm { height: 28px; padding: 0 12px; font-size: 12px; }
 }
-.ui5-cpopover-wrap { position: relative; display: inline-block; }
-.ui5-cpopover {
+.mtk-cpopover-wrap { position: relative; display: inline-block; }
+.mtk-cpopover {
   position: absolute; top: calc(100% + 6px); left: 0; z-index: 100;
   background: $bg-surface; border: 1px solid $border; border-radius: $radius-md;
   box-shadow: $shadow-md; min-width: 200px;
@@ -19,7 +19,7 @@
   &__header { padding: 10px 14px 6px; font-size: 12px; font-weight: 600; color: $text-3; text-transform: uppercase; letter-spacing: .5px; }
   &__footer { padding: 6px 10px 10px; border-top: 1px solid $border; margin-top: 6px; }
 }
-.ui5-color-palette {
+.mtk-color-palette {
   display: flex; flex-wrap: wrap; gap: 5px; padding: 6px 12px;
   &__swatch {
     width: 26px; height: 26px; border-radius: $radius-sm; cursor: pointer;

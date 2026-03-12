@@ -1,4 +1,4 @@
-.ui5-date-field {
+.mtk-date-field {
   height: 32px;
   padding: 0 10px;
   border: 1px solid #c5c8cd;
@@ -9,22 +9,22 @@
   background: #ffffff;
   outline: none;
 }
-.ui5-date-field:focus {
+.mtk-date-field:focus {
   border-color: #0a6ed1;
 }
 
-.ui5-ddr {
+.mtk-ddr {
   display: flex;
   flex-direction: column;
   gap: 14px;
   max-width: 480px;
 }
-.ui5-ddr__presets {
+.mtk-ddr__presets {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
-.ui5-ddr__preset {
+.mtk-ddr__preset {
   padding: 5px 12px;
   background: #ffffff;
   border: 1px solid #c5c8cd;
@@ -35,22 +35,22 @@
   color: #3d4148;
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-ddr__preset:hover {
+.mtk-ddr__preset:hover {
   border-color: #0a6ed1;
   color: #0a6ed1;
   background: #d3e8fd;
 }
-.ui5-ddr__preset.active {
+.mtk-ddr__preset.active {
   background: #0a6ed1;
   border-color: #0a6ed1;
   color: white;
 }
-.ui5-ddr__custom {
+.mtk-ddr__custom {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.ui5-ddr__output {
+.mtk-ddr__output {
   font-size: 13px;
   color: #3d4148;
   padding: 10px 14px;

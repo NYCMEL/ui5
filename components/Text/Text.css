@@ -1,35 +1,35 @@
-.ui5-title {
+.mtk-title {
   font-weight: 700;
   color: #1a1d23;
 }
-.ui5-title--h1 {
+.mtk-title--h1 {
   font-size: 28px;
   letter-spacing: -0.5px;
 }
-.ui5-title--h2 {
+.mtk-title--h2 {
   font-size: 22px;
 }
-.ui5-title--h3 {
+.mtk-title--h3 {
   font-size: 18px;
 }
-.ui5-title--h4 {
+.mtk-title--h4 {
   font-size: 16px;
 }
-.ui5-title--h5 {
+.mtk-title--h5 {
   font-size: 14px;
 }
-.ui5-title--h6 {
+.mtk-title--h6 {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.ui5-text {
+.mtk-text {
   font-size: 14px;
   line-height: 1.6;
   color: #1a1d23;
 }
-.ui5-text--max2 {
+.mtk-text--max2 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;

@@ -1,19 +1,19 @@
 @charset "UTF-8";
-.ui5-input-wrap {
+.mtk-input-wrap {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.ui5-input-wrap label {
+.mtk-input-wrap label {
   font-size: 12px;
   font-weight: 500;
   color: #3d4148;
 }
 
-.ui5-mcombo {
+.mtk-mcombo {
   position: relative;
 }
-.ui5-mcombo__field {
+.mtk-mcombo__field {
   border: 1px solid #c5c8cd;
   border-radius: 4px;
   background: #ffffff;
@@ -26,16 +26,16 @@
   cursor: text;
   transition: border-color 180ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-mcombo__field:focus-within {
+.mtk-mcombo__field:focus-within {
   border-color: #0a6ed1;
   box-shadow: 0 0 0 2px rgba(10, 110, 209, 0.2);
 }
-.ui5-mcombo__tokens {
+.mtk-mcombo__tokens {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
 }
-.ui5-mcombo__input {
+.mtk-mcombo__input {
   border: none;
   outline: none;
   font-family: "IBM Plex Sans", sans-serif;
@@ -44,7 +44,7 @@
   flex: 1;
   background: none;
 }
-.ui5-mcombo__arrow {
+.mtk-mcombo__arrow {
   position: absolute;
   right: 4px;
   top: 50%;
@@ -54,7 +54,7 @@
   cursor: pointer;
   color: #6a6d75;
 }
-.ui5-mcombo__dropdown {
+.mtk-mcombo__dropdown {
   position: absolute;
   top: calc(100% + 2px);
   left: 0;
@@ -68,10 +68,10 @@
   overflow-y: auto;
   display: none;
 }
-.ui5-mcombo__dropdown.open {
+.mtk-mcombo__dropdown.open {
   display: block;
 }
-.ui5-mcombo__item {
+.mtk-mcombo__item {
   padding: 8px 12px;
   font-size: 13px;
   cursor: pointer;
@@ -80,13 +80,13 @@
   gap: 8px;
   transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-mcombo__item:hover {
+.mtk-mcombo__item:hover {
   background: #d3e8fd;
 }
-.ui5-mcombo__item.checked {
+.mtk-mcombo__item.checked {
   color: #0a6ed1;
 }
-.ui5-mcombo__item::before {
+.mtk-mcombo__item::before {
   content: "";
   width: 14px;
   height: 14px;
@@ -94,7 +94,7 @@
   border-radius: 3px;
   flex-shrink: 0;
 }
-.ui5-mcombo__item.checked::before {
+.mtk-mcombo__item.checked::before {
   background: #0a6ed1;
   border-color: #0a6ed1;
   content: "✓";
@@ -105,7 +105,7 @@
   justify-content: center;
 }
 
-.ui5-token {
+.mtk-token {
   display: inline-flex;
   align-items: center;
   gap: 3px;
@@ -117,7 +117,7 @@
   font-size: 11px;
   font-weight: 500;
 }
-.ui5-token__remove {
+.mtk-token__remove {
   background: none;
   border: none;
   cursor: pointer;
@@ -127,6 +127,6 @@
   line-height: 1;
   opacity: 0.7;
 }
-.ui5-token__remove:hover {
+.mtk-token__remove:hover {
   opacity: 1;
 }

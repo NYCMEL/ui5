@@ -1,11 +1,11 @@
 @use '../../shared/variables' as *;
 
-.ui5-label {
+.mtk-label {
   font-size: 12px; font-weight: 500; color: $text-2;
   &--required::after { content: ' *'; color: $color-error; }
 }
 
-.ui5-input {
+.mtk-input {
   height: 36px; padding: 0 10px;
   border: 1px solid $border; border-radius: $radius-sm;
   font-family: $font-primary; font-size: 14px; color: $text-1;
@@ -16,7 +16,7 @@
   &:focus { border-color: $border-focus; box-shadow: 0 0 0 2px rgba($color-primary, 0.2); }
 }
 
-.ui5-select {
+.mtk-select {
   appearance: none; height: 36px; padding: 0 36px 0 10px;
   border: 1px solid $border; border-radius: $radius-sm;
   font-family: $font-primary; font-size: 14px; color: $text-1;
@@ -25,7 +25,7 @@
   &:focus { border-color: $border-focus; }
 }
 
-.ui5-form {
+.mtk-form {
   display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
 
   &__group {

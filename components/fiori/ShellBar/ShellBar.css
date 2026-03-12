@@ -1,4 +1,4 @@
-.ui5-shellbar {
+.mtk-shellbar {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -7,13 +7,13 @@
   color: white;
   height: 48px;
 }
-.ui5-shellbar__start {
+.mtk-shellbar__start {
   display: flex;
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
 }
-.ui5-shellbar__menu-btn {
+.mtk-shellbar__menu-btn {
   background: none;
   border: none;
   color: white;
@@ -23,31 +23,31 @@
   border-radius: 4px;
   transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-shellbar__menu-btn:hover {
+.mtk-shellbar__menu-btn:hover {
   background: rgba(255, 255, 255, 0.15);
 }
-.ui5-shellbar__logo {
+.mtk-shellbar__logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.ui5-shellbar__logo-icon {
+.mtk-shellbar__logo-icon {
   font-size: 22px;
 }
-.ui5-shellbar__product {
+.mtk-shellbar__product {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.3px;
 }
-.ui5-shellbar__context {
+.mtk-shellbar__context {
   font-size: 11px;
   opacity: 0.75;
 }
-.ui5-shellbar__search-wrap {
+.mtk-shellbar__search-wrap {
   flex: 1;
   max-width: 360px;
 }
-.ui5-shellbar__search {
+.mtk-shellbar__search {
   width: 100%;
   height: 32px;
   padding: 0 12px;
@@ -60,20 +60,20 @@
   outline: none;
   transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-shellbar__search::placeholder {
+.mtk-shellbar__search::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-.ui5-shellbar__search:focus {
+.mtk-shellbar__search:focus {
   background: rgba(255, 255, 255, 0.25);
 }
-.ui5-shellbar__actions {
+.mtk-shellbar__actions {
   display: flex;
   align-items: center;
   gap: 4px;
   margin-left: auto;
   flex-shrink: 0;
 }
-.ui5-shellbar__action {
+.mtk-shellbar__action {
   position: relative;
   background: none;
   border: none;
@@ -89,10 +89,10 @@
   justify-content: center;
   transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-shellbar__action:hover {
+.mtk-shellbar__action:hover {
   background: rgba(255, 255, 255, 0.15);
 }
-.ui5-shellbar__badge {
+.mtk-shellbar__badge {
   position: absolute;
   top: 2px;
   right: 2px;
@@ -107,7 +107,7 @@
   align-items: center;
   justify-content: center;
 }
-.ui5-shellbar__avatar {
+.mtk-shellbar__avatar {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -120,6 +120,6 @@
   cursor: pointer;
   border: 2px solid rgba(255, 255, 255, 0.4);
 }
-.ui5-shellbar__avatar:hover {
+.mtk-shellbar__avatar:hover {
   background: rgba(255, 255, 255, 0.35);
 }

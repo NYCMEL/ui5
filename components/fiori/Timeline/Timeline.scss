@@ -1,7 +1,7 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-timeline {
+.mtk-timeline {
   position:relative;
   &__item { display:flex;gap:0;padding-bottom:24px;position:relative;
     &:last-child { padding-bottom:0; } }

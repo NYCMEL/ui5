@@ -1,12 +1,12 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-avatar { display:inline-flex;align-items:center;justify-content:center;border-radius:50%;font-weight:600;flex-shrink:0;
+.mtk-avatar { display:inline-flex;align-items:center;justify-content:center;border-radius:50%;font-weight:600;flex-shrink:0;
   &--sm { width:36px;height:36px;font-size:13px; }
   &--lg { width:56px;height:56px;font-size:20px; }
   &--accent-1 { background:#d1e8ff;color:#0a6ed1; } }
-.ui5-usermenu-wrap { position:relative;display:inline-block; }
-.ui5-usermenu-trigger {
+.mtk-usermenu-wrap { position:relative;display:inline-block; }
+.mtk-usermenu-trigger {
   display:inline-flex;align-items:center;gap:10px;background:none;border:1px solid $border;
   border-radius:$radius-sm;padding:6px 12px 6px 6px;cursor:pointer;transition:background $t;
   &:hover { background:$bg-sunken; }
@@ -14,7 +14,7 @@
   &__name { font-size:13px;font-weight:600; }
   &__role { font-size:11px;color:$text-3; }
 }
-.ui5-usermenu {
+.mtk-usermenu {
   position:absolute;top:calc(100% + 6px);right:0;z-index:100;
   background:$bg-surface;border:1px solid $border;border-radius:$radius-lg;
   box-shadow:$shadow-lg;min-width:280px;

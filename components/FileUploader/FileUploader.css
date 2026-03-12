@@ -1,13 +1,13 @@
-.ui5-file-uploader {
+.mtk-file-uploader {
   position: relative;
 }
-.ui5-file-uploader input[type=file] {
+.mtk-file-uploader input[type=file] {
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
 }
-.ui5-file-uploader__drop {
+.mtk-file-uploader__drop {
   border: 2px dashed #c5c8cd;
   border-radius: 8px;
   padding: 40px 32px;
@@ -20,19 +20,19 @@
   align-items: center;
   gap: 6px;
 }
-.ui5-file-uploader__drop:hover, .ui5-file-uploader__drop.dragover {
+.mtk-file-uploader__drop:hover, .mtk-file-uploader__drop.dragover {
   border-color: #0a6ed1;
   background: #d3e8fd;
   color: #0a6ed1;
 }
-.ui5-file-uploader__drop .drop-icon {
+.mtk-file-uploader__drop .drop-icon {
   font-size: 40px;
 }
-.ui5-file-uploader__drop .drop-text {
+.mtk-file-uploader__drop .drop-text {
   font-size: 14px;
   font-weight: 500;
 }
-.ui5-file-uploader__drop .drop-hint {
+.mtk-file-uploader__drop .drop-hint {
   font-size: 12px;
   opacity: 0.8;
 }

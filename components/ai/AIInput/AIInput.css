@@ -1,17 +1,17 @@
-.ui5-ai-input-wrap {
+.mtk-ai-input-wrap {
   display: flex;
   flex-direction: column;
   gap: 8px;
   max-width: 420px;
 }
 
-.ui5-ai-label {
+.mtk-ai-label {
   font-size: 12px;
   font-weight: 600;
   color: #6c2483;
 }
 
-.ui5-ai-input {
+.mtk-ai-input {
   display: flex;
   align-items: center;
   gap: 0;
@@ -20,16 +20,16 @@
   overflow: hidden;
   transition: box-shadow 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-ai-input:focus-within {
+.mtk-ai-input:focus-within {
   box-shadow: 0 0 0 3px rgba(108, 36, 131, 0.2);
 }
-.ui5-ai-input__icon {
+.mtk-ai-input__icon {
   padding: 0 8px 0 14px;
   font-size: 16px;
   color: #6c2483;
   flex-shrink: 0;
 }
-.ui5-ai-input input {
+.mtk-ai-input input {
   flex: 1;
   border: none;
   outline: none;
@@ -39,7 +39,7 @@
   background: none;
   color: #1a1d23;
 }
-.ui5-ai-input__btn {
+.mtk-ai-input__btn {
   background: linear-gradient(135deg, #6c2483, #0a6ed1);
   color: white;
   border: none;
@@ -52,17 +52,17 @@
   transition: opacity 180ms cubic-bezier(0.4, 0, 0.2, 1);
   min-height: 40px;
 }
-.ui5-ai-input__btn:hover {
+.mtk-ai-input__btn:hover {
   opacity: 0.9;
 }
 
-.ui5-ai-suggestions {
+.mtk-ai-suggestions {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
 
-.ui5-ai-chip {
+.mtk-ai-chip {
   padding: 4px 12px;
   border-radius: 50px;
   font-size: 12px;
@@ -73,7 +73,7 @@
   cursor: pointer;
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-ai-chip:hover {
+.mtk-ai-chip:hover {
   background: #6c2483;
   color: white;
 }

@@ -1,16 +1,16 @@
-.ui5-range-slider-wrap {
+.mtk-range-slider-wrap {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.ui5-range-slider {
+.mtk-range-slider {
   position: relative;
   height: 20px;
   display: flex;
   align-items: center;
 }
-.ui5-range-slider__track {
+.mtk-range-slider__track {
   position: absolute;
   left: 0;
   right: 0;
@@ -18,13 +18,13 @@
   background: #c5c8cd;
   border-radius: 2px;
 }
-.ui5-range-slider__fill {
+.mtk-range-slider__fill {
   position: absolute;
   height: 100%;
   background: #0a6ed1;
   border-radius: 2px;
 }
-.ui5-range-slider__input {
+.mtk-range-slider__input {
   -webkit-appearance: none;
   appearance: none;
   position: absolute;
@@ -34,7 +34,7 @@
   outline: none;
   pointer-events: none;
 }
-.ui5-range-slider__input::-webkit-slider-thumb {
+.mtk-range-slider__input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 18px;
@@ -47,11 +47,11 @@
   pointer-events: all;
   transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-range-slider__input::-webkit-slider-thumb:hover {
+.mtk-range-slider__input::-webkit-slider-thumb:hover {
   transform: scale(1.2);
 }
 
-.ui5-range-slider__labels {
+.mtk-range-slider__labels {
   display: flex;
   justify-content: space-between;
   font-size: 12px;

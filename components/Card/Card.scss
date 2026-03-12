@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-btn {
+.mtk-btn {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 0 16px; height: 36px;
   font-family: $font-primary; font-size: 14px; font-weight: 500;
@@ -12,7 +12,7 @@
   &--sm { height: 28px; padding: 0 12px; font-size: 12px; }
 }
 
-.ui5-card {
+.mtk-card {
   background: $bg-surface;
   border: 1px solid $border;
   border-radius: $radius-lg;

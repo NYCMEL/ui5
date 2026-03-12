@@ -1,14 +1,14 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-sidenav {
+.mtk-sidenav {
   width:220px;background:$bg-surface;border-right:1px solid $border;
   display:flex;flex-direction:column;transition:width $t;overflow:hidden;position:relative;
 
   &.collapsed { width:52px;
     .sidenav-text { display:none; }
-    .ui5-sidenav__group-header { padding:10px;justify-content:center; span:first-child { font-size:18px; } }
-    .ui5-sidenav__item--sub { display:none; }
+    .mtk-sidenav__group-header { padding:10px;justify-content:center; span:first-child { font-size:18px; } }
+    .mtk-sidenav__item--sub { display:none; }
   }
 
   &__toggle {

@@ -1,35 +1,35 @@
-.ui5-cal-legend {
+.mtk-cal-legend {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
-.ui5-cal-legend__item {
+.mtk-cal-legend__item {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 13px;
   color: #1a1d23;
 }
-.ui5-cal-legend__dot {
+.mtk-cal-legend__dot {
   width: 14px;
   height: 14px;
   border-radius: 50%;
   flex-shrink: 0;
 }
-.ui5-cal-legend__dot--today {
+.mtk-cal-legend__dot--today {
   background: #0a6ed1;
   border: 2px solid #0a6ed1;
 }
-.ui5-cal-legend__dot--selected {
+.mtk-cal-legend__dot--selected {
   background: #0a6ed1;
 }
-.ui5-cal-legend__dot--working {
+.mtk-cal-legend__dot--working {
   background: #107e3e;
 }
-.ui5-cal-legend__dot--non-working {
+.mtk-cal-legend__dot--non-working {
   background: #e8eaee;
   border: 2px solid #c5c8cd;
 }
-.ui5-cal-legend__dot--holiday {
+.mtk-cal-legend__dot--holiday {
   background: #b00;
 }

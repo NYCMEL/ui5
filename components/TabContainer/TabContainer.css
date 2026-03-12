@@ -1,12 +1,12 @@
-.ui5-tabs__nav {
+.mtk-tabs__nav {
   display: flex;
   border-bottom: 2px solid #c5c8cd;
   overflow-x: auto;
 }
-.ui5-tabs__nav::-webkit-scrollbar {
+.mtk-tabs__nav::-webkit-scrollbar {
   display: none;
 }
-.ui5-tabs__tab {
+.mtk-tabs__tab {
   padding: 10px 20px;
   font-size: 14px;
   font-weight: 500;
@@ -20,26 +20,26 @@
   white-space: nowrap;
   font-family: "IBM Plex Sans", sans-serif;
 }
-.ui5-tabs__tab:hover {
+.mtk-tabs__tab:hover {
   color: #0a6ed1;
   background: #d3e8fd;
 }
-.ui5-tabs__tab.active {
+.mtk-tabs__tab.active {
   color: #0a6ed1;
   border-bottom-color: #0a6ed1;
 }
-.ui5-tabs__tab:disabled {
+.mtk-tabs__tab:disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }
-.ui5-tabs__pane {
+.mtk-tabs__pane {
   display: none;
   padding: 20px 0;
   animation: fadeIn 0.2s ease;
   font-size: 14px;
   line-height: 1.6;
 }
-.ui5-tabs__pane.active {
+.mtk-tabs__pane.active {
   display: block;
 }
 

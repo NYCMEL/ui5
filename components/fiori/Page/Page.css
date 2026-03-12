@@ -1,4 +1,4 @@
-.ui5-btn {
+.mtk-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -13,41 +13,41 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.ui5-btn--default {
+.mtk-btn--default {
   background: #ffffff;
   border-color: #c5c8cd;
   color: #1a1d23;
 }
-.ui5-btn--default:hover {
+.mtk-btn--default:hover {
   background: #e8eaee;
 }
-.ui5-btn--emphasized {
+.mtk-btn--emphasized {
   background: #0a6ed1;
   border-color: #0a6ed1;
   color: #ffffff;
 }
-.ui5-btn--emphasized:hover {
+.mtk-btn--emphasized:hover {
   background: #085caf;
 }
-.ui5-btn--transparent {
+.mtk-btn--transparent {
   background: transparent;
   color: #0a6ed1;
 }
-.ui5-btn--transparent:hover {
+.mtk-btn--transparent:hover {
   background: #d3e8fd;
 }
-.ui5-btn--negative {
+.mtk-btn--negative {
   background: #b00;
   border-color: #b00;
   color: #ffffff;
 }
-.ui5-btn--sm {
+.mtk-btn--sm {
   height: 28px;
   padding: 0 12px;
   font-size: 12px;
 }
 
-.ui5-page-header {
+.mtk-page-header {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -57,7 +57,7 @@
   border-bottom: 1px solid #c5c8cd;
   flex-shrink: 0;
 }
-.ui5-page-header__back {
+.mtk-page-header__back {
   background: none;
   border: none;
   cursor: pointer;
@@ -67,27 +67,27 @@
   padding: 0;
   transition: color 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-page-header__back:hover {
+.mtk-page-header__back:hover {
   text-decoration: underline;
 }
-.ui5-page-header__title {
+.mtk-page-header__title {
   font-size: 16px;
   font-weight: 600;
   flex: 1;
 }
-.ui5-page-header__actions {
+.mtk-page-header__actions {
   display: flex;
   gap: 4px;
   align-items: center;
 }
 
-.ui5-page-content {
+.mtk-page-content {
   flex: 1;
   overflow-y: auto;
   padding: 20px;
 }
 
-.ui5-page-footer {
+.mtk-page-footer {
   display: flex;
   justify-content: flex-end;
   gap: 8px;

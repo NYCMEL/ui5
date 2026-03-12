@@ -1,16 +1,16 @@
-.ui5-timeline {
+.mtk-timeline {
   position: relative;
 }
-.ui5-timeline__item {
+.mtk-timeline__item {
   display: flex;
   gap: 0;
   padding-bottom: 24px;
   position: relative;
 }
-.ui5-timeline__item:last-child {
+.mtk-timeline__item:last-child {
   padding-bottom: 0;
 }
-.ui5-timeline__connector {
+.mtk-timeline__connector {
   width: 2px;
   background: #c5c8cd;
   position: absolute;
@@ -18,10 +18,10 @@
   top: 28px;
   bottom: 0;
 }
-.ui5-timeline__connector--dashed {
+.mtk-timeline__connector--dashed {
   background: repeating-linear-gradient(to bottom, #c5c8cd 0, #c5c8cd 6px, transparent 6px, transparent 12px);
 }
-.ui5-timeline__node {
+.mtk-timeline__node {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -34,35 +34,35 @@
   z-index: 1;
   margin-right: 14px;
 }
-.ui5-timeline__node--success {
+.mtk-timeline__node--success {
   background: #107e3e;
   color: white;
 }
-.ui5-timeline__node--primary {
+.mtk-timeline__node--primary {
   background: #0a6ed1;
   color: white;
 }
-.ui5-timeline__node--neutral {
+.mtk-timeline__node--neutral {
   background: #e8eaee;
   color: #6a6d75;
   border: 2px solid #c5c8cd;
 }
-.ui5-timeline__content {
+.mtk-timeline__content {
   flex: 1;
   padding-top: 4px;
 }
-.ui5-timeline__title {
+.mtk-timeline__title {
   font-weight: 600;
   font-size: 14px;
   color: #1a1d23;
 }
-.ui5-timeline__desc {
+.mtk-timeline__desc {
   font-size: 13px;
   color: #3d4148;
   margin-top: 3px;
   line-height: 1.5;
 }
-.ui5-timeline__time {
+.mtk-timeline__time {
   font-size: 11px;
   color: #6a6d75;
   margin-top: 4px;

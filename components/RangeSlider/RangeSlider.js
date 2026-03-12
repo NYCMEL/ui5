@@ -1,10 +1,10 @@
 
-document.querySelectorAll('.ui5-range-slider').forEach(rs => {
-  const wrap  = rs.closest('.ui5-range-slider-wrap');
+document.querySelectorAll('.mtk-range-slider').forEach(rs => {
+  const wrap  = rs.closest('.mtk-range-slider-wrap');
   const min   = +rs.dataset.min, max = +rs.dataset.max;
-  const sIn   = rs.querySelector('.ui5-range-slider__input--start');
-  const eIn   = rs.querySelector('.ui5-range-slider__input--end');
-  const fill  = rs.querySelector('.ui5-range-slider__fill');
+  const sIn   = rs.querySelector('.mtk-range-slider__input--start');
+  const eIn   = rs.querySelector('.mtk-range-slider__input--end');
+  const fill  = rs.querySelector('.mtk-range-slider__fill');
   const sLbl  = wrap?.querySelector('.rs-start');
   const eLbl  = wrap?.querySelector('.rs-end');
 

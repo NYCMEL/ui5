@@ -1,5 +1,5 @@
 const stateEl = document.querySelector('.toggle-state');
-document.querySelectorAll('.ui5-toggle-btn').forEach(btn => {
+document.querySelectorAll('.mtk-toggle-btn').forEach(btn => {
   btn.addEventListener('click', function() {
     this.classList.toggle('active');
     if (stateEl) {

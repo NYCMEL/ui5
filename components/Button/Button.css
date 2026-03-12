@@ -1,4 +1,4 @@
-.ui5-btn {
+.mtk-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -16,81 +16,81 @@
   outline: none;
   line-height: 1;
 }
-.ui5-btn:focus-visible {
+.mtk-btn:focus-visible {
   box-shadow: 0 0 0 3px rgba(10, 110, 209, 0.3);
 }
-.ui5-btn--default {
+.mtk-btn--default {
   background: #ffffff;
   border-color: #c5c8cd;
   color: #1a1d23;
 }
-.ui5-btn--default:hover {
+.mtk-btn--default:hover {
   background: #e8eaee;
 }
-.ui5-btn--default:active {
+.mtk-btn--default:active {
   background: rgb(220.27, 223.29, 229.33);
 }
-.ui5-btn--emphasized {
+.mtk-btn--emphasized {
   background: #0a6ed1;
   border-color: #0a6ed1;
   color: #ffffff;
 }
-.ui5-btn--emphasized:hover {
+.mtk-btn--emphasized:hover {
   background: #085caf;
 }
-.ui5-btn--emphasized:active {
+.mtk-btn--emphasized:active {
   background: #0854a0;
 }
-.ui5-btn--positive {
+.mtk-btn--positive {
   background: #107e3e;
   border-color: #107e3e;
   color: #ffffff;
 }
-.ui5-btn--positive:hover {
+.mtk-btn--positive:hover {
   background: rgb(11.4028169014, 89.7971830986, 44.185915493);
 }
-.ui5-btn--negative {
+.mtk-btn--negative {
   background: #b00;
   border-color: #b00;
   color: #ffffff;
 }
-.ui5-btn--negative:hover {
+.mtk-btn--negative:hover {
   background: rgb(146.2, 0, 0);
 }
-.ui5-btn--transparent {
+.mtk-btn--transparent {
   background: transparent;
   color: #0a6ed1;
 }
-.ui5-btn--transparent:hover {
+.mtk-btn--transparent:hover {
   background: #d3e8fd;
 }
-.ui5-btn--ghost {
+.mtk-btn--ghost {
   background: transparent;
   border-color: #0a6ed1;
   color: #0a6ed1;
 }
-.ui5-btn--ghost:hover {
+.mtk-btn--ghost:hover {
   background: #d3e8fd;
 }
-.ui5-btn--attention {
+.mtk-btn--attention {
   background: #e9730c;
   border-color: #e9730c;
   color: #ffffff;
 }
-.ui5-btn--attention:hover {
+.mtk-btn--attention:hover {
   background: rgb(194.1983673469, 95.8489795918, 10.0016326531);
 }
-.ui5-btn:disabled {
+.mtk-btn:disabled {
   opacity: 0.4;
   cursor: not-allowed;
   pointer-events: none;
 }
-.ui5-btn--sm {
+.mtk-btn--sm {
   height: 28px;
   padding: 0 12px;
   font-size: 12px;
 }
-.ui5-btn--lg {
+.mtk-btn--lg {
   height: 44px;
   padding: 0 20px;
   font-size: 15px;

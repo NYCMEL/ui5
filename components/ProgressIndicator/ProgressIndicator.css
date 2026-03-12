@@ -1,4 +1,4 @@
-.ui5-btn {
+.mtk-btn {
   display: inline-flex;
   align-items: center;
   padding: 0 16px;
@@ -12,42 +12,42 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.ui5-btn--emphasized {
+.mtk-btn--emphasized {
   background: #0a6ed1;
   border-color: #0a6ed1;
   color: #ffffff;
 }
-.ui5-btn--emphasized:hover {
+.mtk-btn--emphasized:hover {
   background: #085caf;
 }
 
-.ui5-progress {
+.mtk-progress {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.ui5-progress__bar {
+.mtk-progress__bar {
   height: 10px;
   background: #e8eaee;
   border-radius: 50px;
   overflow: hidden;
 }
-.ui5-progress__fill {
+.mtk-progress__fill {
   height: 100%;
   border-radius: 50px;
   transition: width 0.5s ease;
   background: #0a6ed1;
 }
-.ui5-progress__fill--success {
+.mtk-progress__fill--success {
   background: #107e3e;
 }
-.ui5-progress__fill--warning {
+.mtk-progress__fill--warning {
   background: #e9730c;
 }
-.ui5-progress__fill--error {
+.mtk-progress__fill--error {
   background: #b00;
 }
-.ui5-progress__labels {
+.mtk-progress__labels {
   display: flex;
   justify-content: space-between;
   font-size: 12px;

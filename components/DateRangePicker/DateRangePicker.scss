@@ -1,9 +1,9 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-input-wrap { display: flex; flex-direction: column; gap: 4px;
+.mtk-input-wrap { display: flex; flex-direction: column; gap: 4px;
   label { font-size: 12px; font-weight: 500; color: $text-2; } }
-.ui5-daterange {
+.mtk-daterange {
   display: flex; align-items: center; gap: 8px;
   border: 1px solid $border; border-radius: $radius-sm;
   padding: 0 10px; background: $bg-surface; height: 36px;
@@ -11,7 +11,7 @@
   &:focus-within { border-color: $border-focus; box-shadow: 0 0 0 2px rgba($color-primary,.2); }
   &__sep { color: $text-3; font-size: 14px; flex-shrink: 0; }
 }
-.ui5-date-field {
+.mtk-date-field {
   border: none; outline: none; font-family: $font-primary; font-size: 13px;
   color: $text-1; background: none; flex: 1;
 }

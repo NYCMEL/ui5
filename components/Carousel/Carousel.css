@@ -1,20 +1,20 @@
-.ui5-carousel {
+.mtk-carousel {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
   border: 1px solid #c5c8cd;
 }
-.ui5-carousel__track {
+.mtk-carousel__track {
   display: flex;
   transition: transform 0.35s ease;
 }
-.ui5-carousel__slide {
+.mtk-carousel__slide {
   min-width: 100%;
   padding: 48px 32px;
   background: #ffffff;
   text-align: center;
 }
-.ui5-carousel__nav {
+.mtk-carousel__nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -32,17 +32,17 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
-.ui5-carousel__nav:hover {
+.mtk-carousel__nav:hover {
   background: white;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
-.ui5-carousel__nav--prev {
+.mtk-carousel__nav--prev {
   left: 10px;
 }
-.ui5-carousel__nav--next {
+.mtk-carousel__nav--next {
   right: 10px;
 }
-.ui5-carousel__dots {
+.mtk-carousel__dots {
   position: absolute;
   bottom: 12px;
   left: 50%;
@@ -50,7 +50,7 @@
   display: flex;
   gap: 8px;
 }
-.ui5-carousel__dot {
+.mtk-carousel__dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -58,7 +58,7 @@
   cursor: pointer;
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-carousel__dot.active {
+.mtk-carousel__dot.active {
   background: #0a6ed1;
   transform: scale(1.2);
 }

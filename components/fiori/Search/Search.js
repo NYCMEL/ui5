@@ -13,13 +13,13 @@ input.addEventListener('input', () => {
   if (!matches.length) { sugg.classList.remove('open'); return; }
   sugg.innerHTML = matches.map(m => {
     const hi = m.replace(new RegExp(val,'gi'), s => `<em>${s}</em>`);
-    return `<div class="ui5-search__suggestion">${hi}</div>`;
+    return `<div class="mtk-search__suggestion">${hi}</div>`;
   }).join('');
-  sugg.querySelectorAll('.ui5-search__suggestion').forEach(el => {
+  sugg.querySelectorAll('.mtk-search__suggestion').forEach(el => {
     el.addEventListener('click', () => { input.value = el.textContent; sugg.classList.remove('open'); if (stateEl) stateEl.textContent = `Searched: "${el.textContent}"`; });
   });
   sugg.classList.add('open');
 });
 
 clear.addEventListener('click', () => { input.value = ''; clear.style.display = 'none'; sugg.classList.remove('open'); input.focus(); });
-document.addEventListener('click', e => { if (!e.target.closest('.ui5-search-wrap')) sugg.classList.remove('open'); });
+document.addEventListener('click', e => { if (!e.target.closest('.mtk-search-wrap')) sugg.classList.remove('open'); });

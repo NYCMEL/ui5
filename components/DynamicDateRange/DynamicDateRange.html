@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UI5 — DynamicDateRange</title>
+  <title>MTK — DynamicDateRange</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -18,25 +18,25 @@
 <div class="demo-section">
   <div class="demo-section__label">Dynamic Date Range</div>
   <div class="demo-block">
-    <div class="ui5-ddr">
-      <div class="ui5-ddr__presets">
-        <button class="ui5-ddr__preset active" data-range="today">Today</button>
-        <button class="ui5-ddr__preset" data-range="yesterday">Yesterday</button>
-        <button class="ui5-ddr__preset" data-range="this-week">This Week</button>
-        <button class="ui5-ddr__preset" data-range="last-week">Last Week</button>
-        <button class="ui5-ddr__preset" data-range="this-month">This Month</button>
-        <button class="ui5-ddr__preset" data-range="last-month">Last Month</button>
-        <button class="ui5-ddr__preset" data-range="last-7">Last 7 Days</button>
-        <button class="ui5-ddr__preset" data-range="last-30">Last 30 Days</button>
-        <button class="ui5-ddr__preset" data-range="this-year">This Year</button>
-        <button class="ui5-ddr__preset" data-range="custom">Custom Range…</button>
+    <div class="mtk-ddr">
+      <div class="mtk-ddr__presets">
+        <button class="mtk-ddr__preset active" data-range="today">Today</button>
+        <button class="mtk-ddr__preset" data-range="yesterday">Yesterday</button>
+        <button class="mtk-ddr__preset" data-range="this-week">This Week</button>
+        <button class="mtk-ddr__preset" data-range="last-week">Last Week</button>
+        <button class="mtk-ddr__preset" data-range="this-month">This Month</button>
+        <button class="mtk-ddr__preset" data-range="last-month">Last Month</button>
+        <button class="mtk-ddr__preset" data-range="last-7">Last 7 Days</button>
+        <button class="mtk-ddr__preset" data-range="last-30">Last 30 Days</button>
+        <button class="mtk-ddr__preset" data-range="this-year">This Year</button>
+        <button class="mtk-ddr__preset" data-range="custom">Custom Range…</button>
       </div>
-      <div class="ui5-ddr__custom" id="ddr-custom" style="display:none">
-        <input type="date" class="ui5-date-field" id="ddr-start" />
+      <div class="mtk-ddr__custom" id="ddr-custom" style="display:none">
+        <input type="date" class="mtk-date-field" id="ddr-start" />
         <span style="color:#6a6d75">→</span>
-        <input type="date" class="ui5-date-field" id="ddr-end" />
+        <input type="date" class="mtk-date-field" id="ddr-end" />
       </div>
-      <div class="ui5-ddr__output" id="ddr-output">Today: <strong id="ddr-label"></strong></div>
+      <div class="mtk-ddr__output" id="ddr-output">Today: <strong id="ddr-label"></strong></div>
     </div>
   </div>
 </div>

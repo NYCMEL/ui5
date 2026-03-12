@@ -1,15 +1,15 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-input-wrap { display: flex; flex-direction: column; gap: 4px;
+.mtk-input-wrap { display: flex; flex-direction: column; gap: 4px;
   label { font-size: 11px; font-weight: 500; color: $text-3; } }
-.ui5-input {
+.mtk-input {
   height: 32px; padding: 0 8px; border: 1px solid $border; border-radius: $radius-sm;
   font-family: $font-mono; font-size: 13px; color: $text-1; background: $bg-surface;
   outline: none; width: 100%; transition: border-color $t;
   &:focus { border-color: $border-focus; }
 }
-.ui5-color-picker {
+.mtk-color-picker {
   display: flex; flex-direction: column; gap: 14px; max-width: 300px;
   &__canvas {
     height: 160px; border-radius: $radius-sm; position: relative; cursor: crosshair;

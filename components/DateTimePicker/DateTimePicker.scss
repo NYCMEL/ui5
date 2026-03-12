@@ -1,9 +1,9 @@
 @use '../../shared/variables' as *;
 
 
-.ui5-input-wrap { display: flex; flex-direction: column; gap: 4px; min-width: 220px;
+.mtk-input-wrap { display: flex; flex-direction: column; gap: 4px; min-width: 220px;
   label { font-size: 12px; font-weight: 500; color: $text-2; } }
-.ui5-date-field--full {
+.mtk-date-field--full {
   height: 36px; padding: 0 10px; border: 1px solid $border; border-radius: $radius-sm;
   font-family: $font-primary; font-size: 13px; color: $text-1; background: $bg-surface;
   outline: none; cursor: pointer; transition: border-color $t, box-shadow $t; width: 100%;

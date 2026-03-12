@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-msgstrip {
+.mtk-msgstrip {
   display: flex; align-items: flex-start; gap: 10px;
   padding: 12px 16px; border-radius: $radius-sm; border-left: 4px solid;
   font-size: 13px; animation: stripIn 0.25s ease;

@@ -1,6 +1,6 @@
 @use '../../shared/variables' as *;
 
-.ui5-tabs {
+.mtk-tabs {
   &__nav {
     display: flex; border-bottom: 2px solid $border; overflow-x: auto;
     &::-webkit-scrollbar { display: none; }

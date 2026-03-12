@@ -1,4 +1,4 @@
-.ui5-btn {
+.mtk-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -13,40 +13,40 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.ui5-btn--default {
+.mtk-btn--default {
   background: #ffffff;
   border-color: #c5c8cd;
   color: #1a1d23;
 }
-.ui5-btn--default:hover {
+.mtk-btn--default:hover {
   background: #e8eaee;
 }
-.ui5-btn--emphasized {
+.mtk-btn--emphasized {
   background: #0a6ed1;
   border-color: #0a6ed1;
   color: #ffffff;
 }
-.ui5-btn--emphasized:hover {
+.mtk-btn--emphasized:hover {
   background: #085caf;
 }
-.ui5-btn--negative {
+.mtk-btn--negative {
   background: #b00;
   border-color: #b00;
   color: #ffffff;
 }
 
-.ui5-input-wrap {
+.mtk-input-wrap {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.ui5-input-wrap label {
+.mtk-input-wrap label {
   font-size: 12px;
   font-weight: 500;
   color: #3d4148;
 }
 
-.ui5-input {
+.mtk-input {
   height: 36px;
   padding: 0 10px;
   border: 1px solid #c5c8cd;
@@ -56,12 +56,12 @@
   outline: none;
   transition: border-color 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-input:focus {
+.mtk-input:focus {
   border-color: #0a6ed1;
   box-shadow: 0 0 0 2px rgba(10, 110, 209, 0.2);
 }
 
-.ui5-overlay {
+.mtk-overlay {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.48);
@@ -73,16 +73,16 @@
   visibility: hidden;
   transition: opacity 180ms cubic-bezier(0.4, 0, 0.2, 1), visibility 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-overlay.open {
+.mtk-overlay.open {
   opacity: 1;
   visibility: visible;
 }
-.ui5-overlay.open .ui5-dialog {
+.mtk-overlay.open .mtk-dialog {
   transform: none;
   opacity: 1;
 }
 
-.ui5-dialog {
+.mtk-dialog {
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
@@ -93,18 +93,18 @@
   opacity: 0;
   transition: all 0.25s cubic-bezier(0.2, 0, 0, 1.2);
 }
-.ui5-dialog__header {
+.mtk-dialog__header {
   padding: 20px 24px 16px;
   border-bottom: 1px solid #c5c8cd;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.ui5-dialog__title {
+.mtk-dialog__title {
   font-size: 18px;
   font-weight: 600;
 }
-.ui5-dialog__close {
+.mtk-dialog__close {
   background: none;
   border: none;
   font-size: 20px;
@@ -113,16 +113,16 @@
   transition: color 180ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 4px;
 }
-.ui5-dialog__close:hover {
+.mtk-dialog__close:hover {
   color: #1a1d23;
 }
-.ui5-dialog__body {
+.mtk-dialog__body {
   padding: 20px 24px;
   font-size: 14px;
   line-height: 1.6;
   color: #3d4148;
 }
-.ui5-dialog__footer {
+.mtk-dialog__footer {
   padding: 16px 24px;
   border-top: 1px solid #c5c8cd;
   display: flex;

@@ -1,4 +1,4 @@
-.ui5-btn {
+.mtk-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -13,47 +13,47 @@
   transition: all 180ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.ui5-btn--default {
+.mtk-btn--default {
   background: #ffffff;
   border-color: #c5c8cd;
   color: #1a1d23;
 }
-.ui5-btn--default:hover {
+.mtk-btn--default:hover {
   background: #e8eaee;
 }
-.ui5-btn--emphasized {
+.mtk-btn--emphasized {
   background: #0a6ed1;
   border-color: #0a6ed1;
   color: #ffffff;
 }
-.ui5-btn--emphasized:hover {
+.mtk-btn--emphasized:hover {
   background: #085caf;
 }
 
-.ui5-split-btn {
+.mtk-split-btn {
   display: inline-flex;
   position: relative;
 }
-.ui5-split-btn .split-main {
+.mtk-split-btn .split-main {
   border-radius: 4px 0 0 4px;
   border-right: none;
 }
-.ui5-split-btn .split-arrow {
+.mtk-split-btn .split-arrow {
   border-radius: 0 4px 4px 0;
   padding: 0 10px;
   border-left: 1px solid rgba(255, 255, 255, 0.25);
   min-width: 32px;
 }
-.ui5-split-btn .ui5-btn--default.split-arrow {
+.mtk-split-btn .mtk-btn--default.split-arrow {
   border-left-color: #c5c8cd;
 }
 
-.ui5-menu-wrap {
+.mtk-menu-wrap {
   position: relative;
   display: inline-block;
 }
 
-.ui5-menu {
+.mtk-menu {
   position: absolute;
   top: calc(100% + 4px);
   left: 0;
@@ -68,12 +68,12 @@
   transform: translateY(-8px);
   transition: all 0.2s ease;
 }
-.ui5-menu.open {
+.mtk-menu.open {
   opacity: 1;
   visibility: visible;
   transform: none;
 }
-.ui5-menu__item {
+.mtk-menu__item {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -83,7 +83,7 @@
   color: #1a1d23;
   transition: background 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ui5-menu__item:hover {
+.mtk-menu__item:hover {
   background: #d3e8fd;
   color: #0a6ed1;
 }
